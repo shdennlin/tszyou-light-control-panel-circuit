@@ -374,15 +374,15 @@ F 3 "~" H 8050 4550 50  0001 C CNN
 	1    8050 4550
 	1    0    0    -1  
 $EndComp
-Text Label 7850 4950 2    50   ~ 0
+Text Label 7850 4150 2    50   ~ 0
 LED1
-Text Label 7850 4750 2    50   ~ 0
+Text Label 7850 4350 2    50   ~ 0
 LED2
 Text Label 7850 4550 2    50   ~ 0
 LED3
-Text Label 7850 4350 2    50   ~ 0
+Text Label 7850 4750 2    50   ~ 0
 LED4
-Text Label 7850 4150 2    50   ~ 0
+Text Label 7850 4950 2    50   ~ 0
 LED5
 Text Notes 3800 7300 0    50   ~ 0
 External machinery:\n\nButton x 1 (Arduino Reset)(SW?)\n\nSwitch x 5 (Separate control 5 LED)(Switch1-5)\nSwitch x 1 (Contrl all LED switches)(Switch_All)\n\nVariable Resistance x 5 (Separate  Adjust 5 LED brightness)(ADC1-5)\n\nButton x 5 (Function button, can control light effect by code)(func1-5)\nButton x 1 (Stop Function and Set status with Switch)(Button_STOP)\n
@@ -694,12 +694,12 @@ $Comp
 L Switch:SW_Push SW13
 U 1 1 614E4843
 P 9850 4200
-F 0 "SW13" V 9650 4450 50  0000 C CNN
-F 1 "Button_STOP" V 9750 4550 50  0000 C CNN
+F 0 "SW13" V 10000 4500 50  0000 C CNN
+F 1 "Button_STOP" V 9900 4550 50  0000 C CNN
 F 2 "local_footprint:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" H 9850 4400 50  0001 C CNN
 F 3 "~" H 9850 4400 50  0001 C CNN
 	1    9850 4200
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L Device:R R12
@@ -1254,4 +1254,48 @@ F1 "pwm_amplifier.sch" 50
 F2 "PWM" I L 5600 5700 50 
 F3 "OUT" I R 6600 5700 50 
 $EndSheet
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 615AABDB
+P 9350 5900
+F 0 "H1" H 9450 5946 50  0000 L CNN
+F 1 "MountingHole" H 9450 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9350 5900 50  0001 C CNN
+F 3 "~" H 9350 5900 50  0001 C CNN
+	1    9350 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 615AB416
+P 10150 5900
+F 0 "H3" H 10250 5946 50  0000 L CNN
+F 1 "MountingHole" H 10250 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10150 5900 50  0001 C CNN
+F 3 "~" H 10150 5900 50  0001 C CNN
+	1    10150 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 615AFB1E
+P 9350 6150
+F 0 "H2" H 9450 6196 50  0000 L CNN
+F 1 "MountingHole" H 9450 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9350 6150 50  0001 C CNN
+F 3 "~" H 9350 6150 50  0001 C CNN
+	1    9350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 615B40C6
+P 10150 6200
+F 0 "H4" H 10250 6246 50  0000 L CNN
+F 1 "MountingHole" H 10250 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10150 6200 50  0001 C CNN
+F 3 "~" H 10150 6200 50  0001 C CNN
+	1    10150 6200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
