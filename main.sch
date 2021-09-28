@@ -16,10 +16,10 @@ $EndDescr
 Wire Notes Line
 	1050 7400 3300 7400
 $Comp
-L Connector:Screw_Terminal_01x02 J1
+L Connector:Screw_Terminal_01x02 J2
 U 1 1 6154F1EB
 P 10150 850
-F 0 "J1" H 10230 842 50  0000 L CNN
+F 0 "J2" H 10230 842 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 10230 751 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10150 850 50  0001 C CNN
 F 3 "~" H 10150 850 50  0001 C CNN
@@ -27,7 +27,7 @@ F 3 "~" H 10150 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 950  9950 950 
+	9700 950  9950 950 
 Text Label 10100 1500 1    50   ~ 0
 func1
 Wire Wire Line
@@ -139,10 +139,10 @@ $EndComp
 Text Notes 1100 7000 0    50   ~ 0
 close to power
 $Comp
-L power:+5V #PWR07
+L power:+5V #PWR08
 U 1 1 6150AECA
 P 2050 6200
-F 0 "#PWR07" H 2050 6050 50  0001 C CNN
+F 0 "#PWR08" H 2050 6050 50  0001 C CNN
 F 1 "+5V" H 2065 6373 50  0000 C CNN
 F 2 "" H 2050 6200 50  0001 C CNN
 F 3 "" H 2050 6200 50  0001 C CNN
@@ -152,10 +152,10 @@ $EndComp
 Text Label 2750 6600 0    50   ~ 0
 RESET
 $Comp
-L Device:C C5
+L Device:C C6
 U 1 1 6150A530
 P 2050 6850
-F 0 "C5" H 2165 6896 50  0000 L CNN
+F 0 "C6" H 2165 6896 50  0000 L CNN
 F 1 "0.1uF" H 2165 6805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2088 6700 50  0001 C CNN
 F 3 "~" H 2050 6850 50  0001 C CNN
@@ -212,10 +212,10 @@ Wire Wire Line
 Wire Wire Line
 	2550 1250 2500 1250
 $Comp
-L power:+5V #PWR011
+L power:+5V #PWR010
 U 1 1 614F214E
 P 2500 1250
-F 0 "#PWR011" H 2500 1100 50  0001 C CNN
+F 0 "#PWR010" H 2500 1100 50  0001 C CNN
 F 1 "+5V" H 2515 1423 50  0000 C CNN
 F 2 "" H 2500 1250 50  0001 C CNN
 F 3 "" H 2500 1250 50  0001 C CNN
@@ -252,10 +252,10 @@ Wire Wire Line
 Wire Wire Line
 	2050 4900 2350 4900
 $Comp
-L Device:C C3
+L Device:C C4
 U 1 1 614CF61B
 P 1900 4900
-F 0 "C3" V 1648 4900 50  0000 C CNN
+F 0 "C4" V 1648 4900 50  0000 C CNN
 F 1 "22pF" V 1739 4900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1938 4750 50  0001 C CNN
 F 3 "~" H 1900 4900 50  0001 C CNN
@@ -287,10 +287,10 @@ XTAL1
 Text Label 3750 1950 0    50   ~ 0
 XTAL2
 $Comp
-L Device:C C4
+L Device:C C5
 U 1 1 614D0E10
 P 1900 5300
-F 0 "C4" V 2150 5300 50  0000 C CNN
+F 0 "C5" V 2150 5300 50  0000 C CNN
 F 1 "22pF" V 2050 5300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1938 5150 50  0001 C CNN
 F 3 "~" H 1900 5300 50  0001 C CNN
@@ -364,26 +364,16 @@ Wire Wire Line
 Text Label 3750 1250 0    50   ~ 0
 func1
 $Comp
-L Connector:Screw_Terminal_01x10 J2
+L Connector:Screw_Terminal_01x10 J1
 U 1 1 6174BF42
-P 8050 4550
-F 0 "J2" H 8130 4592 50  0000 L CNN
-F 1 "Screw_Terminal_01x10" H 8130 4501 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-10_1x10_P5.00mm_Horizontal" H 8050 4550 50  0001 C CNN
-F 3 "~" H 8050 4550 50  0001 C CNN
-	1    8050 4550
+P 7900 4550
+F 0 "J1" H 7980 4592 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" H 7980 4501 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-10_1x10_P5.00mm_Horizontal" H 7900 4550 50  0001 C CNN
+F 3 "~" H 7900 4550 50  0001 C CNN
+	1    7900 4550
 	1    0    0    -1  
 $EndComp
-Text Label 7850 4150 2    50   ~ 0
-LED1
-Text Label 7850 4350 2    50   ~ 0
-LED2
-Text Label 7850 4550 2    50   ~ 0
-LED3
-Text Label 7850 4750 2    50   ~ 0
-LED4
-Text Label 7850 4950 2    50   ~ 0
-LED5
 Text Notes 3800 7300 0    50   ~ 0
 External machinery:\n\nButton x 1 (Arduino Reset)(SW?)\n\nSwitch x 5 (Separate control 5 LED)(Switch1-5)\nSwitch x 1 (Contrl all LED switches)(Switch_All)\n\nVariable Resistance x 5 (Separate  Adjust 5 LED brightness)(ADC1-5)\n\nButton x 5 (Function button, can control light effect by code)(func1-5)\nButton x 1 (Stop Function and Set status with Switch)(Button_STOP)\n
 Text Label 3750 1750 0    50   ~ 0
@@ -420,16 +410,16 @@ U 1 1 61519E0C
 P 1500 2850
 F 0 "U1" H 1500 3092 50  0000 C CNN
 F 1 "L7805" H 1500 3001 50  0000 C CNN
-F 2 "local_footprint:TO-220-3_Vertical" H 1525 2700 50  0001 L CIN
+F 2 "local_footprint:TO-220_heatsink" H 1525 2700 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1500 2800 50  0001 C CNN
 	1    1500 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR09
+L power:+5V #PWR07
 U 1 1 61529CBE
 P 2050 2850
-F 0 "#PWR09" H 2050 2700 50  0001 C CNN
+F 0 "#PWR07" H 2050 2700 50  0001 C CNN
 F 1 "+5V" H 2065 3023 50  0000 C CNN
 F 2 "" H 2050 2850 50  0001 C CNN
 F 3 "" H 2050 2850 50  0001 C CNN
@@ -451,27 +441,6 @@ Wire Wire Line
 	2050 2850 1900 2850
 Wire Wire Line
 	1000 2850 1100 2850
-Wire Wire Line
-	7850 5050 7600 5050
-Wire Wire Line
-	7850 4850 7600 4850
-Wire Wire Line
-	7600 4850 7600 5050
-Wire Wire Line
-	7850 4650 7600 4650
-Wire Wire Line
-	7600 4650 7600 4850
-Connection ~ 7600 4850
-Wire Wire Line
-	7600 4450 7600 4650
-Wire Wire Line
-	7850 4450 7600 4450
-Connection ~ 7600 4650
-Wire Wire Line
-	7850 4250 7600 4250
-Wire Wire Line
-	7600 4250 7600 4450
-Connection ~ 7600 4450
 $Comp
 L Device:R_Variable R11
 U 1 1 61670020
@@ -530,10 +499,10 @@ F 3 "~" H 8100 2050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C6
+L Device:C C3
 U 1 1 614E219A
 P 1900 3000
-F 0 "C6" H 2015 3046 50  0000 L CNN
+F 0 "C3" H 2015 3046 50  0000 L CNN
 F 1 "0.1uF" H 2015 2955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1938 2850 50  0001 C CNN
 F 3 "~" H 1900 3000 50  0001 C CNN
@@ -596,7 +565,7 @@ Wire Wire Line
 	1800 2200 1600 2200
 Wire Wire Line
 	1300 2200 1250 2200
-Text Label 9900 950  2    50   ~ 0
+Text Label 9950 850  2    50   ~ 0
 12V_input
 $Comp
 L Switch:SW_DIP_x01 SW3
@@ -722,10 +691,10 @@ Button_STOP
 Wire Wire Line
 	9850 3950 10150 3950
 $Comp
-L power:+5V #PWR023
+L power:+5V #PWR022
 U 1 1 614D153E
 P 9850 3500
-F 0 "#PWR023" H 9850 3350 50  0001 C CNN
+F 0 "#PWR022" H 9850 3350 50  0001 C CNN
 F 1 "+5V" H 9865 3673 50  0000 C CNN
 F 2 "" H 9850 3500 50  0001 C CNN
 F 3 "" H 9850 3500 50  0001 C CNN
@@ -948,10 +917,10 @@ $EndComp
 Wire Wire Line
 	6900 850  5500 850 
 $Comp
-L power:GNDREF #PWR05
+L power:GNDREF #PWR04
 U 1 1 61785A87
 P 1500 3250
-F 0 "#PWR05" H 1500 3000 50  0001 C CNN
+F 0 "#PWR04" H 1500 3000 50  0001 C CNN
 F 1 "GNDREF" H 1505 3077 50  0000 C CNN
 F 2 "" H 1500 3250 50  0001 C CNN
 F 3 "" H 1500 3250 50  0001 C CNN
@@ -959,10 +928,10 @@ F 3 "" H 1500 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR08
+L power:GNDS #PWR05
 U 1 1 6178A71E
 P 1600 5400
-F 0 "#PWR08" H 1600 5150 50  0001 C CNN
+F 0 "#PWR05" H 1600 5150 50  0001 C CNN
 F 1 "GNDS" H 1605 5227 50  0000 C CNN
 F 2 "" H 1600 5400 50  0001 C CNN
 F 3 "" H 1600 5400 50  0001 C CNN
@@ -970,10 +939,10 @@ F 3 "" H 1600 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR015
+L power:GNDS #PWR011
 U 1 1 6178B185
 P 2550 7100
-F 0 "#PWR015" H 2550 6850 50  0001 C CNN
+F 0 "#PWR011" H 2550 6850 50  0001 C CNN
 F 1 "GNDS" H 2555 6927 50  0000 C CNN
 F 2 "" H 2550 7100 50  0001 C CNN
 F 3 "" H 2550 7100 50  0001 C CNN
@@ -981,10 +950,10 @@ F 3 "" H 2550 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR012
+L power:GNDS #PWR09
 U 1 1 6178EE6E
 P 2050 7100
-F 0 "#PWR012" H 2050 6850 50  0001 C CNN
+F 0 "#PWR09" H 2050 6850 50  0001 C CNN
 F 1 "GNDS" H 2055 6927 50  0000 C CNN
 F 2 "" H 2050 7100 50  0001 C CNN
 F 3 "" H 2050 7100 50  0001 C CNN
@@ -992,10 +961,10 @@ F 3 "" H 2050 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR04
+L power:GNDS #PWR03
 U 1 1 61792B3A
 P 1350 6700
-F 0 "#PWR04" H 1350 6450 50  0001 C CNN
+F 0 "#PWR03" H 1350 6450 50  0001 C CNN
 F 1 "GNDS" H 1355 6527 50  0000 C CNN
 F 2 "" H 1350 6700 50  0001 C CNN
 F 3 "" H 1350 6700 50  0001 C CNN
@@ -1003,10 +972,10 @@ F 3 "" H 1350 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR026
+L power:GNDS #PWR023
 U 1 1 6179A907
 P 9850 4450
-F 0 "#PWR026" H 9850 4200 50  0001 C CNN
+F 0 "#PWR023" H 9850 4200 50  0001 C CNN
 F 1 "GNDS" H 9855 4277 50  0000 C CNN
 F 2 "" H 9850 4450 50  0001 C CNN
 F 3 "" H 9850 4450 50  0001 C CNN
@@ -1014,10 +983,10 @@ F 3 "" H 9850 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR027
+L power:GNDS #PWR024
 U 1 1 6179E526
 P 10650 1600
-F 0 "#PWR027" H 10650 1350 50  0001 C CNN
+F 0 "#PWR024" H 10650 1350 50  0001 C CNN
 F 1 "GNDS" H 10655 1427 50  0000 C CNN
 F 2 "" H 10650 1600 50  0001 C CNN
 F 3 "" H 10650 1600 50  0001 C CNN
@@ -1025,10 +994,10 @@ F 3 "" H 10650 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR028
+L power:GNDS #PWR025
 U 1 1 617A216C
 P 10650 1950
-F 0 "#PWR028" H 10650 1700 50  0001 C CNN
+F 0 "#PWR025" H 10650 1700 50  0001 C CNN
 F 1 "GNDS" H 10655 1777 50  0000 C CNN
 F 2 "" H 10650 1950 50  0001 C CNN
 F 3 "" H 10650 1950 50  0001 C CNN
@@ -1036,10 +1005,10 @@ F 3 "" H 10650 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR029
+L power:GNDS #PWR026
 U 1 1 617A5D70
 P 10650 2300
-F 0 "#PWR029" H 10650 2050 50  0001 C CNN
+F 0 "#PWR026" H 10650 2050 50  0001 C CNN
 F 1 "GNDS" H 10655 2127 50  0000 C CNN
 F 2 "" H 10650 2300 50  0001 C CNN
 F 3 "" H 10650 2300 50  0001 C CNN
@@ -1047,10 +1016,10 @@ F 3 "" H 10650 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR030
+L power:GNDS #PWR027
 U 1 1 617A991C
 P 10650 2650
-F 0 "#PWR030" H 10650 2400 50  0001 C CNN
+F 0 "#PWR027" H 10650 2400 50  0001 C CNN
 F 1 "GNDS" H 10655 2477 50  0000 C CNN
 F 2 "" H 10650 2650 50  0001 C CNN
 F 3 "" H 10650 2650 50  0001 C CNN
@@ -1058,10 +1027,10 @@ F 3 "" H 10650 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR031
+L power:GNDS #PWR028
 U 1 1 617AD558
 P 10650 3000
-F 0 "#PWR031" H 10650 2750 50  0001 C CNN
+F 0 "#PWR028" H 10650 2750 50  0001 C CNN
 F 1 "GNDS" H 10655 2827 50  0000 C CNN
 F 2 "" H 10650 3000 50  0001 C CNN
 F 3 "" H 10650 3000 50  0001 C CNN
@@ -1069,10 +1038,10 @@ F 3 "" H 10650 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR017
+L power:GNDS #PWR015
 U 1 1 617B54FB
 P 5700 2700
-F 0 "#PWR017" H 5700 2450 50  0001 C CNN
+F 0 "#PWR015" H 5700 2450 50  0001 C CNN
 F 1 "GNDS" H 5705 2527 50  0000 C CNN
 F 2 "" H 5700 2700 50  0001 C CNN
 F 3 "" H 5700 2700 50  0001 C CNN
@@ -1080,10 +1049,10 @@ F 3 "" H 5700 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR018
+L power:GNDS #PWR016
 U 1 1 617B9274
 P 6300 2700
-F 0 "#PWR018" H 6300 2450 50  0001 C CNN
+F 0 "#PWR016" H 6300 2450 50  0001 C CNN
 F 1 "GNDS" H 6305 2527 50  0000 C CNN
 F 2 "" H 6300 2700 50  0001 C CNN
 F 3 "" H 6300 2700 50  0001 C CNN
@@ -1091,10 +1060,10 @@ F 3 "" H 6300 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR019
+L power:GNDS #PWR017
 U 1 1 617BCFA0
 P 6900 2700
-F 0 "#PWR019" H 6900 2450 50  0001 C CNN
+F 0 "#PWR017" H 6900 2450 50  0001 C CNN
 F 1 "GNDS" H 6905 2527 50  0000 C CNN
 F 2 "" H 6900 2700 50  0001 C CNN
 F 3 "" H 6900 2700 50  0001 C CNN
@@ -1102,10 +1071,10 @@ F 3 "" H 6900 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR021
+L power:GNDS #PWR018
 U 1 1 617C0CD8
 P 7500 2700
-F 0 "#PWR021" H 7500 2450 50  0001 C CNN
+F 0 "#PWR018" H 7500 2450 50  0001 C CNN
 F 1 "GNDS" H 7505 2527 50  0000 C CNN
 F 2 "" H 7500 2700 50  0001 C CNN
 F 3 "" H 7500 2700 50  0001 C CNN
@@ -1113,10 +1082,10 @@ F 3 "" H 7500 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR024
+L power:GNDS #PWR019
 U 1 1 617C49C2
 P 8100 2700
-F 0 "#PWR024" H 8100 2450 50  0001 C CNN
+F 0 "#PWR019" H 8100 2450 50  0001 C CNN
 F 1 "GNDS" H 8105 2527 50  0000 C CNN
 F 2 "" H 8100 2700 50  0001 C CNN
 F 3 "" H 8100 2700 50  0001 C CNN
@@ -1124,10 +1093,10 @@ F 3 "" H 8100 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR016
+L power:GNDS #PWR012
 U 1 1 617C8666
 P 3150 3950
-F 0 "#PWR016" H 3150 3700 50  0001 C CNN
+F 0 "#PWR012" H 3150 3700 50  0001 C CNN
 F 1 "GNDS" H 3155 3777 50  0000 C CNN
 F 2 "" H 3150 3950 50  0001 C CNN
 F 3 "" H 3150 3950 50  0001 C CNN
@@ -1135,32 +1104,16 @@ F 3 "" H 3150 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR022
-U 1 1 617CC21A
-P 7600 5100
-F 0 "#PWR022" H 7600 4850 50  0001 C CNN
-F 1 "GNDREF" H 7605 4927 50  0000 C CNN
-F 2 "" H 7600 5100 50  0001 C CNN
-F 3 "" H 7600 5100 50  0001 C CNN
-	1    7600 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR025
+L power:GNDREF #PWR021
 U 1 1 617CCF1F
-P 9400 850
-F 0 "#PWR025" H 9400 600 50  0001 C CNN
-F 1 "GNDREF" H 9405 677 50  0000 C CNN
-F 2 "" H 9400 850 50  0001 C CNN
-F 3 "" H 9400 850 50  0001 C CNN
-	1    9400 850 
+P 9700 950
+F 0 "#PWR021" H 9700 700 50  0001 C CNN
+F 1 "GNDREF" H 9705 777 50  0000 C CNN
+F 2 "" H 9700 950 50  0001 C CNN
+F 3 "" H 9700 950 50  0001 C CNN
+	1    9700 950 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9400 850  9950 850 
-Wire Wire Line
-	7600 5100 7600 5050
-Connection ~ 7600 5050
 $Comp
 L MCU_Microchip_ATmega:ATmega328P-PU U2
 U 1 1 614C4454
@@ -1174,86 +1127,16 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 $EndComp
 Text Label 1250 2200 2    50   ~ 0
 12V_input
-Text Label 5400 3700 2    50   ~ 0
+Text Label 5400 3450 2    50   ~ 0
 PWM1
-Wire Wire Line
-	5400 3700 5600 3700
-Text Label 6750 3700 0    50   ~ 0
-LED1
-Wire Wire Line
-	6750 3700 6600 3700
-$Sheet
-S 5600 3550 1000 250 
-U 61537257
-F0 "LED1 PWM Amplifier" 50
-F1 "pwm_amplifier.sch" 50
-F2 "PWM" I L 5600 3700 50 
-F3 "OUT" I R 6600 3700 50 
-$EndSheet
-Text Label 5400 4200 2    50   ~ 0
+Text Label 5400 4050 2    50   ~ 0
 PWM2
-Wire Wire Line
-	5400 4200 5600 4200
-Text Label 6750 4200 0    50   ~ 0
-LED2
-Wire Wire Line
-	6750 4200 6600 4200
-$Sheet
-S 5600 4050 1000 250 
-U 6157AA02
-F0 "LED2 PWM Amplifier" 50
-F1 "pwm_amplifier.sch" 50
-F2 "PWM" I L 5600 4200 50 
-F3 "OUT" I R 6600 4200 50 
-$EndSheet
-Text Label 5400 4700 2    50   ~ 0
+Text Label 5400 4650 2    50   ~ 0
 PWM3
-Wire Wire Line
-	5400 4700 5600 4700
-Text Label 6750 4700 0    50   ~ 0
-LED3
-Wire Wire Line
-	6750 4700 6600 4700
-$Sheet
-S 5600 4550 1000 250 
-U 6157ECA1
-F0 "LED3 PWM Amplifier" 50
-F1 "pwm_amplifier.sch" 50
-F2 "PWM" I L 5600 4700 50 
-F3 "OUT" I R 6600 4700 50 
-$EndSheet
-Text Label 5400 5200 2    50   ~ 0
+Text Label 5400 5250 2    50   ~ 0
 PWM4
-Wire Wire Line
-	5400 5200 5600 5200
-Text Label 6750 5200 0    50   ~ 0
-LED4
-Wire Wire Line
-	6750 5200 6600 5200
-$Sheet
-S 5600 5050 1000 250 
-U 61583105
-F0 "LED4 PWM Amplifier" 50
-F1 "pwm_amplifier.sch" 50
-F2 "PWM" I L 5600 5200 50 
-F3 "OUT" I R 6600 5200 50 
-$EndSheet
-Text Label 5400 5700 2    50   ~ 0
+Text Label 5400 5850 2    50   ~ 0
 PWM5
-Wire Wire Line
-	5400 5700 5600 5700
-Text Label 6750 5700 0    50   ~ 0
-LED5
-Wire Wire Line
-	6750 5700 6600 5700
-$Sheet
-S 5600 5550 1000 250 
-U 615877FA
-F0 "LED5 PWM Amplifier" 50
-F1 "pwm_amplifier.sch" 50
-F2 "PWM" I L 5600 5700 50 
-F3 "OUT" I R 6600 5700 50 
-$EndSheet
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 615AABDB
@@ -1298,4 +1181,119 @@ F 3 "~" H 10150 6200 50  0001 C CNN
 	1    10150 6200
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 5600 3350 1050 350 
+U 61537257
+F0 "LED1 PWM Amplifier" 50
+F1 "pwm_amplifier.sch" 50
+F2 "PWM" I L 5600 3450 50 
+F3 "LED+" I R 6650 3450 50 
+F4 "LED-" I R 6650 3600 50 
+$EndSheet
+Wire Wire Line
+	6650 3450 6800 3450
+Wire Wire Line
+	6650 3600 6800 3600
+Text Label 6800 3450 0    50   ~ 0
+LED1+
+Text Label 6800 3600 0    50   ~ 0
+LED1-
+$Sheet
+S 5600 3950 1050 350 
+U 61510461
+F0 "LED2 PWM Amplifier" 50
+F1 "pwm_amplifier.sch" 50
+F2 "PWM" I L 5600 4050 50 
+F3 "LED+" I R 6650 4050 50 
+F4 "LED-" I R 6650 4200 50 
+$EndSheet
+Wire Wire Line
+	6650 4050 6800 4050
+Wire Wire Line
+	6650 4200 6800 4200
+Text Label 6800 4050 0    50   ~ 0
+LED2+
+Text Label 6800 4200 0    50   ~ 0
+LED2-
+Wire Wire Line
+	5400 5850 5600 5850
+$Sheet
+S 5600 4550 1050 350 
+U 615268FF
+F0 "LED3 PWM Amplifier" 50
+F1 "pwm_amplifier.sch" 50
+F2 "PWM" I L 5600 4650 50 
+F3 "LED+" I R 6650 4650 50 
+F4 "LED-" I R 6650 4800 50 
+$EndSheet
+Wire Wire Line
+	6650 4650 6800 4650
+Wire Wire Line
+	6650 4800 6800 4800
+Text Label 6800 4650 0    50   ~ 0
+LED3+
+Text Label 6800 4800 0    50   ~ 0
+LED3-
+$Sheet
+S 5600 5150 1050 350 
+U 6152A6A8
+F0 "LED4 PWM Amplifier" 50
+F1 "pwm_amplifier.sch" 50
+F2 "PWM" I L 5600 5250 50 
+F3 "LED+" I R 6650 5250 50 
+F4 "LED-" I R 6650 5400 50 
+$EndSheet
+Wire Wire Line
+	6650 5250 6800 5250
+Wire Wire Line
+	6650 5400 6800 5400
+Text Label 6800 5250 0    50   ~ 0
+LED4+
+Text Label 6800 5400 0    50   ~ 0
+LED4-
+$Sheet
+S 5600 5750 1050 350 
+U 6152E7D4
+F0 "LED5 PWM Amplifier" 50
+F1 "pwm_amplifier.sch" 50
+F2 "PWM" I L 5600 5850 50 
+F3 "LED+" I R 6650 5850 50 
+F4 "LED-" I R 6650 6000 50 
+$EndSheet
+Wire Wire Line
+	6650 5850 6800 5850
+Wire Wire Line
+	6650 6000 6800 6000
+Text Label 6800 5850 0    50   ~ 0
+LED5+
+Text Label 6800 6000 0    50   ~ 0
+LED5-
+Text Label 7700 4150 2    50   ~ 0
+LED1+
+Text Label 7700 4250 2    50   ~ 0
+LED1-
+Text Label 7700 4350 2    50   ~ 0
+LED2+
+Text Label 7700 4450 2    50   ~ 0
+LED2-
+Text Label 7700 4550 2    50   ~ 0
+LED3+
+Text Label 7700 4650 2    50   ~ 0
+LED3-
+Text Label 7700 4750 2    50   ~ 0
+LED4+
+Text Label 7700 4850 2    50   ~ 0
+LED4-
+Text Label 7700 4950 2    50   ~ 0
+LED5+
+Text Label 7700 5050 2    50   ~ 0
+LED5-
+Wire Wire Line
+	5600 5250 5400 5250
+Wire Wire Line
+	5400 4650 5600 4650
+Wire Wire Line
+	5400 4050 5600 4050
+Wire Wire Line
+	5400 3450 5600 3450
 $EndSCHEMATC
