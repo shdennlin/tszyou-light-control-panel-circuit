@@ -1137,7 +1137,7 @@ U 1 1 615AABDB
 P 9350 5900
 F 0 "H1" H 9450 5946 50  0000 L CNN
 F 1 "MountingHole" H 9450 5855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9350 5900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9350 5900 50  0001 C CNN
 F 3 "~" H 9350 5900 50  0001 C CNN
 	1    9350 5900
 	1    0    0    -1  
@@ -1148,7 +1148,7 @@ U 1 1 615AB416
 P 10150 5900
 F 0 "H3" H 10250 5946 50  0000 L CNN
 F 1 "MountingHole" H 10250 5855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10150 5900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 10150 5900 50  0001 C CNN
 F 3 "~" H 10150 5900 50  0001 C CNN
 	1    10150 5900
 	1    0    0    -1  
@@ -1159,7 +1159,7 @@ U 1 1 615AFB1E
 P 9350 6150
 F 0 "H2" H 9450 6196 50  0000 L CNN
 F 1 "MountingHole" H 9450 6105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9350 6150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9350 6150 50  0001 C CNN
 F 3 "~" H 9350 6150 50  0001 C CNN
 	1    9350 6150
 	1    0    0    -1  
@@ -1170,7 +1170,7 @@ U 1 1 615B40C6
 P 10150 6200
 F 0 "H4" H 10250 6246 50  0000 L CNN
 F 1 "MountingHole" H 10250 6155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10150 6200 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 10150 6200 50  0001 C CNN
 F 3 "~" H 10150 6200 50  0001 C CNN
 	1    10150 6200
 	1    0    0    -1  
