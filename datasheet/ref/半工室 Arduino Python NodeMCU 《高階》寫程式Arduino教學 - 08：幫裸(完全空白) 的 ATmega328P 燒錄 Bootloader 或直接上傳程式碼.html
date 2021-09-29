@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html class="v2" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen">*:not(pre, pre *, code, .far, .fa, .glyphicon, [class*="vjs-"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*="mu-"], .glyphicon, .icon) {
+  -webkit-text-stroke: 0.1px !important;
+  text-stroke: 0.1px !important;
+}</style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #454a4d #202324;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+<link href="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/1667664774-css_bundle_v2.css" rel="stylesheet" type="text/css"><style class="darkreader darkreader--cors" media="screen">body{margin:0;padding:0 0 1px}.content-outer,.header-outer,.tabs-outer,.main-outer,.main-inner,.footer-outer,.post,.comments,.widget,.date-header,.inline-ad{position:relative;min-height:0;_position:static;_height:1%}.footer-outer{margin-bottom:-1px}.content-inner{padding:10px}.tabs-inner{padding:0 15px}.main-inner{padding:30px 0}.main-inner .column-center-inner,.main-inner .column-left-inner,.main-inner .column-right-inner{padding:0 15px}.footer-inner{padding:30px 15px}.section{margin:0 15px}.widget{margin:30px 0;_margin:0 0 10px}.section:first-child .widget:first-child{margin-top:0}.section:first-child #uds-searchControl+.widget{margin-top:0}.section:last-child .widget:last-child{margin-bottom:0}.tabs:first-child .widget{margin-bottom:0}body .navbar{height:30px;padding:0;margin:0}body .navbar .Navbar{position:absolute;z-index:10;left:0;width:100%;margin:0;padding:0;background:none;border:none}.header-inner .section{margin:0}.header-inner .widget{margin-left:30px;margin-right:30px}.header-inner .Header{margin:0}.header-inner .Header #header-inner{overflow:hidden}.header-inner .Header .titlewrapper{padding:22px 30px 0}.header-inner .Header .descriptionwrapper{padding:0 30px;margin-bottom:25px}.Header h1{margin-bottom:10px}.Header .description{margin:.5em 0 10px;padding:0 2px}a img{border:none;position:relative}h1,h2,h3,h4{margin:0;position:relative}h1 a:hover{text-decoration:none}h3 a:hover{text-decoration:none}.tabs .widget h2{display:none}.tabs .widget ul,.tabs .widget ul{margin:0;padding:0;overflow:hidden;list-style:none}.tabs .widget li,.tabs .widget li{margin:0;padding:0;float:left}.tabs .widget li a:hover{text-decoration:none}.widget{line-height:1.4}.widget ul{padding:0 0 0 1.25em;margin:0;line-height:1.2}.BlogList ul{padding:0}.BlogList li .blog-content{position:relative}.widget li,.BlogArchive #ArchiveList ul.flat li{padding:.25em 0;margin:0;text-indent:0}.widget .post-body ul{padding:0 2.5em;margin:.5em 0;line-height:1.4}.widget .post-body li{margin-bottom:.25em;padding-top:0;padding-bottom:0}.item-control{display:none}.item-control a,.item-action a{text-decoration:none !important}.widget-item-control{float:right;height:20px;margin-top:-20px;position:relative;z-index:10}.widget-item-control a{opacity:.5}.widget-item-control a:hover{opacity:1}.widget .widget-item-control a img{border:none;padding:none;background:none;-moz-box-shadow:none;-webkit-box-shadow:none;-ie-box-shadow:none;box-shadow:none}.post-body{width:100%;_overflow:hidden}.post-header,.post-footer{line-height:1.6}.post-footer-line>*{margin-right:1em}.post-footer-line>*:last-child{margin-right:0}.post-timestamp{margin-left:-1em}.post-footer-line>*:first-child{margin-left:0}.post .tr-caption-container{position:relative}.inline-ad{margin:2em 0;text-align:center;line-height:0}#comments .comment-author{padding-left:25px}.comment-body{margin:.5em 25px}.comment-footer{margin:.5em 25px 1.5em}.comment-body p{margin:0}#comments .avatar-comment-indent .comment-author{margin-left:-45px;padding-left:45px}.deleted-comment{font-style:italic;opacity:.5}.Profile img{margin:0 .75em .5em 0}.Profile .profile-datablock{margin:0 0 .5em}dt{font-weight:bold}table.section-columns td.first.columns-cell{border-left:none}.post-summary{padding-top:8px}#layout .header-outer,#layout .tabs-outer,#layout .main-outer,#layout .footer-outer{margin:5px 0}#layout .cap-top,#layout .cap-bottom{display:none}#layout .region-inner{padding:0 10px;margin:0}#layout .main-inner .column-center-inner,#layout .main-inner .column-left-inner,#layout .main-inner .column-right-inner{padding:0 5px}html{height:100%}body{min-height:100%;_height:100%;position:relative}.content{position:relative;word-wrap:break-word}.content-outer,.region-inner{min-height:0;margin:0 auto}.columns{zoom:1}.loading .columns{overflow:hidden}.columns-inner{_height:1%;min-height:0}.column-center-outer,.column-left-outer,.column-right-outer{position:relative;float:left;_display:inline;_overflow:hidden}.column-center-outer{width:100%}.column-left-outer{margin-left:-100%}.fauxcolumns{position:relative;_height:1%}.fauxcolumn-outer{position:absolute;top:0;bottom:0;height:expression(this.parentNode.offsetHeight + 'px');overflow:hidden}.fauxcolumn-outer .fauxborder-left,.fauxcolumn-outer .fauxborder-right,.fauxcolumn-inner{height:100%}.fauxcolumn-left-outer{left:0}.fauxcolumn-right-outer{right:0}.cap-top,.cap-bottom{position:relative;height:0;background-repeat:repeat-x}.cap-top .cap-left,.cap-top .cap-right,.cap-bottom .cap-left,.cap-bottom .cap-right{height:100%;background-repeat:no-repeat}.cap-top,.cap-top .cap-left{background-position:top left}.cap-bottom,.cap-bottom .cap-left{background-position:bottom left}.cap-top .cap-left,.cap-bottom .cap-left{float:left}.cap-top .cap-right{background-position:top right;float:right}.cap-bottom .cap-right{background-position:bottom right;float:right}.fauxborder-left{background-position:top left;background-repeat:repeat-y;position:relative;_height:1%}.fauxborder-right{background-position:top right;background-repeat:repeat-y;position:absolute;right:0;height:100%;_height:expression(this.parentNode.offsetHeight + 'px')}table.section-columns{border:none;table-layout:fixed;width:100%;position:relative}table.columns-2 td.columns-cell{width:50%}table.columns-3 td.columns-cell{width:33.33%}table.columns-4 td.columns-cell{width:25%}table.section-columns td.columns-cell{vertical-align:top}.body-fauxcolumns,.content-fauxcolumns{position:absolute;top:0;left:0;z-index:-1;height:100%;_height:expression(this.parentNode.offsetHeight + 'px');width:100%;overflow:hidden}.body-fauxcolumns .fauxcolumn-outer{width:100%}.content-fauxcolumns .fauxcolumn-outer{position:relative;overflow:visible;height:100%;margin:0 auto}.content-fauxcolumns .fauxcolumn-left{width:100%}section,nav,article,aside,hgroup,header,footer{display:block}time,mark{display:inline}.blog-list-container ul{padding-left:0}.blog-list-container ul li{padding-left:0;list-style:none;list-style-image:none;clear:left}.blog-list-container a{text-decoration:none}.blog-list-container a:hover{text-decoration:underline}.blog-list-container .blog-content{float:left;margin:0 0 5px 5px;text-indent:0;width:85%}.blog-list-container .blog-title{font-weight:bold;line-height:16px;margin:2px 0 0 0}.blog-list-container .blog-icon{float:left;margin-top:2px;vertical-align:top;text-indent:0;width:16px}.blog-list-container .item-content{font-size:95%;line-height:1.3em}.blog-list-container .item-thumbnail{float:left;margin:2px 5px 5px 0}.blog-list-container .item-time{font-size:95%;font-style:italic;clear:left}.blog-list-title{font-weight:bold}.blog-list-container .show-option{font-size:75%;text-align:right}.contact-form-widget{height:320;margin-left:0;max-width:250px;padding:0;padding-top:0;width:100%}.contact-form-success-message{background:#f9edbe;border:0 solid #f0c36d;bottom:0;box-shadow:0 2px 4px rgba(0,0,0,.2);color:#222;font-size:11px;line-height:19px;margin-left:0;opacity:1;position:static;text-align:center}.contact-form-error-message{background:#f9edbe;border:0 solid #f0c36d;bottom:0;box-shadow:0 2px 4px rgba(0,0,0,.2);color:#666;font-size:11px;font-weight:bold;line-height:19px;margin-left:0;opacity:1;position:static;text-align:center}.contact-form-success-message-with-border{background:#f9edbe;border:1px solid #f0c36d;bottom:0;box-shadow:0 2px 4px rgba(0,0,0,.2);color:#222;font-size:11px;line-height:19px;margin-left:0;opacity:1;position:static;text-align:center}.contact-form-error-message-with-border{background:#f9edbe;border:1px solid #f0c36d;bottom:0;box-shadow:0 2px 4px rgba(0,0,0,.2);color:#666;font-size:11px;font-weight:bold;line-height:19px;margin-left:0;opacity:1;position:static;text-align:center}.contact-form-cross{height:11px;margin:0 5px;vertical-align:-8.5%;width:11px}.contact-form-email,.contact-form-name{background:#fff;background-color:#fff;border:1px solid #d9d9d9;border-top:1px solid #c0c0c0;box-sizing:border-box;color:#333;display:inline-block;font-family:Arial,sans-serif;font-size:13px;height:24px;margin:0;margin-top:5px;padding:0;vertical-align:top}.contact-form-email-message{background:#fff;background-color:#fff;border:1px solid #d9d9d9;border-top:1px solid #c0c0c0;box-sizing:border-box;color:#333;display:inline-block;font-family:Arial,sans-serif;font-size:13px;margin:0;margin-top:5px;padding:0;vertical-align:top}.contact-form-email:hover,.contact-form-name:hover,.contact-form-email-message:hover{border:1px solid #b9b9b9;border-top:1px solid #a0a0a0;box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}.contact-form-email:focus,.contact-form-name:focus,.contact-form-email-message:focus{border:1px solid #4d90fe;box-shadow:inset 0 1px 2px rgba(0,0,0,.3);outline:none}.contact-form-name,.contact-form-email,.contact-form-email-message{max-width:220px;width:100%}.contact-form-button{-webkit-border-radius:2px;-moz-border-radius:2px;-webkit-transition:all .218s;-moz-transition:all .218s;-o-transition:all .218s;-webkit-user-select:none;-moz-user-select:none;background-color:#f5f5f5;background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));background-image:-webkit-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-moz-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-ms-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-o-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:linear-gradient(top,#f5f5f5,#f1f1f1);border:1px solid #dcdcdc;border:1px solid rgba(0,0,0,.1);border-radius:2px;color:#444;cursor:default;display:inline-block;filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5',EndColorStr='#f1f1f1');font-family:"Arial","Helvetica",sans-serif;font-size:11px;font-weight:bold;height:24px;line-height:24px;margin-left:0;min-width:54px;*min-width:70px;padding:0 8px;text-align:center;transition:all .218s}.contact-form-button:hover,.contact-form-button.hover{-moz-box-shadow:0 1px 1px rgba(0,0,0,.1);-moz-transition:all 0;-o-transition:all 0;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.1);-webkit-transition:all 0;background-color:#f8f8f8;background-image:-webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-moz-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-ms-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-o-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:linear-gradient(top,#f8f8f8,#f1f1f1);border:1px solid #c6c6c6;box-shadow:0 1px 1px rgba(0,0,0,.1);color:#222;filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8f8f8',EndColorStr='#f1f1f1');transition:all 0}.contact-form-button.focus,.contact-form-button.right.focus,.contact-form-button.mid.focus,.contact-form-button.left.focus{border:1px solid #4d90fe;outline:none;z-index:4 !important}.contact-form-button-submit:focus,.contact-form-button-submit.focus{-moz-box-shadow:inset 0 0 0 1px rgba(255,255,255,.5);-webkit-box-shadow:inset 0 0 0 1px rgba(255,255,255,.5);box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}.contact-form-button-submit:focus,.contact-form-button-submit.focus{border-color:#404040}.contact-form-button-submit:focus:hover,.contact-form-button-submit.focus:hover{-moz-box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1);-webkit-box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1);box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1)}.contact-form-button-submit{background-color:#666;background-image:-webkit-gradient(linear,left top,left bottom,from(#777),to(#555));background-image:-webkit-linear-gradient(top,#777,#555);background-image:-moz-linear-gradient(top,#777,#555);background-image:-ms-linear-gradient(top,#777,#555);background-image:-o-linear-gradient(top,#777,#555);background-image:linear-gradient(top,#777,#555);border:1px solid #505050;color:#fff;filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#777777',EndColorStr='#555555')}.contact-form-button-submit:hover{background-color:#555;background-image:-webkit-gradient(linear,left top,left bottom,from(#666),to(#444));background-image:-webkit-linear-gradient(top,#666,#444);background-image:-moz-linear-gradient(top,#666,#444);background-image:-ms-linear-gradient(top,#666,#444);background-image:-o-linear-gradient(top,#666,#444);background-image:linear-gradient(top,#666,#444);border:1px solid #404040;color:#fff;filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#666666',EndColorStr='#444444')}.contact-form-button-submit:active,.contact-form-button-submit:focus:active,.contact-form-button-submit.focus:active{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.3);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.3);box-shadow:inset 0 1px 2px rgba(0,0,0,.3)}.contact-form-button-submit{background-color:#4d90fe;background-image:-webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));background-image:-webkit-linear-gradient(top,#4d90fe,#4787ed);background-image:-moz-linear-gradient(top,#4d90fe,#4787ed);background-image:-ms-linear-gradient(top,#4d90fe,#4787ed);background-image:-o-linear-gradient(top,#4d90fe,#4787ed);background-image:linear-gradient(top,#4d90fe,#4787ed);border-color:#3079ed;filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#4787ed')}.contact-form-button-submit:hover{background-color:#357ae8;background-image:-webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357ae8));background-image:-webkit-linear-gradient(top,#4d90fe,#357ae8);background-image:-moz-linear-gradient(top,#4d90fe,#357ae8);background-image:-ms-linear-gradient(top,#4d90fe,#357ae8);background-image:-o-linear-gradient(top,#4d90fe,#357ae8);background-image:linear-gradient(top,#4d90fe,#357ae8);border-color:#2f5bb7;filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#357ae8')}.contact-form-button.disabled,.contact-form-button.disabled:hover,.contact-form-button.disabled:active{background:none;border:1px solid #f3f3f3;border:1px solid rgba(0,0,0,.05);color:#b8b8b8;cursor:default;pointer-events:none}.contact-form-button-submit.disabled,.contact-form-button-submit.disabled:hover,.contact-form-button-submit.disabled:active{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";background-color:#666;border:1px solid #505050;color:#fff;filter:alpha(opacity=50);opacity:.5}.contact-form-button-submit.disabled,.contact-form-button-submit.disabled:hover,.contact-form-button-submit.disabled:active{background-color:#4d90fe;border-color:#3079ed}.Example{}a.follower-link{cursor:pointer}a.next-page-link{cursor:pointer}.follower{width:32px;height:32px;float:left;margin:2px}.follower img{width:32px;clip:rect(0,32px,32px,0);position:absolute}div.clear{clear:both}.label-size-1{font-size:80%;filter:alpha(opacity=80);opacity:.8}.label-size-2{font-size:90%;filter:alpha(opacity=90);opacity:.9}.label-size-3{font-size:100%}.label-size-4{font-size:120%}.label-size-5{font-size:160%}.cloud-label-widget-content{text-align:justify}.label-count{white-space:nowrap}.label-size{line-height:1.2}.quickedit{cursor:pointer}.Navbar iframe{display:block}#navbar-iframe{display:block;height:30px}.crosscol .PageList UL,.footer .PageList UL{list-style:none;margin:0;padding:0}.crosscol .PageList LI,.footer .PageList LI{list-style:none;float:left;padding-right:.75em;margin:.75em;background:none}.crosscol .PageList H2{display:none}.PageList LI A{font-weight:normal}.PageList LI.selected A{font-weight:bold;text-decoration:none}.PopularPosts .item-thumbnail{float:left;margin:0 5px 5px 0}.PopularPosts .widget-content ul li{padding:.7em 0}.PopularPosts img{padding-right:.4em}.PopularPosts .item-title{padding-bottom:.2em}.default-avatar{display:none}.profile-img{float:left;margin:0 5px 5px}.profile-data{margin:0}.profile-datablock{margin:.5em 0}.profile-name-link{background:no-repeat left top;box-sizing:border-box;display:inline-block;max-width:100%;min-height:20px;padding-left:20px}.profile-textblock{margin:.5em 0}body{overflow-wrap:break-word;word-break:break-word;word-wrap:break-word}.hidden{display:none}.invisible{visibility:hidden}.container::after,.float-container::after{clear:both;content:"";display:table}.clearboth{clear:both}.dim-overlay{background-color:rgba(0,0,0,.54);height:100vh;left:0;position:fixed;top:0;width:100%}#sharing-dim-overlay{background-color:transparent}input::-ms-clear{display:none}.blogger-logo,.svg-icon-24.blogger-logo{fill:#ff9800;opacity:1}.widget.Sharing .sharing-button{display:none}.widget.Sharing .sharing-buttons li{padding:0}.widget.Sharing .sharing-buttons li span{display:none}.post-share-buttons{position:relative}.share-buttons .svg-icon-24,.centered-bottom .share-buttons .svg-icon-24{fill:#000}.sharing-open.touch-icon-button:focus .touch-icon,.sharing-open.touch-icon-button:active .touch-icon{background-color:transparent}.share-buttons{background-color:#fff;border-radius:2px;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);color:#000;list-style:none;margin:0;padding:8px 0;position:absolute;top:-11px;min-width:200px;z-index:101}.share-buttons.hidden{display:none}.sharing-button{background:transparent;border:0;margin:0;outline:none;padding:0;cursor:pointer}.share-buttons li{margin:0;height:48px}.share-buttons li:last-child{margin-bottom:0}.share-buttons li .sharing-platform-button{box-sizing:border-box;cursor:pointer;display:block;height:100%;margin-bottom:0;padding:0 16px;position:relative;width:100%}.share-buttons li .sharing-platform-button:focus,.share-buttons li .sharing-platform-button:hover{background-color:rgba(128,128,128,.1);outline:none}.share-buttons li svg[class^=sharing-],.share-buttons li svg[class*=" sharing-"]{position:absolute;top:10px}.share-buttons li span.sharing-platform-button,.share-buttons li span.sharing-platform-button{position:relative;top:0}.share-buttons li .platform-sharing-text{display:block;font-size:16px;line-height:48px;white-space:nowrap}.share-buttons li .platform-sharing-text{margin-$startSide:56px}{"version":3,"sourceRoot":"","sources":["../../../../../../../../../../../java/com/google/blogger/b2/staticresources/layouts/skins/responsive/scss/common.scss","../../../../../../../../../../../java/com/google/blogger/b2/staticresources/layouts/skins/responsive/scss/_variables.scss","../../../../../../../../../../../java/com/google/blogger/b2/staticresources/layouts/skins/responsive/scss/sharing.scss","../../../../../../../../../../../java/com/google/blogger/b2/layouts/widgets/sharing/sharing.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AASF;AAAA;EALE;EACA;EACA;;;AAQF;EACE;;;AA2FF;EACE,kBAJY;EAKZ;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAaF;EACE;;;AAGF;AAAA;EAEE,MCjHmB;EDkHnB;;;AEvIF;AAAA;AAAA;AAAA;AASA;AAWA;AACA;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;AAAA;EAEE,MAjCmB;;;AAoCrB;AAAA;EAEE;;;AAGF;EACE,kBA3CyB;EA4CzB;EACA;EAEA,OA9CmB;EA+CnB;EACA;EACA;EACA;EACA;AACA;AACA;EACA,WAhDwB;EAiDxB,SCxEsB;;;AD2ExB;EACE;;;AAGF;EFlCE;EACA;EACA;EACA;EACA;EEgCA;;;AAGF;EACE;EACA,QA9D0B;;;AAiE5B;EACE;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;AAAA;EAEE;EACA;;;AAGF;AAAA;EAEE;EACA;;;AAGF;AACA;AAAA;EAEE;EACA;;;AAGF;EACE;EACA;AACA;EACA,aAvG0B;EAwG1B;;;AAGF;EACE,mBAzG0B","file":"sharing_css.css"}.Stats .counter-wrapper{display:inline-block;font-size:24px;font-weight:bold;height:30px;line-height:30px;vertical-align:top;direction:ltr}.Stats img,.Stats span{margin-right:10px;vertical-align:top}.Stats .graph-counter-wrapper{color:#fff}.Stats .digit{background:url("https://www.blogger.com/img/widgets/stats-flipper.png") no-repeat left !important;border:1px solid #fff;display:inline-block;height:28px;line-height:28px;margin-left:-1px;position:relative;text-align:center;width:22px}.Stats .blind-plate{border-bottom:1px solid #fff;border-top:1px solid #000;filter:alpha(opacity=65);height:0;left:0;opacity:.65;position:absolute;top:13px;width:22px}.Stats .stage-0{background-position:0 0 !important}.Stats .stage-1{background-position:-22px 0 !important}.Stats .stage-2{background-position:-44px 0 !important}.Stats .stage-3{background-position:-66px 0 !important}.widget.Subscribe{position:static}.widget.Subscribe .widget-content{zoom:1}.subscribe-feed-title{float:left}.subscribe{cursor:pointer;color:#999}.subscribe a{color:#999}.subscribe-wrapper{margin:.5em;padding:0;position:relative;zoom:1}div.subscribe{cursor:pointer;margin:0;padding:0;text-align:left;width:144px}div.subscribe div.top{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://resources.blogblog.com/img/widgets/s_top.png',sizingMethod='crop');font-size:1em;padding:4px 0 1px;width:144px}html>body div.subscribe div.top{background:url("https://resources.blogblog.com/img/widgets/s_top.png") top left no-repeat}span.inner{margin:0;padding:0}div.subscribe div.top span.inner{margin:0 5px}.feed-icon{vertical-align:baseline;display:inline}div.subscribe div.bottom{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://resources.blogblog.com/img/widgets/s_bottom.png',sizingMethod='crop');font-size:3px;height:3px;line-height:0}.subscribe-wrapper .expanded{position:absolute;top:0;z-index:20}html>body div.subscribe div.bottom{background:url("https://resources.blogblog.com/img/widgets/s_bottom.png") bottom left no-repeat;margin-bottom:0;padding-bottom:0;width:144px}.feed-reader-links{list-style:none;margin:10px 20px;padding:0;position:relative}.subscribe-dropdown-arrow{float:right;margin-right:6px;margin-top:4px}.feed-reader-links{list-style:none;margin:0;padding:0}a.feed-reader-link{display:block;font-weight:normal;margin:.5em;text-decoration:none;z-index:1000}.feed-reader-link img{border:0;display:inline}.Translate a.goog-te-menu-value{text-decoration:none}.Translate .goog-te-menu-value span{color:#000}.Translate .goog-te-gadget a:link.goog-logo-link{font-size:12px;font-weight:bold;color:#444;text-decoration:none}.Translate .goog-te-combo{background-color:#f5f5f5;color:#444;border:1px solid #dcdcdc;padding:6px;font-family:Arial,Helvetica,sans-serif}.wikipedia-search-main-container{max-width:350px}.wikipedia-search-wiki-link{vertical-align:middle;width:8%}.wikipedia-search-input{border:1px solid #d9d9d9;border-top:1px solid #c0c0c0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;height:28px;padding-left:4px;vertical-align:top;width:60%}.wikipedia-search-input:hover{border:1px solid #b9b9b9;border-top:1px solid #a0a0a0;-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);-ms-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}.wikipedia-search-input:focus{border:1px solid #4d90fe;-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.3);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.3);-ms-box-shadow:inset 0 1px 2px rgba(0,0,0,.3);box-shadow:inset 0 1px 2px rgba(0,0,0,.3);outline:none}.wikipedia-search-form{margin:0;overflow:hidden;padding-bottom:0;padding-left:6px}.wikipedia-search-results-header{border-bottom:1px solid #ebebeb;display:none;font-weight:bold;height:19px;padding-top:3px}.wikipedia-search-button{background-color:#4d90fe;background-image:url("https://www.blogger.com/img/widgets/icon_wikipedia_search.png");background-position:center;background-repeat:no-repeat;border:1px solid #3079ed;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;border-radius:2px;color:transparent;font-size:11px;font-weight:bold;height:28px;text-align:center;width:38px}.wikipedia-search-button:hover{background-color:#357ae8;border:1px solid #2f5bb7;color:transparent}.wikipedia-search-button:focus{-webkit-box-shadow:inset 0 0 0 1px #fff;-moz-box-shadow:inset 0 0 0 1px #fff;-ms-box-shadow:inset 0 0 0 1px #fff;box-shadow:inset 0 0 0 1px #fff}.wikipedia-search-results{color:#dd4b39;padding-top:2px}.wikipedia-search-result-link a:link,.wikipedia-search-more a:visited,.wikipedia-search-result-link a:visited{text-decoration:none}.wikipedia-search-more a:hover,.wikipedia-search-result-link a:hover,.wikipedia-search-more a:active,.wikipedia-search-result-link a:active{text-decoration:underline}.wikipedia-search-more a:link{text-decoration:none}.wikipedia-search-main-container{padding-top:5px}.wikipedia-searchtable{position:relative;right:6px}.wikipedia-search-bar{white-space:nowrap}.wikipedia-icon{padding-bottom:5px}.wikipedia-input-box{padding:0 2px}#ArchiveList .toggle{cursor:pointer;font-family:Arial,sans-serif}#ArchiveList .toggle-open{_font-size:1.7em;line-height:.6em}#ArchiveList{text-align:left}#ArchiveList a.post-count-link,#ArchiveList a.post-count-link:link,#ArchiveList a.post-count-link:visited{text-decoration:none}#ArchiveList a.toggle,#ArchiveList a.toggle:link,#ArchiveList a.toggle:visited,#ArchiveList a.toggle:hover{color:inherit;text-decoration:none}.BlogArchive #ArchiveList ul li{background:none;list-style:none;list-style-image:none;list-style-position:outside;border-width:0;padding-left:15px;text-indent:-15px;margin:.25em 0;background-image:none}.BlogArchive #ArchiveList ul ul li{padding-left:1.2em}.BlogArchive #ArchiveList ul{margin:0;padding:0;list-style:none;list-style-image:none;border-width:0}.BlogArchive #ArchiveList ul.posts li{padding-left:1.3em}#ArchiveList .collapsed ul{display:none}.post-footer abbr{border:none}.author-profile{margin:5px 5px 0 0;overflow:hidden}.author-profile img{border:1px solid #efefef;float:left;margin-right:5px}#blog-pager-newer-link{float:left}#blog-pager-older-link{float:right}#blog-pager{margin:1em 0;text-align:center;overflow:hidden}.backlink-toggle-zippy{padding-right:11px;margin-right:.1em;cursor:pointer;cursor:hand;background:url("https://resources.blogblog.com/img/triangle_ltr.gif") no-repeat left center}.expanded-backlink .backlink-toggle-zippy{background-image:url("https://resources.blogblog.com/img/triangle_open.gif")}.collapsed-backlink .collapseable{display:none}.status-msg-wrap{font-size:110%;width:90%;margin:10px auto;position:relative}.status-msg-border{border:1px solid #000;filter:alpha(opacity=40);-moz-opacity:.4;opacity:.4;width:100%;position:relative}.status-msg-bg{background-color:#ccc;opacity:.8;filter:alpha(opacity=30);-moz-opacity:.8;width:100%;position:relative;z-index:1}.status-msg-body{text-align:center;padding:.3em 0;width:100%;position:absolute;z-index:4}.status-msg-hidden{visibility:hidden;padding:.3em 0}.status-msg-wrap a{padding-left:.4em;text-decoration:underline}.reactions-label{margin:3px 0 0 0}.reactions-label-cell{line-height:2.3em}.reactions-iframe{background:transparent;height:2.3em;width:100%;border:0}#comments .blogger-comment-icon,.blogger-comment-icon{line-height:16px;background:url("https://www.blogger.com/img/b16-rounded.gif") left no-repeat;padding-left:20px}#comments .openid-comment-icon,.openid-comment-icon{line-height:16px;background:url("https://www.blogger.com/img/openid16-rounded.gif") left no-repeat;padding-left:20px}#comments .anon-comment-icon,.anon-comment-icon{line-height:16px;background:url("https://www.blogger.com/img/anon16-rounded.gif") left no-repeat;padding-left:20px}.comment-form{clear:both;_width:410px}.comment-link{white-space:nowrap}#comment-actions{background:transparent;border:0;padding:0;position:absolute;height:25px}.paging-control-container{float:right;margin:0 6px 0 0;font-size:80%}.unneeded-paging-control{visibility:hidden}#comments-block .avatar-image-container img{-ms-interpolation-mode:bicubic;border:1px solid #ccc;float:right}#comments-block .avatar-image-container.avatar-stock img{border-width:0;padding:1px}#comments-block .avatar-image-container{height:37px;left:-45px;position:absolute;width:37px}#comments-block.avatar-comment-indent{margin-left:45px;position:relative}#comments-block.avatar-comment-indent dd{margin-left:0}iframe.avatar-hovercard-iframe{border:0 none;padding:0;width:25em;height:9.4em;margin:.5em}.comments{clear:both;margin-top:10px;margin-bottom:0}.comments .comments-content{margin-bottom:16px}.comments .comment .comment-actions a{padding-right:5px;padding-top:5px}.comments .comment .comment-actions a:hover{text-decoration:underline}.comments .comments-content .comment-thread ol{list-style-type:none;padding:0;text-align:left}.comments .comments-content .inline-thread{padding:.5em 1em}.comments .comments-content .comment-thread{margin:8px 0}.comments .comments-content .comment-thread:empty{display:none}.comments .comments-content .comment-replies{margin-left:36px;margin-top:1em}.comments .comments-content .comment{margin-bottom:16px;padding-bottom:8px}.comments .comments-content .comment:first-child{padding-top:16px}.comments .comments-content .comment:last-child{border-bottom:0;padding-bottom:0}.comments .comments-content .comment-body{position:relative}.comments .comments-content .user{font-style:normal;font-weight:bold}.comments .comments-content .icon.blog-author{display:inline-block;height:18px;margin:0 0 -4px 6px;width:18px}.comments .comments-content .datetime{margin-left:6px}.comments .comments-content .comment-header,.comments .comments-content .comment-content{margin:0 0 8px}.comments .comments-content .comment-content{text-align:justify}.comments .comments-content .owner-actions{position:absolute;right:0;top:0}.comments .comments-replybox{border:none;height:250px;width:100%}.comments .comment-replybox-single{margin-left:48px;margin-top:5px}.comments .comment-replybox-thread{margin-top:5px}.comments .comments-content .loadmore a{display:block;padding:10px 16px;text-align:center}.comments .thread-toggle{cursor:pointer;display:inline-block}.comments .continue{cursor:pointer}.comments .continue a{display:block;font-weight:bold;padding:.5em}.comments .comments-content .loadmore{cursor:pointer;margin-top:3em;max-height:3em}.comments .comments-content .loadmore.loaded{max-height:0;opacity:0;overflow:hidden}.comments .thread-chrome.thread-collapsed{display:none}.comments .thread-toggle{display:inline-block}.comments .thread-toggle .thread-arrow{display:inline-block;height:6px;margin:.3em;overflow:visible;padding-right:4px;width:7px}.comments .thread-expanded .thread-arrow{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC") no-repeat scroll 0 0 transparent}.comments .thread-collapsed .thread-arrow{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAJUlEQVR42mNgAILy8vL/DLgASBKnApgkVgXIkhgKiNKJ005s4gDLbCZBiSxfygAAAABJRU5ErkJggg==") no-repeat scroll 0 0 transparent}.comments .avatar-image-container{float:left;max-height:36px;overflow:hidden;width:36px}.comments .avatar-image-container img{max-width:36px}.comments .comment-block{margin-left:48px;position:relative}.comments .hidden{display:none}@media screen and (max-device-width:480px){.comments .comments-content .comment-replies{margin-left:0}}table.tr-caption-container{padding:4px;margin-bottom:.5em}td.tr-caption{font-size:80%}.icon-action{border-style:none !important;margin:0 0 0 .5em !important;vertical-align:middle}.comment-action-icon{width:13px;height:13px;margin-top:3px}.delete-comment-icon{background:url("https://www.blogger.com/img/icon_delete13.gif") no-repeat left;padding:7px}#comment-popup{position:absolute;visibility:hidden;width:100px;height:20px}@media all{.BLOG_mobile_video_class{display:none}}@media handheld{.BLOG_mobile_video_class{display:inline}.BLOG_video_class{display:none}}.post-share-buttons{display:inline-block;margin-top:.5em;vertical-align:middle}.share-button{width:20px;height:20px;background:url("https://www.blogger.com/img/share_buttons_20_3.png") no-repeat left !important;overflow:hidden;margin-left:-1px;position:relative}.dummy-container,.google-plus-share-container{vertical-align:top;padding-left:.3em}a:hover.share-button{text-decoration:none;z-index:1}.share-button-link-text{display:block;text-indent:-9999px}.sb-email{background-position:0 0 !important}a:hover.sb-email{background-position:0 -20px !important}a:active.sb-email{background-position:0 -40px !important}.sb-blog{background-position:-20px 0 !important}a:hover.sb-blog{background-position:-20px -20px !important}a:active.sb-blog{background-position:-20px -40px !important}.sb-twitter{background-position:-40px 0 !important}a:hover.sb-twitter{background-position:-40px -20px !important}a:active.sb-twitter{background-position:-40px -40px !important}.sb-facebook{background-position:-60px 0 !important}a:hover.sb-facebook{background-position:-60px -20px !important}a:active.sb-facebook{background-position:-60px -40px !important}.sb-buzz{display:none !important}.sb-pinterest{background-position:-100px 0 !important}a:hover.sb-pinterest{background-position:-100px -20px !important}a:active.sb-pinterest{background-position:-100px -40px !important}.sb-google{background:url("https://www.blogger.com/img/plusone/plusonepreview.png") no-repeat;height:20px;vertical-align:top;width:82px}.goog-inline-block{position:relative;display:-moz-inline-box;display:inline-block}* html .goog-inline-block{display:inline}*:first-child+html .goog-inline-block{display:inline}.goog-custom-button{margin:2px;border:0;padding:0;font-family:Arial,sans-serif;color:#000;text-decoration:none;list-style:none;vertical-align:middle;cursor:default;outline:none}.goog-custom-button-outer-box,.goog-custom-button-inner-box{border-style:solid;border-color:transparent;vertical-align:top}.goog-custom-button-checked .goog-custom-button-outer-box,.goog-custom-button-checked .goog-custom-button-inner-box{border-color:#ccc}.goog-custom-button-outer-box{margin:0;border-width:1px 0;padding:0}.goog-custom-button-inner-box{-moz-box-orient:vertical;margin:0 -1px;border-width:0 1px;padding:3px 4px;white-space:nowrap}* html .goog-custom-button-inner-box{left:-1px}* html .goog-custom-button-rtl .goog-custom-button-outer-box{left:-1px}* html .goog-custom-button-rtl .goog-custom-button-inner-box{right:auto}*:first-child+html .goog-custom-button-inner-box{left:-1px}*:first-child+html .goog-custom-button-rtl .goog-custom-button-inner-box{left:1px}::root .goog-custom-button,::root .goog-custom-button-outer-box{line-height:0}::root .goog-custom-button-inner-box{line-height:normal}.goog-custom-button-active,.goog-custom-button-checked{background-color:#faf6bc;background-position:bottom left}.blog-mobile-link{padding:15px}#mobile-share-button{height:18px;padding:1px 10px;text-align:center;vertical-align:top;margin:0}#mobile-share-button a{display:block;height:100%;line-height:18px;width:100%}.mobile-share-panel-outer{background:#444}.mobile-share-panel-inner{background:#fff;border-bottom-left-radius:2px 2px;border-bottom-right-radius:2px 2px;border-radius:3px;-webkit-border-radius:3px;font-family:Arial;font-size:18px;color:#666}.mobile .mobile-share-panel-inner a{display:block;color:#666}.mobile-share-panel-title{background:#f5f5f5;border-bottom:1px solid #eee;border-top-left-radius:2px 2px;border-top-right-radius:2px 2px;height:25px;line-height:25px;padding:10px 10px 10px 20px}.mobile a.mobile-share-panel-button{background:#fff url("https://www.blogger.com/img/mobile_share_icons4.png") no-repeat left !important;border-bottom:1px solid #eee;height:50px;line-height:30px;padding:10px 0 10px 65px;width:100%;-webkit-box-sizing:border-box}.mobile-share-panel-button-close{font-size:26px;float:right;height:25px;line-height:25px;text-align:center;width:25px}.mobile a.mobile-share-panel-button-email{background-position:10px 0 !important}.mobile a.mobile-share-panel-button-facebook{background-position:10px -50px !important}.mobile a.mobile-share-panel-button-twitter{background-position:10px -100px !important}.mobile a.mobile-share-panel-button-googleplus{background:#fff url("https://www.gstatic.com/images/icons/gplus-32.png") no-repeat left !important;background-position:19px 9px !important}.mobile a.mobile-share-panel-button-buzz{background-position:10px -150px !important;border-bottom-left-radius:2px 2px;border-bottom-right-radius:2px 2px}.svg-icon-24{height:24px;width:24px}form.gsc-search-box{font-size:13px;margin-top:0;margin-right:0;margin-bottom:4px;margin-left:0;width:100%}table.gsc-search-box{border-style:none;border-width:0;border-spacing:0 0;width:100%;margin-bottom:2px}table.gsc-search-box td{vertical-align:middle}table.gsc-search-box td.gsc-input{padding-right:12px}td.gsc-search-button{width:1%}td.gsc-clear-button{width:14px}input.gsc-search-button{margin-left:2px}input.gsc-input{padding:1px 6px;border:1px solid #ddd;width:99%}</style><style class="darkreader darkreader--sync" media="screen"></style>
+<meta content="width=1100" name="viewport">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="blogger" name="generator">
+<link href="https://wyj-learning.blogspot.com/favicon.ico" rel="icon" type="image/x-icon">
+<link href="http://wyj-learning.blogspot.com/2018/11/arduino-08-atmega328p-bootloader.html" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="半工室 Arduino Python NodeMCU - Atom" href="https://wyj-learning.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="半工室 Arduino Python NodeMCU - RSS" href="https://wyj-learning.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="半工室 Arduino Python NodeMCU - Atom" href="https://www.blogger.com/feeds/1014857139731180094/posts/default">
+
+<link rel="alternate" type="application/atom+xml" title="半工室 Arduino Python NodeMCU - Atom" href="https://wyj-learning.blogspot.com/feeds/167286726752167210/comments/default">
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/403901366-ieretrofit.js"></script>
+<![endif]-->
+<link href="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/2019-01-11_175509.jpg" rel="image_src">
+<meta content="http://wyj-learning.blogspot.com/2018/11/arduino-08-atmega328p-bootloader.html" property="og:url">
+<meta content="《高階》寫程式Arduino教學 - 08：幫裸(完全空白) 的 ATmega328P 燒錄 Bootloader 或直接上傳程式碼" property="og:title">
+<meta content="程式語言，程式碼分享，利用Python、Arduino、Linux、嵌入式、爬蟲" property="og:description">
+<meta content="https://4.bp.blogspot.com/-DZofOUQMCUw/XDhoByVSMmI/AAAAAAAAIow/LMP67YG4cF0z8PuxRKbH-2MqYmrhY-ydgCLcBGAs/w1200-h630-p-k-no-nu/2019-01-11_175509.jpg" property="og:image">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>半工室 Arduino Python NodeMCU: 《高階》寫程式Arduino教學 - 08：幫裸(完全空白) 的 ATmega328P 燒錄 Bootloader 或直接上傳程式碼</title>
+<style id="page-skin-1" type="text/css"><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Blogger
+URL:      www.blogger.com
+----------------------------------------------- */
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #cccccc;
+background: #292929 none repeat scroll top left;
+padding: 0 40px 40px 40px;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+h2 {
+font-size: 22px;
+}
+a:link {
+text-decoration:none;
+color: #dd7700;
+}
+a:visited {
+text-decoration:none;
+color: #cc6600;
+}
+a:hover {
+text-decoration:underline;
+color: #cc6600;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent none repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 10px #333333;
+box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px 10px;
+}
+.content-inner {
+background-color: #333333;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal bold 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
+text-shadow: -1px -1px 1px rgba(0, 0, 0, .2);
+}
+.Header h1 a {
+color: #ffffff;
+}
+.Header .description {
+font-size: 140%;
+color: #ffffff;
+}
+.header-inner .Header .titlewrapper {
+padding: 22px 30px;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 30px;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 1px solid #404040;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -1px;
+border-top: 1px solid #404040;
+border-left: 0 solid #404040;
+border-right: 0 solid #404040;
+}
+.tabs-inner .widget ul {
+background: #222222 none repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #404040;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #999999;
+border-left: 1px solid #333333;
+border-right: 0 solid #404040;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #ffffff;
+background-color: #000000;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid #404040;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid #404040;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid #404040;
+}
+/* Headings
+----------------------------------------------- */
+div.widget > h2,
+div.widget h2.title {
+margin: 0 0 1em 0;
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.widget .popular-posts ul {
+list-style: none;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.date-header span {
+background-color: rgba(0, 0, 0, 0);
+color: #666666;
+padding: inherit;
+letter-spacing: inherit;
+margin: inherit;
+}
+.main-inner {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.main-inner .column-center-inner {
+padding: 0 15px;
+}
+.main-inner .column-center-inner .section {
+margin: 0 15px;
+}
+.post {
+margin: 0 0 25px 0;
+}
+h3.post-title, .comments h4 {
+font: italic normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 0;
+background: #111111;
+border: 1px solid #111111;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 1px;
+}
+.post-body .tr-caption-container {
+color: #cccccc;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #888888;
+background-color: #303030;
+border-bottom: 1px solid #444444;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid #404040;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #111111;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
+}
+.comments .comment-thread.inline-thread {
+background-color: #303030;
+}
+.comments .continue {
+border-top: 2px solid #999999;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid #404040;
+}
+.blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #333333;
+padding: 5px;
+}
+.footer-outer {
+border-top: 0 dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #333333;
+}
+.mobile-index-contents {
+color: #cccccc;
+}
+.mobile-link-button {
+background-color: #dd7700;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: #000000;
+color: #ffffff;
+border-top: 1px solid #404040;
+border-bottom: 1px solid #404040;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #404040;
+}
+/* PrismJS 1.15.0
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+c+csharp+cpp+java+python&plugins=line-highlight+line-numbers+custom-class+jsonp-highlight+highlight-keywords+command-line */
+/**
+* okaidia theme for JavaScript, CSS and HTML
+* Loosely based on Monokai textmate theme by http://www.monokai.nl/
+* @author ocodia
+*/
+code[class*="language-"],
+pre[class*="language-"] {
+color: #f8f8f2;
+background: none;
+text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+text-align: left;
+white-space: pre;
+word-spacing: normal;
+word-break: normal;
+word-wrap: normal;
+line-height: 1.5;
+-moz-tab-size: 4;
+-o-tab-size: 4;
+tab-size: 4;
+-webkit-hyphens: none;
+-moz-hyphens: none;
+-ms-hyphens: none;
+hyphens: none;
+}
+/* Code blocks */
+pre[class*="language-"] {
+padding: 1em;
+margin: .5em 0;
+overflow: auto;
+border-radius: 0.3em;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+background: #272822;
+}
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+padding: .1em;
+border-radius: .3em;
+white-space: normal;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+color: slategray;
+}
+.token.punctuation {
+color: #f8f8f2;
+}
+.namespace {
+opacity: .7;
+}
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+color: #f92672;
+}
+.token.boolean,
+.token.number {
+color: #ae81ff;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+color: #a6e22e;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+color: #f8f8f2;
+}
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+color: #e6db74;
+}
+.token.keyword {
+color: #66d9ef;
+}
+.token.regex,
+.token.important {
+color: #fd971f;
+}
+.token.important,
+.token.bold {
+font-weight: bold;
+}
+.token.italic {
+font-style: italic;
+}
+.token.entity {
+cursor: help;
+}
+pre[data-line] {
+position: relative;
+padding: 1em 0 1em 3em;
+}
+.line-highlight {
+position: absolute;
+left: 0;
+right: 0;
+padding: inherit 0;
+margin-top: 1em; /* Same as .prism&#8217;s padding-top */
+background: hsla(24, 20%, 50%,.08);
+background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+pointer-events: none;
+line-height: inherit;
+white-space: pre;
+}
+.line-highlight:before,
+.line-highlight[data-end]:after {
+content: attr(data-start);
+position: absolute;
+top: .4em;
+left: .6em;
+min-width: 1em;
+padding: 0 .5em;
+background-color: hsla(24, 20%, 50%,.4);
+color: hsl(24, 20%, 95%);
+font: bold 65%/1.5 sans-serif;
+text-align: center;
+vertical-align: .3em;
+border-radius: 999px;
+text-shadow: none;
+box-shadow: 0 1px white;
+}
+.line-highlight[data-end]:after {
+content: attr(data-end);
+top: auto;
+bottom: .4em;
+}
+.line-numbers .line-highlight:before,
+.line-numbers .line-highlight:after {
+content: none;
+}
+pre[class*="language-"].line-numbers {
+position: relative;
+padding-left: 3.8em;
+counter-reset: linenumber;
+}
+pre[class*="language-"].line-numbers > code {
+position: relative;
+white-space: inherit;
+}
+.line-numbers .line-numbers-rows {
+position: absolute;
+pointer-events: none;
+top: 0;
+font-size: 100%;
+left: -3.8em;
+width: 3em; /* works for line-numbers below 1000 lines */
+letter-spacing: -1px;
+border-right: 1px solid #999;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.line-numbers-rows > span {
+pointer-events: none;
+display: block;
+counter-increment: linenumber;
+}
+.line-numbers-rows > span:before {
+content: counter(linenumber);
+color: #999;
+display: block;
+padding-right: 0.8em;
+text-align: right;
+}
+.command-line-prompt {
+border-right: 1px solid #999;
+display: block;
+float: left;
+font-size: 100%;
+letter-spacing: -1px;
+margin-right: 1em;
+pointer-events: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.command-line-prompt > span:before {
+color: #999;
+content: ' ';
+display: block;
+padding-right: 0.8em;
+}
+.command-line-prompt > span[data-user]:before {
+content: "[" attr(data-user) "@" attr(data-host) "] $";
+}
+.command-line-prompt > span[data-user="root"]:before {
+content: "[" attr(data-user) "@" attr(data-host) "] #";
+}
+.command-line-prompt > span[data-prompt]:before {
+content: attr(data-prompt);
+}
+--></style><style class="darkreader darkreader--sync" media="screen"></style>
+<style id="template-skin-1" type="text/css"><!--
+body {
+min-width: 1200px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 1200px;
+max-width: 1200px;
+_width: 1200px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 320px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 320px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("320px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 320px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 320px;
+margin-right: -320px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style><style class="darkreader darkreader--sync" media="screen"></style>
+<script async="async" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2052457560343124",
+          enable_page_level_ads: true
+     });
+</script><script id="dataslayerLaunchMonitors">
+console.log('** dataslayer: injecting Launch monitors **');
+window._satellite = window._satellite || {};
+window._satellite._monitors = window._satellite._monitors || [];
+window._satellite._monitors.push({
+  ruleTriggered: function(e) {
+    window.parent.postMessage(
+      {
+        type: 'dataslayer_launchruletriggered',
+        url: window == window.parent ? window.location.href : 'iframe',
+        data: JSON.parse(JSON.stringify(e.rule)),
+      },
+      '*'
+    );
+  },
+  ruleCompleted: function(e) {
+    // console.log('** dataslayer: Launch rule completed **', e.rule);
+    var rule = JSON.parse(JSON.stringify(e.rule));
+    var sendRule = function() {
+        if (window.dataslayer) {
+            window.parent.postMessage(
+                {
+                    type: 'dataslayer_launchrulecompleted',
+                    url: window == window.parent ? window.location.href : 'iframe',
+                    data: rule,
+                },
+                '*'
+            );       
+            // console.log('** dataslayer: posted rule '+rule+'**'); 
+        } else {
+            if (document.readyState === 'complete') {
+                // console.log('** dataslayer: giving up on launch **');
+                window._dataslayerQueue = window._dataslayerQueue || [];
+                window._dataslayerQueue.push({
+                  type: 'dataslayer_launchrulecompleted',
+                  url: window == window.parent ? window.location.href : 'iframe',
+                  data: rule,
+                });
+                return;
+            } else {
+                // console.log('** dataslayer: waiting 250ms to repost rule **');
+                window.setTimeout(sendRule, 250);
+            }
+        }
+    }
+    sendRule();
+    if (
+      window._satellite &&
+      window._satellite._container &&
+      window._satellite._container.dataElements
+    ) {
+      var elementNames = Object.keys(
+        window._satellite._container.dataElements
+      ).sort(function(a, b) {
+        var nameA = a.toUpperCase();
+        var nameB = b.toUpperCase();
+
+        if (nameA < nameB) {
+          return -1;
+        } else if (nameA > nameB) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+
+      let launchElements = {};
+
+      for (var i = 0; i < elementNames.length; i++) {
+        var newElement = JSON.parse(
+          JSON.stringify(
+            window._satellite._container.dataElements[elementNames[i]]
+          )
+        );
+  
+        let cleanValue = window._satellite.getVar(elementNames[i]);
+        if (typeof cleanValue === 'function') {
+          cleanValue = '(function)';
+        } else if (
+          typeof cleanValue === 'object' &&
+          typeof cleanValue.then === 'function'
+        ) {
+          cleanValue = '(Promise)';
+        }
+        launchElements[elementNames[i]] = cleanValue;
+        // launchElements.push({
+        //   key: elementNames[i],
+        //   value: cleanValue,
+        //   element: newElement,
+        // });
+      }
+      try {
+        window.parent.postMessage(
+          {
+            type: 'dataslayer_launchdataelements',
+            data: 'found',
+            url: window == window.parent ? window.location.href : 'iframe',
+            elements: launchElements
+          },
+          '*'
+        );
+      } catch (e) {
+        console.warn(e);
+      }
+  
+    }
+  },
+  ruleConditionFailed: function(e) {
+    window.parent.postMessage(
+      {
+        type: 'dataslayer_launchrulefailed',
+        url: window == window.parent ? window.location.href : 'iframe',
+        data: JSON.parse(JSON.stringify(e.rule)),
+      },
+      '*'
+    );
+  },
+});
+</script><meta name="darkreader" content="6f8ced53168b1865c33ea3cc72a1ae86"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+a[href="https://coinmarketcap.com/"] > svg[width="94"][height="16"] > path {
+    fill: var(--darkreader-neutral-text) !important;
+}
+#edge-translate-panel-body {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #0f3a48 !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style>
+<script src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/jquery.js"></script>
+<style>
+/*樹狀標籤 V2*/
+#Label1 {
+display: none;
+overflow: auto;
+}
+
+#tl2_main,
+#tl2_nav {
+font-size: 13px;
+font-weight: bold;
+}
+
+#tl2_nav {
+background-color: #eee;
+margin-bottom: 10px;
+padding: 3px;
+}
+
+#tl2_nav a {
+display: inline-block;
+box-sizing: border-box;
+width: 50%;
+text-align: center;
+border-left: 1px dashed #aaa;
+}
+
+#tl2_nav a:first-child {
+border-left: 0;
+}
+
+#tl2_nav a,
+#tl2_main a {
+text-decoration: none;
+}
+
+#tl2_main img {
+vertical-align: middle;
+}
+
+.tl2_category {
+margin-top: 2px;
+}
+
+a.tl2_catText {
+}
+
+.tl2_subArea {
+margin: 0 0 5px 10px;
+}
+
+.tl2_label {
+margin-left: 5px;
+}
+</style><style class="darkreader darkreader--sync" media="screen"></style>
+<!-- Auto Read More Body Script Start -->
+<script type="text/javascript">
+post_no_pic_sum = 300;
+post_pic_sum = 240;
+pic_h = 156;
+pic_w = 210;
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function removeHtmlTag(t,e){if(-1!=t.indexOf("<")){for(var n=t.split("<"),i=0;i<n.length;i++)-1!=n[i].indexOf(">")&&(n[i]=n[i].substring(n[i].indexOf(">")+1,n[i].length));t=n.join("")}for(e=e<t.length-1?e:t.length-2;" "!=t.charAt(e-1)&&-1!=t.indexOf(" ",e);)e++;return t=t.substring(0,e-1),t+"..."}function createSummaryAndThumb(t,e,n){var i=document.getElementById(t),m="",r=i.getElementsByTagName("img"),s=post_no_pic_sum;r.length>=1&&(m='<span class="posts-thumb" style="float:left; margin-right: 10px;"><a href="'+e+'" title="'+n+'"><img src="'+r[0].src+'" width="'+pic_w+'px" height="'+pic_h+'px" /></a></span>',s=post_pic_sum);var g=m+"<div>"+removeHtmlTag(i.innerHTML,s)+"</div>";i.innerHTML=g}
+//]]>
+</script>
+<!-- Auto Read More Body Script End -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="async" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-104940354-1');
+</script>
+<link href="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/authorization.css" media="all" onload="if(media!='all')media='all'" rel="stylesheet"><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=1014857139731180094&amp;zx=8419bdc4-1a46-43ea-8bdc-476d43892053' rel='stylesheet'/></noscript>
+<meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109">
+<meta name="google-adsense-platform-domain" content="blogspot.com">
+
+<!-- data-ad-client=ca-pub-2052457560343124 -->
+
+<script type="text/javascript" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/google_top_exp.js"></script><style shopback-extension-v6-6-6="" data-styled-version="4.2.0"></style><style class="darkreader darkreader--sync" media="screen"></style></head>
+<body class="variant-dark vsc-initialized" data-new-gr-c-s-check-loaded="8.884.0" data-gr-ext-installed="">
+<div class="navbar section" id="navbar" name="導覽列"><div class="widget Navbar" data-version="1" id="Navbar1"><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/plusone.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d1014857139731180094\x26blogName\x3d%E5%8D%8A%E5%B7%A5%E5%AE%A4+Arduino+Python+NodeMCU\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://wyj-learning.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttps://wyj-learning.blogspot.com/\x26targetPostID\x3d167286726752167210\x26blogPostOrPageUrl\x3dhttps://wyj-learning.blogspot.com/2018/11/arduino-08-atmega328p-bootloader.html\x26vt\x3d-7358642529213872854',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class="body-fauxcolumns">
+<div class="fauxcolumn-outer body-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="content-fauxcolumns">
+<div class="fauxcolumn-outer content-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content-outer">
+<div class="content-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left content-fauxborder-left">
+<div class="fauxborder-right content-fauxborder-right"></div>
+<div class="content-inner">
+<header>
+<div class="header-outer">
+<div class="header-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left header-fauxborder-left">
+<div class="fauxborder-right header-fauxborder-right"></div>
+<div class="region-inner header-inner">
+<div class="header section" id="header" name="標頭"><div class="widget Header" data-version="1" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+<a href="https://wyj-learning.blogspot.com/">
+半工室 Arduino Python NodeMCU
+</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>花若盛開，蝴蝶自來。人若精彩，天自安排。雖不如艷陽下的工人般勞累，但也是一個名符其實的
+「半工人」，在半工室內或坐或站，敲打著鍵盤，手腦不得閒。A problem well-stated is 
+half-solved.「能把問題說清楚、講明白，就已經解決一半了。」──John Dewey
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+Youtube 頻道 : YJ 半工人 定期推出 Arduino, ESP8266, NodeMCU, Python 等等的新手教學影片</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="header-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</header>
+<div class="tabs-outer">
+<div class="tabs-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left tabs-fauxborder-left">
+<div class="fauxborder-right tabs-fauxborder-right"></div>
+<div class="region-inner tabs-inner">
+<div class="tabs section" id="crosscol" name="跨欄區"><div class="widget HTML" data-version="1" id="HTML1">
+<h2 class="title">文章程式碼顯示</h2>
+<div class="widget-content">
+<script>
+/* PrismJS 1.15.0
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+c+csharp+cpp+java+python&plugins=line-highlight+line-numbers+custom-class+jsonp-highlight+highlight-keywords+command-line */
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-([\w-]+)\b/i,t=0,n=_self.Prism={manual:_self.Prism&&_self.Prism.manual,disableWorkerMessageHandler:_self.Prism&&_self.Prism.disableWorkerMessageHandler,util:{encode:function(e){return e instanceof r?new r(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e,t){var r=n.util.type(e);switch(t=t||{},r){case"Object":if(t[n.util.objId(e)])return t[n.util.objId(e)];var a={};t[n.util.objId(e)]=a;for(var l in e)e.hasOwnProperty(l)&&(a[l]=n.util.clone(e[l],t));return a;case"Array":if(t[n.util.objId(e)])return t[n.util.objId(e)];var a=[];return t[n.util.objId(e)]=a,e.forEach(function(e,r){a[r]=n.util.clone(e,t)}),a}return e}},languages:{extend:function(e,t){var r=n.util.clone(n.languages[e]);for(var a in t)r[a]=t[a];return r},insertBefore:function(e,t,r,a){a=a||n.languages;var l=a[e];if(2==arguments.length){r=arguments[1];for(var i in r)r.hasOwnProperty(i)&&(l[i]=r[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in r)r.hasOwnProperty(i)&&(o[i]=r[i]);o[s]=l[s]}var u=a[e];return a[e]=o,n.languages.DFS(n.languages,function(t,n){n===u&&t!=e&&(this[t]=o)}),o},DFS:function(e,t,r,a){a=a||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],r||l),"Object"!==n.util.type(e[l])||a[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||a[n.util.objId(e[l])]||(a[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,a)):(a[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,a)))}},plugins:{},highlightAll:function(e,t){n.highlightAllUnder(document,e,t)},highlightAllUnder:function(e,t,r){var a={callback:r,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var l,i=a.elements||e.querySelectorAll(a.selector),o=0;l=i[o++];)n.highlightElement(l,t===!0,a.callback)},highlightElement:function(t,r,a){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1].toLowerCase(),i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,t.parentNode&&(o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l));var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(n.hooks.run("before-sanity-check",u),!u.code||!u.grammar)return u.code&&(n.hooks.run("before-highlight",u),u.element.textContent=u.code,n.hooks.run("after-highlight",u)),n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),r&&_self.Worker){var g=new Worker(n.filename);g.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,a&&a.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},g.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,a&&a.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,a){var l={code:e,grammar:t,language:a};return n.hooks.run("before-tokenize",l),l.tokens=n.tokenize(l.code,l.grammar),n.hooks.run("after-tokenize",l),r.stringify(n.util.encode(l.tokens),l.language)},matchGrammar:function(e,t,r,a,l,i,o){var s=n.Token;for(var u in r)if(r.hasOwnProperty(u)&&r[u]){if(u==o)return;var g=r[u];g="Array"===n.util.type(g)?g:[g];for(var c=0;c<g.length;++c){var h=g[c],f=h.inside,d=!!h.lookbehind,m=!!h.greedy,p=0,y=h.alias;if(m&&!h.pattern.global){var v=h.pattern.toString().match(/[imuy]*$/)[0];h.pattern=RegExp(h.pattern.source,v+"g")}h=h.pattern||h;for(var b=a,k=l;b<t.length;k+=t[b].length,++b){var w=t[b];if(t.length>e.length)return;if(!(w instanceof s)){if(m&&b!=t.length-1){h.lastIndex=k;var _=h.exec(e);if(!_)break;for(var j=_.index+(d?_[1].length:0),P=_.index+_[0].length,A=b,x=k,O=t.length;O>A&&(P>x||!t[A].type&&!t[A-1].greedy);++A)x+=t[A].length,j>=x&&(++b,k=x);if(t[b]instanceof s)continue;I=A-b,w=e.slice(k,x),_.index-=k}else{h.lastIndex=0;var _=h.exec(w),I=1}if(_){d&&(p=_[1]?_[1].length:0);var j=_.index+p,_=_[0].slice(p),P=j+_.length,N=w.slice(0,j),S=w.slice(P),C=[b,I];N&&(++b,k+=N.length,C.push(N));var E=new s(u,f?n.tokenize(_,f):_,y,_,m);if(C.push(E),S&&C.push(S),Array.prototype.splice.apply(t,C),1!=I&&n.matchGrammar(e,t,r,b,k,!0,u),i)break}else if(i)break}}}}},tokenize:function(e,t){var r=[e],a=t.rest;if(a){for(var l in a)t[l]=a[l];delete t.rest}return n.matchGrammar(e,r,t,0,0,!1),r},hooks:{all:{},add:function(e,t){var r=n.hooks.all;r[e]=r[e]||[],r[e].push(t)},run:function(e,t){var r=n.hooks.all[e];if(r&&r.length)for(var a,l=0;a=r[l++];)a(t)}}},r=n.Token=function(e,t,n,r,a){this.type=e,this.content=t,this.alias=n,this.length=0|(r||"").length,this.greedy=!!a};if(r.stringify=function(e,t,a){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return r.stringify(n,t,e)}).join("");var l={type:e.type,content:r.stringify(e.content,t,a),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:a};if(e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o=Object.keys(l.attributes).map(function(e){return e+'="'+(l.attributes[e]||"").replace(/"/g,"&quot;")+'"'}).join(" ");return"<"+l.tag+' class="'+l.classes.join(" ")+'"'+(o?" "+o:"")+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(n.disableWorkerMessageHandler||_self.addEventListener("message",function(e){var t=JSON.parse(e.data),r=t.language,a=t.code,l=t.immediateClose;_self.postMessage(n.highlight(a,n.languages[r],r)),l&&_self.close()},!1),_self.Prism):_self.Prism;var a=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return a&&(n.filename=a.src,n.manual||a.hasAttribute("data-manual")||("loading"!==document.readyState?window.requestAnimationFrame?window.requestAnimationFrame(n.highlightAll):window.setTimeout(n.highlightAll,16):document.addEventListener("DOMContentLoaded",n.highlightAll))),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+Prism.languages.markup={comment:/<!--[\s\S]*?-->/,prolog:/<\?[\s\S]+?\?>/,doctype:/<!DOCTYPE[\s\S]+?>/i,cdata:/<!\[CDATA\[[\s\S]*?]]>/i,tag:{pattern:/<\/?(?!\d)[^\s>\/=$<%]+(?:\s+[^\s>\/=]+(?:=(?:("|')(?:\\[\s\S]|(?!\1)[^\\])*\1|[^\s'">=]+))?)*\s*\/?>/i,greedy:!0,inside:{tag:{pattern:/^<\/?[^\s>\/]+/i,inside:{punctuation:/^<\/?/,namespace:/^[^\s>\/:]+:/}},"attr-value":{pattern:/=(?:("|')(?:\\[\s\S]|(?!\1)[^\\])*\1|[^\s'">=]+)/i,inside:{punctuation:[/^=/,{pattern:/(^|[^\\])["']/,lookbehind:!0}]}},punctuation:/\/?>/,"attr-name":{pattern:/[^\s>\/]+/,inside:{namespace:/^[^\s>\/:]+:/}}}},entity:/&#?[\da-z]{1,8};/i},Prism.languages.markup.tag.inside["attr-value"].inside.entity=Prism.languages.markup.entity,Prism.hooks.add("wrap",function(a){"entity"===a.type&&(a.attributes.title=a.content.replace(/&amp;/,"&"))}),Prism.languages.xml=Prism.languages.markup,Prism.languages.html=Prism.languages.markup,Prism.languages.mathml=Prism.languages.markup,Prism.languages.svg=Prism.languages.markup;
+Prism.languages.css={comment:/\/\*[\s\S]*?\*\//,atrule:{pattern:/@[\w-]+?.*?(?:;|(?=\s*\{))/i,inside:{rule:/@[\w-]+/}},url:/url\((?:(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1|.*?)\)/i,selector:/[^{}\s][^{};]*?(?=\s*\{)/,string:{pattern:/("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,greedy:!0},property:/[-_a-z\xA0-\uFFFF][-\w\xA0-\uFFFF]*(?=\s*:)/i,important:/\B!important\b/i,"function":/[-a-z0-9]+(?=\()/i,punctuation:/[(){};:]/},Prism.languages.css.atrule.inside.rest=Prism.languages.css,Prism.languages.markup&&(Prism.languages.insertBefore("markup","tag",{style:{pattern:/(<style[\s\S]*?>)[\s\S]*?(?=<\/style>)/i,lookbehind:!0,inside:Prism.languages.css,alias:"language-css",greedy:!0}}),Prism.languages.insertBefore("inside","attr-value",{"style-attr":{pattern:/\s*style=("|')(?:\\[\s\S]|(?!\1)[^\\])*\1/i,inside:{"attr-name":{pattern:/^\s*style/i,inside:Prism.languages.markup.tag.inside},punctuation:/^\s*=\s*['"]|['"]\s*$/,"attr-value":{pattern:/.+/i,inside:Prism.languages.css}},alias:"language-css"}},Prism.languages.markup.tag));
+Prism.languages.clike={comment:[{pattern:/(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/,lookbehind:!0},{pattern:/(^|[^\\:])\/\/.*/,lookbehind:!0,greedy:!0}],string:{pattern:/(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,greedy:!0},"class-name":{pattern:/((?:\b(?:class|interface|extends|implements|trait|instanceof|new)\s+)|(?:catch\s+\())[\w.\\]+/i,lookbehind:!0,inside:{punctuation:/[.\\]/}},keyword:/\b(?:if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,"boolean":/\b(?:true|false)\b/,"function":/\w+(?=\()/,number:/\b0x[\da-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?/i,operator:/--?|\+\+?|!=?=?|<=?|>=?|==?=?|&&?|\|\|?|\?|\*|\/|~|\^|%/,punctuation:/[{}[\];(),.:]/};
+Prism.languages.javascript=Prism.languages.extend("clike",{"class-name":[Prism.languages.clike["class-name"],{pattern:/(^|[^$\w\xA0-\uFFFF])[_$A-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\.(?:prototype|constructor))/,lookbehind:!0}],keyword:[{pattern:/((?:^|})\s*)(?:catch|finally)\b/,lookbehind:!0},/\b(?:as|async|await|break|case|class|const|continue|debugger|default|delete|do|else|enum|export|extends|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|var|void|while|with|yield)\b/],number:/\b(?:(?:0[xX][\dA-Fa-f]+|0[bB][01]+|0[oO][0-7]+)n?|\d+n|NaN|Infinity)\b|(?:\b\d+\.?\d*|\B\.\d+)(?:[Ee][+-]?\d+)?/,"function":/[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*\(|\.(?:apply|bind|call)\()/,operator:/-[-=]?|\+[+=]?|!=?=?|<<?=?|>>?>?=?|=(?:==?|>)?|&[&=]?|\|[|=]?|\*\*?=?|\/=?|~|\^=?|%=?|\?|\.{3}/}),Prism.languages.javascript["class-name"][0].pattern=/(\b(?:class|interface|extends|implements|instanceof|new)\s+)[\w.\\]+/,Prism.languages.insertBefore("javascript","keyword",{regex:{pattern:/((?:^|[^$\w\xA0-\uFFFF."'\])\s])\s*)\/(\[[^\]\r\n]+]|\\.|[^\/\\\[\r\n])+\/[gimyu]{0,5}(?=\s*($|[\r\n,.;})\]]))/,lookbehind:!0,greedy:!0},"function-variable":{pattern:/[_$a-z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*[=:]\s*(?:function\b|(?:\([^()]*\)|[_$a-z\xA0-\uFFFF][$\w\xA0-\uFFFF]*)\s*=>))/i,alias:"function"},constant:/\b[A-Z][A-Z\d_]*\b/}),Prism.languages.insertBefore("javascript","string",{"template-string":{pattern:/`(?:\\[\s\S]|\${[^}]+}|[^\\`])*`/,greedy:!0,inside:{interpolation:{pattern:/\${[^}]+}/,inside:{"interpolation-punctuation":{pattern:/^\${|}$/,alias:"punctuation"},rest:Prism.languages.javascript}},string:/[\s\S]+/}}}),Prism.languages.markup&&Prism.languages.insertBefore("markup","tag",{script:{pattern:/(<script[\s\S]*?>)[\s\S]*?(?=<\/script>)/i,lookbehind:!0,inside:Prism.languages.javascript,alias:"language-javascript",greedy:!0}}),Prism.languages.js=Prism.languages.javascript;
+Prism.languages.c=Prism.languages.extend("clike",{keyword:/\b(?:_Alignas|_Alignof|_Atomic|_Bool|_Complex|_Generic|_Imaginary|_Noreturn|_Static_assert|_Thread_local|asm|typeof|inline|auto|break|case|char|const|continue|default|do|double|else|enum|extern|float|for|goto|if|int|long|register|return|short|signed|sizeof|static|struct|switch|typedef|union|unsigned|void|volatile|while)\b/,operator:/>>=?|<<=?|->|([-+&|:])\1|[?:~]|[-+*\/%&|^!=<>]=?/,number:/(?:\b0x[\da-f]+|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?)[ful]*/i}),Prism.languages.insertBefore("c","string",{macro:{pattern:/(^\s*)#\s*[a-z]+(?:[^\r\n\\]|\\(?:\r\n|[\s\S]))*/im,lookbehind:!0,alias:"property",inside:{string:{pattern:/(#\s*include\s*)(?:<.+?>|("|')(?:\\?.)+?\2)/,lookbehind:!0},directive:{pattern:/(#\s*)\b(?:define|defined|elif|else|endif|error|ifdef|ifndef|if|import|include|line|pragma|undef|using)\b/,lookbehind:!0,alias:"keyword"}}},constant:/\b(?:__FILE__|__LINE__|__DATE__|__TIME__|__TIMESTAMP__|__func__|EOF|NULL|SEEK_CUR|SEEK_END|SEEK_SET|stdin|stdout|stderr)\b/}),delete Prism.languages.c["class-name"],delete Prism.languages.c["boolean"];
+Prism.languages.csharp=Prism.languages.extend("clike",{keyword:/\b(?:abstract|add|alias|as|ascending|async|await|base|bool|break|byte|case|catch|char|checked|class|const|continue|decimal|default|delegate|descending|do|double|dynamic|else|enum|event|explicit|extern|false|finally|fixed|float|for|foreach|from|get|global|goto|group|if|implicit|in|int|interface|internal|into|is|join|let|lock|long|namespace|new|null|object|operator|orderby|out|override|params|partial|private|protected|public|readonly|ref|remove|return|sbyte|sealed|select|set|short|sizeof|stackalloc|static|string|struct|switch|this|throw|true|try|typeof|uint|ulong|unchecked|unsafe|ushort|using|value|var|virtual|void|volatile|where|while|yield)\b/,string:[{pattern:/@("|')(?:\1\1|\\[\s\S]|(?!\1)[^\\])*\1/,greedy:!0},{pattern:/("|')(?:\\.|(?!\1)[^\\\r\n])*?\1/,greedy:!0}],"class-name":[{pattern:/\b[A-Z]\w*(?:\.\w+)*\b(?=\s+\w+)/,inside:{punctuation:/\./}},{pattern:/(\[)[A-Z]\w*(?:\.\w+)*\b/,lookbehind:!0,inside:{punctuation:/\./}},{pattern:/(\b(?:class|interface)\s+[A-Z]\w*(?:\.\w+)*\s*:\s*)[A-Z]\w*(?:\.\w+)*\b/,lookbehind:!0,inside:{punctuation:/\./}},{pattern:/((?:\b(?:class|interface|new)\s+)|(?:catch\s+\())[A-Z]\w*(?:\.\w+)*\b/,lookbehind:!0,inside:{punctuation:/\./}}],number:/\b0x[\da-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)f?/i}),Prism.languages.insertBefore("csharp","class-name",{"generic-method":{pattern:/\w+\s*<[^>\r\n]+?>\s*(?=\()/,inside:{"function":/^\w+/,"class-name":{pattern:/\b[A-Z]\w*(?:\.\w+)*\b/,inside:{punctuation:/\./}},keyword:Prism.languages.csharp.keyword,punctuation:/[<>(),.:]/}},preprocessor:{pattern:/(^\s*)#.*/m,lookbehind:!0,alias:"property",inside:{directive:{pattern:/(\s*#)\b(?:define|elif|else|endif|endregion|error|if|line|pragma|region|undef|warning)\b/,lookbehind:!0,alias:"keyword"}}}}),Prism.languages.dotnet=Prism.languages.csharp;
+Prism.languages.cpp=Prism.languages.extend("c",{keyword:/\b(?:alignas|alignof|asm|auto|bool|break|case|catch|char|char16_t|char32_t|class|compl|const|constexpr|const_cast|continue|decltype|default|delete|do|double|dynamic_cast|else|enum|explicit|export|extern|float|for|friend|goto|if|inline|int|int8_t|int16_t|int32_t|int64_t|uint8_t|uint16_t|uint32_t|uint64_t|long|mutable|namespace|new|noexcept|nullptr|operator|private|protected|public|register|reinterpret_cast|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while)\b/,"boolean":/\b(?:true|false)\b/,operator:/>>=?|<<=?|->|([-+&|:])\1|[?:~]|[-+*\/%&|^!=<>]=?|\b(?:and|and_eq|bitand|bitor|not|not_eq|or|or_eq|xor|xor_eq)\b/}),Prism.languages.insertBefore("cpp","keyword",{"class-name":{pattern:/(class\s+)\w+/i,lookbehind:!0}}),Prism.languages.insertBefore("cpp","string",{"raw-string":{pattern:/R"([^()\\ ]{0,16})\([\s\S]*?\)\1"/,alias:"string",greedy:!0}});
+Prism.languages.java=Prism.languages.extend("clike",{keyword:/\b(?:var|abstract|continue|for|new|switch|assert|default|goto|package|synchronized|boolean|do|if|private|this|break|double|implements|protected|throw|byte|else|import|public|throws|case|enum|instanceof|return|transient|catch|extends|int|short|try|char|final|interface|static|void|class|finally|long|strictfp|volatile|const|float|native|super|while)\b/,number:/\b0b[01]+\b|\b0x[\da-f]*\.?[\da-fp-]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?[df]?/i,operator:{pattern:/(^|[^.])(?:<<=?|>>>?=?|->|([-+&|])\2|[?:~]|[-+*\/%&|^!=<>]=?)/m,lookbehind:!0}}),Prism.languages.insertBefore("java","function",{annotation:{alias:"punctuation",pattern:/(^|[^.])@\w+/,lookbehind:!0}}),Prism.languages.insertBefore("java","class-name",{generics:{pattern:/<\s*\w+(?:\.\w+)?(?:\s*,\s*\w+(?:\.\w+)?)*>/i,alias:"function",inside:{keyword:Prism.languages.java.keyword,punctuation:/[<>(),.:]/}}});
+Prism.languages.python={comment:{pattern:/(^|[^\\])#.*/,lookbehind:!0},"triple-quoted-string":{pattern:/("""|''')[\s\S]+?\1/,greedy:!0,alias:"string"},string:{pattern:/("|')(?:\\.|(?!\1)[^\\\r\n])*\1/,greedy:!0},"function":{pattern:/((?:^|\s)def[ \t]+)[a-zA-Z_]\w*(?=\s*\()/g,lookbehind:!0},"class-name":{pattern:/(\bclass\s+)\w+/i,lookbehind:!0},keyword:/\b(?:as|assert|async|await|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|nonlocal|pass|print|raise|return|try|while|with|yield)\b/,builtin:/\b(?:__import__|abs|all|any|apply|ascii|basestring|bin|bool|buffer|bytearray|bytes|callable|chr|classmethod|cmp|coerce|compile|complex|delattr|dict|dir|divmod|enumerate|eval|execfile|file|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|intern|isinstance|issubclass|iter|len|list|locals|long|map|max|memoryview|min|next|object|oct|open|ord|pow|property|range|raw_input|reduce|reload|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|unichr|unicode|vars|xrange|zip)\b/,"boolean":/\b(?:True|False|None)\b/,number:/(?:\b(?=\d)|\B(?=\.))(?:0[bo])?(?:(?:\d|0x[\da-f])[\da-f]*\.?\d*|\.\d+)(?:e[+-]?\d+)?j?\b/i,operator:/[-+%=]=?|!=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]|\b(?:or|and|not)\b/,punctuation:/[{}[\];(),.:]/};
+!function(){function e(e,t){return Array.prototype.slice.call((t||document).querySelectorAll(e))}function t(e,t){return t=" "+t+" ",(" "+e.className+" ").replace(/[\n\t]/g," ").indexOf(t)>-1}function n(e,n,i){n="string"==typeof n?n:e.getAttribute("data-line");for(var o,l=n.replace(/\s+/g,"").split(","),a=+e.getAttribute("data-line-offset")||0,s=r()?parseInt:parseFloat,d=s(getComputedStyle(e).lineHeight),u=t(e,"line-numbers"),c=0;o=l[c++];){var p=o.split("-"),m=+p[0],f=+p[1]||m,h=e.querySelector('.line-highlight[data-range="'+o+'"]')||document.createElement("div");if(h.setAttribute("aria-hidden","true"),h.setAttribute("data-range",o),h.className=(i||"")+" line-highlight",u&&Prism.plugins.lineNumbers){var g=Prism.plugins.lineNumbers.getLine(e,m),y=Prism.plugins.lineNumbers.getLine(e,f);g&&(h.style.top=g.offsetTop+"px"),y&&(h.style.height=y.offsetTop-g.offsetTop+y.offsetHeight+"px")}else h.setAttribute("data-start",m),f>m&&h.setAttribute("data-end",f),h.style.top=(m-a-1)*d+"px",h.textContent=new Array(f-m+2).join(" \n");u?e.appendChild(h):(e.querySelector("code")||e).appendChild(h)}}function i(){var t=location.hash.slice(1);e(".temporary.line-highlight").forEach(function(e){e.parentNode.removeChild(e)});var i=(t.match(/\.([\d,-]+)$/)||[,""])[1];if(i&&!document.getElementById(t)){var r=t.slice(0,t.lastIndexOf(".")),o=document.getElementById(r);o&&(o.hasAttribute("data-line")||o.setAttribute("data-line",""),n(o,i,"temporary "),document.querySelector(".temporary.line-highlight").scrollIntoView())}}if("undefined"!=typeof self&&self.Prism&&self.document&&document.querySelector){var r=function(){var e;return function(){if("undefined"==typeof e){var t=document.createElement("div");t.style.fontSize="13px",t.style.lineHeight="1.5",t.style.padding=0,t.style.border=0,t.innerHTML="&nbsp;<br />&nbsp;",document.body.appendChild(t),e=38===t.offsetHeight,document.body.removeChild(t)}return e}}(),o=0;Prism.hooks.add("before-sanity-check",function(t){var n=t.element.parentNode,i=n&&n.getAttribute("data-line");if(n&&i&&/pre/i.test(n.nodeName)){var r=0;e(".line-highlight",n).forEach(function(e){r+=e.textContent.length,e.parentNode.removeChild(e)}),r&&/^( \n)+$/.test(t.code.slice(-r))&&(t.code=t.code.slice(0,-r))}}),Prism.hooks.add("complete",function l(e){var r=e.element.parentNode,a=r&&r.getAttribute("data-line");if(r&&a&&/pre/i.test(r.nodeName)){clearTimeout(o);var s=Prism.plugins.lineNumbers,d=e.plugins&&e.plugins.lineNumbers;t(r,"line-numbers")&&s&&!d?Prism.hooks.add("line-numbers",l):(n(r,a),o=setTimeout(i,1))}}),window.addEventListener("hashchange",i),window.addEventListener("resize",function(){var e=document.querySelectorAll("pre[data-line]");Array.prototype.forEach.call(e,function(e){n(e)})})}}();
+!function(){if("undefined"!=typeof self&&self.Prism&&self.document){var e="line-numbers",t=/\n(?!$)/g,n=function(e){var n=r(e),s=n["white-space"];if("pre-wrap"===s||"pre-line"===s){var l=e.querySelector("code"),i=e.querySelector(".line-numbers-rows"),a=e.querySelector(".line-numbers-sizer"),o=l.textContent.split(t);a||(a=document.createElement("span"),a.className="line-numbers-sizer",l.appendChild(a)),a.style.display="block",o.forEach(function(e,t){a.textContent=e||"\n";var n=a.getBoundingClientRect().height;i.children[t].style.height=n+"px"}),a.textContent="",a.style.display="none"}},r=function(e){return e?window.getComputedStyle?getComputedStyle(e):e.currentStyle||null:null};window.addEventListener("resize",function(){Array.prototype.forEach.call(document.querySelectorAll("pre."+e),n)}),Prism.hooks.add("complete",function(e){if(e.code){var r=e.element.parentNode,s=/\s*\bline-numbers\b\s*/;if(r&&/pre/i.test(r.nodeName)&&(s.test(r.className)||s.test(e.element.className))&&!e.element.querySelector(".line-numbers-rows")){s.test(e.element.className)&&(e.element.className=e.element.className.replace(s," ")),s.test(r.className)||(r.className+=" line-numbers");var l,i=e.code.match(t),a=i?i.length+1:1,o=new Array(a+1);o=o.join("<span></span>"),l=document.createElement("span"),l.setAttribute("aria-hidden","true"),l.className="line-numbers-rows",l.innerHTML=o,r.hasAttribute("data-start")&&(r.style.counterReset="linenumber "+(parseInt(r.getAttribute("data-start"),10)-1)),e.element.appendChild(l),n(r),Prism.hooks.run("line-numbers",e)}}}),Prism.hooks.add("line-numbers",function(e){e.plugins=e.plugins||{},e.plugins.lineNumbers=!0}),Prism.plugins.lineNumbers={getLine:function(t,n){if("PRE"===t.tagName&&t.classList.contains(e)){var r=t.querySelector(".line-numbers-rows"),s=parseInt(t.getAttribute("data-start"),10)||1,l=s+(r.children.length-1);s>n&&(n=s),n>l&&(n=l);var i=n-s;return r.children[i]}}}}}();
+!function(){if("undefined"!=typeof self&&self.Prism||"undefined"!=typeof global&&global.Prism){var s={classMap:{}};Prism.plugins.customClass={map:function(i){s.classMap=i},prefix:function(i){s.prefixString=i}},Prism.hooks.add("wrap",function(i){(s.classMap||s.prefixString)&&(i.classes=i.classes.map(function(i){return(s.prefixString||"")+(s.classMap[i]||i)}))})}}();
+!function(){function t(t){"function"!=typeof t||e(t)||r.push(t)}function e(t){return"function"==typeof t?r.filter(function(e){return e.valueOf()===t.valueOf()})[0]:"string"==typeof t&&t.length>0?r.filter(function(e){return e.name===t})[0]:null}function n(t){if("string"==typeof t&&(t=e(t)),"function"==typeof t){var n=r.indexOf(t);n>=0&&r.splice(n,1)}}function a(){Array.prototype.slice.call(document.querySelectorAll("pre[data-jsonp]")).forEach(function(t){t.textContent="";var e=document.createElement("code");e.textContent=i,t.appendChild(e);var n=t.getAttribute("data-adapter"),a=null;if(n){if("function"!=typeof window[n])return e.textContent="JSONP adapter function '"+n+"' doesn't exist",void 0;a=window[n]}var u="prismjsonp"+o++,f=document.createElement("a"),l=f.href=t.getAttribute("data-jsonp");f.href+=(f.search?"&":"?")+(t.getAttribute("data-callback")||"callback")+"="+u;var s=setTimeout(function(){e.textContent===i&&(e.textContent="Timeout loading '"+l+"'")},5e3),d=document.createElement("script");d.src=f.href,window[u]=function(n){document.head.removeChild(d),clearTimeout(s),delete window[u];var o="";if(a)o=a(n,t);else for(var i in r)if(o=r[i](n,t),null!==o)break;null===o?e.textContent="Cannot parse response (perhaps you need an adapter function?)":(e.textContent=o,Prism.highlightElement(e))},document.head.appendChild(d)})}if(self.Prism&&self.document&&document.querySelectorAll&&[].filter){var r=[];Prism.plugins.jsonphighlight={registerAdapter:t,removeAdapter:n,highlight:a},t(function(t){if(t&&t.meta&&t.data){if(t.meta.status&&t.meta.status>=400)return"Error: "+(t.data.message||t.meta.status);if("string"==typeof t.data.content)return"function"==typeof atob?atob(t.data.content.replace(/\s/g,"")):"Your browser cannot decode base64"}return null}),t(function(t,e){if(t&&t.meta&&t.data&&t.data.files){if(t.meta.status&&t.meta.status>=400)return"Error: "+(t.data.message||t.meta.status);var n=e.getAttribute("data-filename");if(null==n)for(var a in t.data.files)if(t.data.files.hasOwnProperty(a)){n=a;break}return void 0!==t.data.files[n]?t.data.files[n].content:"Error: unknown or missing gist file "+n}return null}),t(function(t){return t&&t.node&&"string"==typeof t.data?t.data:null});var o=0,i="Loading&#8230;";a()}}();
+!function(){"undefined"!=typeof self&&!self.Prism||"undefined"!=typeof global&&!global.Prism||Prism.hooks.add("wrap",function(e){"keyword"===e.type&&e.classes.push("keyword-"+e.content)})}();
+!function(){if("undefined"!=typeof self&&self.Prism&&self.document){var e=/\s*\bcommand-line\b\s*/;Prism.hooks.add("before-highlight",function(a){if(a.vars=a.vars||{},a.vars["command-line"]=a.vars["command-line"]||{},a.vars["command-line"].complete||!a.code)return a.vars["command-line"].complete=!0,void 0;var n=a.element.parentNode;if(!n||!/pre/i.test(n.nodeName)||!e.test(n.className)&&!e.test(a.element.className))return a.vars["command-line"].complete=!0,void 0;if(a.element.querySelector(".command-line-prompt"))return a.vars["command-line"].complete=!0,void 0;var t=a.code.split("\n");a.vars["command-line"].numberOfLines=t.length,a.vars["command-line"].outputLines=[];var r=n.getAttribute("data-output"),s=n.getAttribute("data-filter-output");if(r||""===r){r=r.split(",");for(var o=0;o<r.length;o++){var m=r[o].split("-"),i=parseInt(m[0],10),l=2===m.length?parseInt(m[1],10):i;if(!isNaN(i)&&!isNaN(l)){1>i&&(i=1),l>t.length&&(l=t.length),i--,l--;for(var d=i;l>=d;d++)a.vars["command-line"].outputLines[d]=t[d],t[d]=""}}}else if(s)for(var o=0;o<t.length;o++)0===t[o].indexOf(s)&&(a.vars["command-line"].outputLines[o]=t[o].slice(s.length),t[o]="");a.code=t.join("\n")}),Prism.hooks.add("before-insert",function(e){if(e.vars=e.vars||{},e.vars["command-line"]=e.vars["command-line"]||{},!e.vars["command-line"].complete){for(var a=e.highlightedCode.split("\n"),n=0;n<e.vars["command-line"].outputLines.length;n++)e.vars["command-line"].outputLines.hasOwnProperty(n)&&(a[n]=e.vars["command-line"].outputLines[n]);e.highlightedCode=a.join("\n")}}),Prism.hooks.add("complete",function(a){if(a.vars=a.vars||{},a.vars["command-line"]=a.vars["command-line"]||{},!a.vars["command-line"].complete){var n=a.element.parentNode;e.test(a.element.className)&&(a.element.className=a.element.className.replace(e," ")),e.test(n.className)||(n.className+=" command-line");var t=function(e,a){return(n.getAttribute(e)||a).replace(/"/g,"&quot")},r=new Array(a.vars["command-line"].numberOfLines+1),s=t("data-prompt","");if(""!==s)r=r.join('<span data-prompt="'+s+'"></span>');else{var o=t("data-user","user"),m=t("data-host","localhost");r=r.join('<span data-user="'+o+'" data-host="'+m+'"></span>')}var i=document.createElement("span");i.className="command-line-prompt",i.innerHTML=r;for(var l=0;l<a.vars["command-line"].outputLines.length;l++)if(a.vars["command-line"].outputLines.hasOwnProperty(l)){var d=i.children[l];d.removeAttribute("data-user"),d.removeAttribute("data-host"),d.removeAttribute("data-prompt")}a.element.insertBefore(i,a.element.firstChild),a.vars["command-line"].complete=!0}})}}();
+</script>
+
+<script async="" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2052457560343124",
+          enable_page_level_ads: true
+     });
+</script>
+
+<script data-ad-client="ca-pub-2052457560343124" async="" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/adsbygoogle.js"></script>
+
+<script data-ad-client="ca-pub-2052457560343124" async="" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/adsbygoogle.js"></script>
+</div>
+<div class="clear"></div>
+</div></div>
+<div class="tabs no-items section" id="crosscol-overflow" name="Cross-Column 2"></div>
+</div>
+</div>
+<div class="tabs-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="main-outer">
+<div class="main-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left main-fauxborder-left">
+<div class="fauxborder-right main-fauxborder-right"></div>
+<div class="region-inner main-inner">
+<div class="columns fauxcolumns">
+<div class="fauxcolumn-outer fauxcolumn-center-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-left-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-right-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class="columns-inner">
+<div class="column-center-outer">
+<div class="column-center-inner">
+<div class="main section" id="main" name="主版面"><div class="widget Blog" data-version="1" id="Blog1">
+<div class="blog-posts hfeed">
+
+          <div class="date-outer">
+        
+<h2 class="date-header"><span>2018年11月19日 星期一</span></h2>
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="post hentry uncustomized-post-template" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<meta content="https://4.bp.blogspot.com/-DZofOUQMCUw/XDhoByVSMmI/AAAAAAAAIow/LMP67YG4cF0z8PuxRKbH-2MqYmrhY-ydgCLcBGAs/s400/2019-01-11_175509.jpg" itemprop="image_url">
+<meta content="1014857139731180094" itemprop="blogId">
+<meta content="167286726752167210" itemprop="postId">
+<a name="167286726752167210"></a>
+<h3 class="post-title entry-title" itemprop="name">
+《高階》寫程式Arduino教學 - 08：幫裸(完全空白) 的 ATmega328P 燒錄 Bootloader 或直接上傳程式碼
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-167286726752167210" itemprop="description articleBody">
+若在拍賣網上買 ATmega328P 的話，有可能會買到沒有內置 Bootloader 的裸片<br>
+<br>
+對於 Bootloader 是什麼，在此篇不予以討論，目前我們只要知道<span style="color: magenta; --darkreader-inline-color: #ff1aff;" data-darkreader-inline-color="">若沒有 Bootloader 我們就無法以&nbsp; USB 的方式進行程式碼的上傳</span>即可<br>
+<br>
+本文共分為 3 個部分<br>
+<br>
+1. 使用 Arduino Uno 開發版，其扮演 ISP 燒錄器的角色，對裸(完全全白)的 ATmega328P 直接進行程式碼的上傳<br>
+<br>
+2. 使用 Arduino Uno 開發版，其扮演 ISP 燒錄器的角色，對裸(完全全白)的 ATmega328P 進行 bootloader 的燒錄<br>
+<br>
+3. 對已有 Bootloader 的 ATmega328P 進行程式碼的上傳<br>
+<br>
+<span style="font-size: x-large;">正文開始</span><br>
+<br>
+<span style="color: yellow; font-size: large; --darkreader-inline-color: #ffff1a;" data-darkreader-inline-color="">1. 使用 Arduino Uno 開發版，其扮演 ISP 燒錄器的角色，對裸(完全全白)的 ATmega328P 直接進行程式碼的上傳</span><br>
+<br>
+此方法會直接將 Arduino IDE 編譯好的程式碼藉由 Arduino Uno 開發版直接上傳至 <span style="color: red; --darkreader-inline-color: #ff1a1a;" data-darkreader-inline-color="">裸(無預燒bootloader)的 ATmega328P 。</span>燒錄完成後，<span style="color: red; --darkreader-inline-color: #ff1a1a;" data-darkreader-inline-color="">ATmega328P </span>內部就直接存有該程式碼<br>
+<br>
+<span style="color: red; --darkreader-inline-color: #ff1a1a;" data-darkreader-inline-color="">先將 Arduino Uno 開發版燒錄 ArduinoISP 程式，使其成為一個 ISP 燒錄器</span><br>
+<span style="color: red; --darkreader-inline-color: #ff1a1a;" data-darkreader-inline-color=""><br></span>
+<span style="color: magenta; font-size: large; --darkreader-inline-color: #ff1aff;" data-darkreader-inline-color="">開啟 Arduino IDE 中的  檔案 =&gt; 範例 =&gt; 11. ArduinoISP =&gt; 草稿碼 =&gt; 上傳</span><br>
+<div>
+<br></div>
+<div>
+<span style="color: cyan; --darkreader-inline-color: #1affff;" data-darkreader-inline-color="">接著接線如下</span><br>
+ATmega328P-PU 的腳位 7（VCC）、20（AVCC）接到5V<br>
+ATmega328P-PU 的腳位 8（GND）、22（GND）接地<br>
+ATmega328P-PU 的腳位 9（XTAL1）與 10（XTAL2）之間跨接 16Mhz 石英晶體<br>
+ATmega328P-PU 的腳位 9（XTAL1）接上一個 22pF 的陶瓷電容到 GND<br>
+ATmega328P-PU 的腳位 10（XTAL2）接上一個 22pF 的陶瓷電容到 GND<br>
+ATmega328P-PU 的腳位 1（RESET）接上一個 10k 歐姆的上拉電阻 至 5V<br>
+ATmega328P-PU 的腳位 1（RESET）接上一個開關的頭，開關的尾巴則連接至 GND 實現拉低復位功能<br>
+ATmega328P-PU 的腳位 19 (D13) 接一個 220 歐姆的電阻，串連 LED ，最後接至 GND<br>
+<br>
+Arduino Uno 板 D10，接 ATmega328P-PU 的腳位 1（RESET）<br>
+Arduino Uno 板 D11，接 ATmega328P-PU 的腳位 17（MOSI）<br>
+Arduino Uno 板 D12，接 ATmega328P-PU 的腳位 18（MISO）<br>
+Arduino Uno 板 D13，接 ATmega328P-PU 的腳位 19（SCK）<br>
+<div>
+<br></div>
+接線完成後，<span style="color: magenta; --darkreader-inline-color: #ff1aff;" data-darkreader-inline-color="">再開啟一個 Arduino IDE</span><br>
+<span style="color: magenta; --darkreader-inline-color: #ff1aff;" data-darkreader-inline-color=""><br></span>
+1.1. 準備好要燒錄的程式碼，如 LED 閃爍程式(如下)<br>
+<br>
+<pre class=" language-c line-numbers"><code class=" language-c"><span class="token keyword keyword-void">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">pinMode</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span>   
+  <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                       
+  <span class="token function">digitalWrite</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span>    
+  <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                      
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<br>
+<br>
+<span style="font-size: large;">1.2.&nbsp; <span style="color: red; --darkreader-inline-color: #ff1a1a;" data-darkreader-inline-color="">【此步很重要，<b>與我們一般使用 Arduino 開發版時上傳程式碼不同</b>】</span></span><br>
+<span style="color: magenta; font-size: large; --darkreader-inline-color: #ff1aff;" data-darkreader-inline-color="">草稿碼 =&gt; 以燒錄器上傳</span><br>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://4.bp.blogspot.com/-DZofOUQMCUw/XDhoByVSMmI/AAAAAAAAIow/LMP67YG4cF0z8PuxRKbH-2MqYmrhY-ydgCLcBGAs/s1600/2019-01-11_175509.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img data-original-height="257" data-original-width="458" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/2019-01-11_175509.jpg" width="400" height="223" border="0"></a></div>
+<br>
+<br>
+<br>
+1.3. 完成，會看到 LED 燈在閃爍<br>
+<br>
+<br>
+<br>
+<br>
+<span style="color: yellow; font-size: large; --darkreader-inline-color: #ffff1a;" data-darkreader-inline-color="">2. 使用 Arduino Uno 開發版，其扮演 ISP 燒錄器的角色，對裸(無預燒bootloader)的 ATmega328P 進行 bootloader 的燒錄</span><br>
+<br>
+接線與直接上傳程式碼的完全不變，只是點的選項不同罷了<br>
+<br>
+<span style="color: red; --darkreader-inline-color: #ff1a1a;" data-darkreader-inline-color="">2.1.&nbsp; 直接點選 工具 =&gt; 燒錄 Bootloader</span><br>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://2.bp.blogspot.com/--bO36_krXrM/XDhoQv70ubI/AAAAAAAAIo0/KKNtko90zIUl9A-Xo5tBRu1FA_QPv7rBACLcBGAs/s1600/2019-01-11_175612.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img data-original-height="403" data-original-width="622" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/2019-01-11_175612.jpg" width="400" height="258" border="0"></a></div>
+<br>
+<br>
+2.2. 按看看自己在麵包版上兜的開關 (其作用為使 ATmega328P 的 Reset 變為低電位) ，若有看到 LED 燈閃了幾下後就滅掉，那就表示成功(其行為與 Arduino UNO 開發版按 Reset 鈕時一模一樣)<br>
+<br>
+<span style="color: cyan; font-size: large; --darkreader-inline-color: #1affff;" data-darkreader-inline-color="">註 </span>:
+ 當我們替 ATmega328P 燒錄好 Bootloader 後，往後就可以藉由 USB to Uart (如 FT232 ) 直接經由 Rx
+ Tx 對這個具有 Bootloader 的 Atmega328P 進行程式碼的上傳，如同一個 Arduino Uno 開發版一樣。<br>
+<br>
+事實上，Arduino UNO 開發版最基本的組合就是一個已燒 Bootloader 的 ATmega328P 加上 USB to Uart 的通訊轉換晶片而已。(當然還有一些有關於電源配置的電路，這方面就不是那麼的重要了)<br>
+<br>
+<span style="color: yellow; font-size: large; --darkreader-inline-color: #ffff1a;" data-darkreader-inline-color="">3. 對已有 Bootloader 的 ATmega328P 進行程式碼的上傳</span><br>
+<br>
+在第 2 點的地方，我們已經成功將 bootloader 藉由另一塊 Arduino Uno (充當燒錄器) 燒錄進一個完全空白的 ATmega328P 中<br>
+<br>
+如果手邊有 FT232 這種 USB &lt;-&gt; Uart 的轉接器，我們就可以使用 uart 
+來進行板上燒錄了，這樣的好處在於如果我們將 ATmega328P 焊在電路版上時，若要進行程式的修改，就不需要將 ATmega328P 
+從電路板上拆解下來，再連接到 Arduino Uno 燒錄<br>
+<br>
+接線部份很簡單，就直接將 FT232 的 Rx Tx 與 ATmega328P 的 Tx Rx 對接即可<br>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://4.bp.blogspot.com/-CstlQ8kBOlk/XDohPaaq1kI/AAAAAAAAIqA/PBtSHHL3bCU2V_5fSywyCLuKmpKSR3FDwCLcBGAs/s1600/440998.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img data-original-height="1200" data-original-width="1600" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/440998.jpg" width="640" height="480" border="0"></a></div>
+<br>
+打開 Arduino IDE ，選擇 FT232 的 COM port<br>
+<br>
+接著有個地方需要注意，我們要<span style="color: magenta; --darkreader-inline-color: #ff1aff;" data-darkreader-inline-color="">勾選 Arduino IDE 偏好設定中的 "顯示詳細輸出 : 上傳選項"</span>，其作用等等就會知道<br>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-XByeqFZLJ0U/XDohokgxo3I/AAAAAAAAIqI/m9_pwY-GF1YAqp_UIWAPQZYpGdw5CW_dgCLcBGAs/s1600/2019-01-13_011301.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img data-original-height="666" data-original-width="761" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/2019-01-13_011301.jpg" width="640" height="560" border="0"></a></div>
+<br>
+<br>
+接著按下程式的上傳按鈕<br>
+此時下方的顯示幕會出現以下文字<br>
+<br>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-rVEqrcoK-PU/XDoh7YocobI/AAAAAAAAIqQ/RM6NzgQRi6I2k1hHAIcsMPK7S4RzUX7GACLcBGAs/s1600/2019-01-13_011159.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img data-original-height="939" data-original-width="1049" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/2019-01-13_011159.jpg" width="640" height="572" border="0"></a></div>
+<br>
+<br>
+<span style="color: magenta; font-size: large; --darkreader-inline-color: #ff1aff;" data-darkreader-inline-color="">在這個時候，趕緊按下 ATmega328P 電路中的 Reset 按鈕，此時才會進行燒錄的動作</span><br>
+<br>
+若成功則會出現以下文字<br>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-lhPVq8c1gbc/XDoiJt2aV1I/AAAAAAAAIqU/zE_EjHi_PLMWy8dW6HdRrcuzS7s7AggbACLcBGAs/s1600/2019-01-13_011227.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img data-original-height="943" data-original-width="1048" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/2019-01-13_011227.jpg" width="640" height="574" border="0"></a></div>
+<br>
+<br>
+若沒有這個按下 Reset 按鈕的動作則無法進行燒錄，會出現以下文字<br>
+<br>
+<br>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-uL6JCAbNZWk/XDoiRcw-IjI/AAAAAAAAIqY/AfCRCam_zuA9l_wd_K3KrJ4XMWOuU6WzgCLcBGAs/s1600/2019-01-13_012146.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img data-original-height="513" data-original-width="1040" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/2019-01-13_012146.jpg" width="640" height="314" border="0"></a></div>
+<br>
+<br>
+<span style="color: yellow; font-size: large; --darkreader-inline-color: #ffff1a;" data-darkreader-inline-color="">20190113補充 :</span><br>
+若嫌還要手動按 Reset 麻煩，則可以將 FT232 的 DTR 腳位 "串聯一個 0.1uF 的電容並連接至 ATmega328P 的 Reset 腳位(pin1) "。如此一來他就會自動幫你達成按 Reset 按鈕的作用了<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+參考文章<br>
+<a href="http://yehnan.blogspot.com/2013/02/arduino-unoispbootloadersketchatmega328.html?m=1" target="_blank">將Arduino Uno當做一台ISP線上燒錄器，燒錄bootloader或sketch到麵包板上的ATmega328P-PU晶片</a><br>
+<a href="http://ky123d.blogspot.com/2015/06/ftdiatmege328p.html?m=1" target="_blank">用FTDI燒錄Atmege328p</a><br>
+<a href="http://forum.arduino.cc/index.php?topic=53631.0" target="_blank">FTDI DTR Pin usage?</a></div>
+<div style="clear: both;"></div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+By
+<span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+<meta content="https://www.blogger.com/profile/12805166071803416768" itemprop="url">
+<a class="g-profile" href="https://www.blogger.com/profile/12805166071803416768" rel="author" title="author profile">
+<span itemprop="name">半工室 Arduino Python NodeMCU</span>
+</a>
+</span>
+</span>
+<span class="post-timestamp">
+於
+<meta content="http://wyj-learning.blogspot.com/2018/11/arduino-08-atmega328p-bootloader.html" itemprop="url">
+<a class="timestamp-link" href="https://wyj-learning.blogspot.com/2018/11/arduino-08-atmega328p-bootloader.html" rel="bookmark" title="permanent link"><abbr class="published" itemprop="datePublished" title="2018-11-19T01:35:00+08:00">11月 19, 2018</abbr></a>
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-backlinks post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-688808104">
+<a href="https://www.blogger.com/post-edit.g?blogID=1014857139731180094&amp;postID=167286726752167210&amp;from=pencil" title="編輯文章">
+<img alt="" class="icon-action" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/icon18_edit_allbkg.gif" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="post-share-buttons goog-inline-block">
+<a class="goog-inline-block share-button sb-email" href="https://www.blogger.com/share-post.g?blogID=1014857139731180094&amp;postID=167286726752167210&amp;target=email" target="_blank" title="以電子郵件傳送這篇文章"><span class="share-button-link-text">以電子郵件傳送這篇文章</span></a><a class="goog-inline-block share-button sb-blog" href="https://www.blogger.com/share-post.g?blogID=1014857139731180094&amp;postID=167286726752167210&amp;target=blog" onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target="_blank" title="BlogThis！"><span class="share-button-link-text">BlogThis！</span></a><a class="goog-inline-block share-button sb-twitter" href="https://www.blogger.com/share-post.g?blogID=1014857139731180094&amp;postID=167286726752167210&amp;target=twitter" target="_blank" title="分享至 Twitter"><span class="share-button-link-text">分享至 Twitter</span></a><a class="goog-inline-block share-button sb-facebook" href="https://www.blogger.com/share-post.g?blogID=1014857139731180094&amp;postID=167286726752167210&amp;target=facebook" onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target="_blank" title="分享至 Facebook"><span class="share-button-link-text">分享至 Facebook</span></a><a class="goog-inline-block share-button sb-pinterest" href="https://www.blogger.com/share-post.g?blogID=1014857139731180094&amp;postID=167286726752167210&amp;target=pinterest" target="_blank" title="分享到 Pinterest"><span class="share-button-link-text">分享到 Pinterest</span></a>
+</div>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+標籤：
+<a href="https://wyj-learning.blogspot.com/search/label/Arduino-Arduino%E9%AB%98%E9%9A%8E?max-results=25" rel="tag">Arduino-Arduino高階</a>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3">
+<span class="post-location">
+</span>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+</div>
+</div>
+<div class="inline-ad">
+<script async="" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/adsbygoogle.js"></script>
+<!-- wyj-learning_main_Blog1_1x1_as -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2052457560343124" data-ad-host="ca-host-pub-1556223355139109" data-ad-slot="8285135352" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+        </div></div>
+      
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link">
+<a class="blog-pager-newer-link" href="https://wyj-learning.blogspot.com/2018/12/c-2-enum-c-boolean-type.html" id="Blog1_blog-pager-newer-link" title="較新的文章">較新的文章</a>
+</span>
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="https://wyj-learning.blogspot.com/2018/10/arduino-20arduino-nano-watchdog-uno.html" id="Blog1_blog-pager-older-link" title="較舊的文章">較舊的文章</a>
+</span>
+<a class="home-link" href="https://wyj-learning.blogspot.com/">首頁</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+</div>
+</div><div class="widget FeaturedPost" data-version="1" id="FeaturedPost1">
+<h2 class="title">↓↓↓ 連結到部落格方針與索引 ↓↓↓</h2>
+<div class="post-summary">
+<h3><a href="https://wyj-learning.blogspot.com/2017/08/python-python-c.html">Blog 使用方針與索引</a></h3>
+</div>
+<style type="text/css">
+    .image {
+      width: 100%;
+    }
+  </style><style class="darkreader darkreader--sync" media="screen"></style>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="column-left-outer">
+<div class="column-left-inner">
+<aside>
+</aside>
+</div>
+</div>
+<div class="column-right-outer">
+<div class="column-right-inner">
+<aside>
+<div class="sidebar section" id="sidebar-right-1"><div class="widget AdSense" data-version="1" id="AdSense1">
+<div class="widget-content">
+<script async="" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/adsbygoogle.js"></script>
+<!-- wyj-learning_sidebar-right-1_AdSense1_1x1_as -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2052457560343124" data-ad-host="ca-host-pub-1556223355139109" data-ad-slot="7275784940" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="clear"></div>
+</div>
+</div><div class="widget Label" data-version="1" id="Label1" style="display: block;">
+<h2>文章分類</h2>
+<div class="widget-content list-label-widget-content"><div id="tl2_nav"><a href="javascript:tl2.toggle(1);">▼ 展開</a><a href="javascript:tl2.toggle(0);">► 收合</a></div><div id="tl2_main"><div class="tl2_category"><span onclick='tl2.swap("logo部落格使用方針與索引部落格使用方針與索引0","部落格使用方針與索引部落格使用方針與索引0");'><a id="logo部落格使用方針與索引部落格使用方針與索引0" href="javascript:">▼</a><span><a class="tl2_catText" href="javascript:"> 部落格使用方針與索引 </a></span></span><span></span></div><div class="tl2_subArea" id="部落格使用方針與索引部落格使用方針與索引0" style="display:block"><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/%E9%83%A8%E8%90%BD%E6%A0%BC%E4%BD%BF%E7%94%A8%E6%96%B9%E9%87%9D%E8%88%87%E7%B4%A2%E5%BC%95-%E9%83%A8%E8%90%BD%E6%A0%BC%E4%BD%BF%E7%94%A8%E6%96%B9%E9%87%9D%E8%88%87%E7%B4%A2%E5%BC%95?max-results=25"><span dir="ltr">部落格使用方針與索引</span></a> (1)</div><p></p></div><div class="tl2_category"><span onclick='tl2.swap("logoArduino Arduino入門手把手教學篇0","Arduino Arduino入門手把手教學篇0");'><a id="logoArduino Arduino入門手把手教學篇0" href="javascript:">▼</a><span><a class="tl2_catText" href="javascript:"> Arduino </a></span></span><span></span></div><div class="tl2_subArea" id="Arduino Arduino入門手把手教學篇0" style="display:block"><div class="tl2_category"><span onclick='tl2.swap("logoArduino Arduino入門手把手教學篇1","Arduino Arduino入門手把手教學篇1");'><a id="logoArduino Arduino入門手把手教學篇1" href="javascript:">▼</a><span><a class="tl2_catText" href="javascript:">  Arduino入門 </a></span></span><span></span></div><div class="tl2_subArea" id="Arduino Arduino入門手把手教學篇1" style="display:block"><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/Arduino-Arduino%E5%85%A5%E9%96%80-%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E5%AD%B8%E7%AF%87?max-results=25"><span dir="ltr">手把手教學篇</span></a> (11)</div></div><div class="tl2_category"><span onclick='tl2.swap("logoArduino Arduino進階應用篇1","Arduino Arduino進階應用篇1");'><a id="logoArduino Arduino進階應用篇1" href="javascript:">▼</a><span><a class="tl2_catText" href="javascript:">  Arduino進階 </a></span></span><span></span></div><div class="tl2_subArea" id="Arduino Arduino進階應用篇1" style="display:block"><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/Arduino-Arduino%E9%80%B2%E9%9A%8E-%E6%87%89%E7%94%A8%E7%AF%87?max-results=25"><span dir="ltr">應用篇</span></a> (13)</div><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/Arduino-Arduino%E9%80%B2%E9%9A%8E-%E9%9B%BB%E5%AD%90%E9%9B%BB%E8%B7%AF%E7%AF%87?max-results=25"><span dir="ltr">電子電路篇</span></a> (7)</div></div><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/Arduino-Arduino%E9%AB%98%E9%9A%8E?max-results=25"><span dir="ltr">Arduino高階</span></a> (11)</div><p></p></div><div class="tl2_category"><span onclick='tl2.swap("logoEsp8266NodeMCU相關0","Esp8266NodeMCU相關0");'><a id="logoEsp8266NodeMCU相關0" href="javascript:">▼</a><span><a class="tl2_catText" href="javascript:"> Esp8266 </a></span></span><span></span></div><div class="tl2_subArea" id="Esp8266NodeMCU相關0" style="display:block"><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/Esp8266-NodeMCU%E7%9B%B8%E9%97%9C?max-results=25"><span dir="ltr">NodeMCU相關</span></a> (23)</div><p></p></div><div class="tl2_category"><span onclick='tl2.swap("logoC 語言筆記C 語言0","C 語言筆記C 語言0");'><a id="logoC 語言筆記C 語言0" href="javascript:">▼</a><span><a class="tl2_catText" href="javascript:"> C 語言筆記 </a></span></span><span></span></div><div class="tl2_subArea" id="C 語言筆記C 語言0" style="display:block"><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/C%20%E8%AA%9E%E8%A8%80%E7%AD%86%E8%A8%98-C%20%E8%AA%9E%E8%A8%80?max-results=25"><span dir="ltr">C 語言</span></a> (40)</div><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/C%20%E8%AA%9E%E8%A8%80%E7%AD%86%E8%A8%98-C%2B%2B%20%E8%AA%9E%E8%A8%80?max-results=25"><span dir="ltr">C++ 語言</span></a> (6)</div><p></p></div><div class="tl2_category"><span onclick='tl2.swap("logoMatlabMatlab應用0","MatlabMatlab應用0");'><a id="logoMatlabMatlab應用0" href="javascript:">▼</a><span><a class="tl2_catText" href="javascript:"> Matlab </a></span></span><span></span></div><div class="tl2_subArea" id="MatlabMatlab應用0" style="display:block"><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/Matlab-Matlab%E6%87%89%E7%94%A8?max-results=25"><span dir="ltr">Matlab應用</span></a> (9)</div><p></p></div><div class="tl2_category"><span onclick='tl2.swap("logoPythonPython入門0","PythonPython入門0");'><a id="logoPythonPython入門0" href="javascript:">▼</a><span><a class="tl2_catText" href="javascript:"> Python </a></span></span><span></span></div><div class="tl2_subArea" id="PythonPython入門0" style="display:block"><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/Python-Python%E5%85%A5%E9%96%80?max-results=25"><span dir="ltr">Python入門</span></a> (29)</div><p></p></div><div class="tl2_category"><span onclick='tl2.swap("logoRaspberry piRaspberry pi 使用 Python0","Raspberry piRaspberry pi 使用 Python0");'><a id="logoRaspberry piRaspberry pi 使用 Python0" href="javascript:">▼</a><span><a class="tl2_catText" href="javascript:"> Raspberry pi </a></span></span><span></span></div><div class="tl2_subArea" id="Raspberry piRaspberry pi 使用 Python0" style="display:block"><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/Raspberry%20pi-Raspberry%20pi%20%E4%BD%BF%E7%94%A8%20Python?max-results=25"><span dir="ltr">Raspberry pi 使用 Python</span></a> (9)</div><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/Raspberry%20pi-Raspbian%20%E7%9B%B8%E9%97%9C?max-results=25"><span dir="ltr">Raspbian 相關</span></a> (14)</div><p></p></div><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/%E6%9C%AA%E5%88%86%E9%A1%9E?max-results=25"><span dir="ltr">未分類</span></a> (7)</div><div class="tl2_label">⇢ <a dir="ltr" href="https://wyj-learning.blogspot.com/search/label/Sikuli%20%E9%AB%98%E9%9A%8E%E6%8C%89%E9%8D%B5%E7%B2%BE%E9%9D%88?max-results=25"><span dir="ltr">Sikuli 高階按鍵精靈</span></a> (2)</div></div><a href="https://goo.gl/2RzmSs" target="_blank" title="Blogger 樹狀標籤 V2
+程式設計：WFU BLOG" style="float: right; margin-top: 5px; text-decoration: none; color: rgb(204, 204, 204); font-family: helvetica, arial, sans-serif; font-size: 11px; --darkreader-inline-color: #c8c3bc;" data-darkreader-inline-color="">ⓦ Tree Label V2</a></div>
+</div></div>
+<table class="section-columns columns-2" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="sidebar no-items section" id="sidebar-right-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="sidebar no-items section" id="sidebar-right-2-2"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sidebar no-items section" id="sidebar-right-3"></div>
+</aside>
+</div>
+</div>
+</div>
+<div style="clear: both"></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class="main-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<footer>
+<div class="footer-outer">
+<div class="footer-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left footer-fauxborder-left">
+<div class="fauxborder-right footer-fauxborder-right"></div>
+<div class="region-inner footer-inner">
+<div class="foot no-items section" id="footer-1"></div>
+<table class="section-columns columns-2" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="foot no-items section" id="footer-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="foot no-items section" id="footer-2-2"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class="foot section" id="footer-3" name="頁尾"><div class="widget Attribution" data-version="1" id="Attribution1">
+<div class="widget-content" style="text-align: center;">
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　. 簡單主題. 技術提供：<a href="https://www.blogger.com/" target="_blank">Blogger</a>.
+</div>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="footer-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class="content-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<!-- 樹狀標籤 V2 start -->
+<script>
+//<![CDATA[
+var tl2 = {
+target: "Label1", // 標籤小工具的 ID
+
+category: [
+
+"部落格使用方針與索引",
+"Arduino",
+"Esp8266",
+"C 語言筆記",
+"Matlab",
+"Python",
+"Raspberry pi",
+"Sikuli 高階按鍵精靈",
+"ARM S3c2440 嵌入式Linux",
+"未分類"
+
+
+], // 雙引號內填入大分類名稱, 每個大分類用小寫逗號隔開, 最後一個大分類之後不可有逗號; 填入順序就是顯示的順序
+
+showLevel: 6, // 預設打開的標籤層數, 填入 1 為全部收起的狀態
+showCategoryCount: "N", // 大分類若不顯示文章數, 請填入 "N"
+openLogo: "▼", // 如使用圖檔,雙引號內請填入 http 開頭的網址
+closeLogo: "►", // 如使用圖檔,雙引號內請填入 http 開頭的網址
+listLogo: "⇢", // 如使用圖檔,雙引號內請填入 http 開頭的網址
+openNav: "▼ 展開", // 如使用圖檔,雙引號內請填入 http 開頭的網址
+closeNav: "► 收合" // 如使用圖檔,雙引號內請填入 http 開頭的網址
+};
+ 
+tl2.dataSet=[];tl2.labelSplitSet=[];tl2.notTreeLabel=[];tl2.text=function(a){return $("<p>").html(a).text()};$("#"+tl2.target+" li").each(function(){var j=$(this),c=j.children("a"),m=[],f,a,d,g,b,e,k,h;if(c.length){a=c.attr("href");d=c.attr("dir");k=j.find("span")[0];h=k.innerHTML.replace("(","").replace(")","");c.find("span").remove();g=tl2.text(c.html())}else{a="//"+location.hostname+location.pathname;k=j.find("span");d=k[0].dir;g=tl2.text(k[0].innerHTML);h=k[1].innerHTML.replace("(","").replace(")","")}b=g.split("-");e=b.length;for(f=0;f<e;f++){if(e==1){tl2.notTreeLabel.push([g,d,a,h]);return}if(f>0&&f!=e-1&&b[f].search(" ")!=0){b[f]=" "+b[f]}m[f]=b[f]}tl2.dataSet.push([m,d,a,h])});tl2.dg=function(a){return document.getElementById(a)};tl2.toggle=function(n){var k=tl2.dg,o=tl2.labelSplitSet,b=o.length,p=tl2.openLogo,h=tl2.closeLogo,m,q,d,g,a,e,c,f;for(e=0;e<b;e++){m=o[e];f=m.length;for(c=0;c<f;c++){q=m.join("")+c;d="logo"+q;g=k(q);a=k(d);if(m[1]&&n==1){if(a&&!a.firstChild.src){a.innerHTML=p}if(a&&a.firstChild.src){a.firstChild.src=p}if(g){g.style.display="block"}}if(m[1]&&n==0){if(a&&!a.firstChild.src){a.innerHTML=h}if(a&&a.firstChild.src){a.firstChild.src=h}if(g){g.style.display="none"}}}}};tl2.swap=function(c,d){var f=tl2.dg,a=f(d),e=f(c),b=tl2.openLogo,g=tl2.closeLogo;if(!e.firstChild.src){e.innerHTML=(tl2.text(e.innerHTML)==b)?g:b}else{e.firstChild.src=(e.firstChild.src==b)?g:b}a.style.display=(a.style.display=="block")?"none":"block"};(function($,tl2){var data=tl2.dataSet,catArray=tl2.category,notTreeLabel=tl2.notTreeLabel,lnArray=[],ldArray=[],luArray=[],lcArray=[],cl=catArray.length,dl=data.length,l=notTreeLabel.length,showLevel=tl2.showLevel,openLogo=tl2.openLogo,closeLogo=tl2.closeLogo,listLogo=tl2.listLogo,openNav=tl2.openNav,closeNav=tl2.closeNav,html="",navHtml="",end="",endCheck=0,label,cLabel,tree,i,j,k,x,y,n,findSame,findEnd,count,showCount,catID,logoID,sLogo,sDisplay,imgHtml;imgHtml=function(html){return html.search("http")<0?html:"<img src='"+html+"'/>"};openLogo=imgHtml(openLogo);closeLogo=imgHtml(closeLogo);listLogo=imgHtml(listLogo);openNav=imgHtml(openNav);closeNav=imgHtml(closeNav);data.sort();for(i=0;i<dl;i++){tl2.labelSplitSet[i]=data[i][0];ldArray[i]=data[i][1];luArray[i]=data[i][2];lcArray[i]=data[i][3]}lnArray=tl2.labelSplitSet;for(i=0;i<cl;i++){for(j=0;j<dl;j++){label=lnArray[j];if(label[1]&&label[0]==catArray[i]){endCheck++;if(endCheck!=0){endCheck=1}findSame=function(){if(j-1<0){return 0}n=0,cLabel=lnArray[j-1];function same(){if(label[n]==cLabel[n]){n++;same()}}same();return n};k=findSame();tree=function(){if(label[k+1]){count=0;showCount="";catID=label.join("")+k;logoID="logo"+catID;sLogo=(k<showLevel-1)?openLogo:closeLogo;sDisplay=(k<showLevel-1)?"block":"none";if(tl2.showCategoryCount=="Y"){for(x=0;x<dl;x++){cLabel=lnArray[x];for(y=k;y>=0;y--){if(label[y]!=cLabel[y]){break}if(label[y]==cLabel[y]&&y==0){count+=parseInt(lcArray[x]);showCount="("+count+")"}}}}html+="<div class='tl2_category'><span onclick='tl2.swap(\""+logoID+'","'+catID+"\");'><a id='"+logoID+"' href='javascript:'>"+sLogo+"</a>";html+="<span><a class='tl2_catText' href='javascript:'> "+label[k]+" </a></span></span><span>"+showCount+"</span></div><div class='tl2_subArea' id='"+catID+"' style='display:"+sDisplay+"'>";k++;tree()}else{html+="<div class='tl2_label'>"+listLogo+" <a dir='"+ldArray[j]+"' href='"+luArray[j]+"'><span dir='ltr'>"+label[k]+"</span></a> ("+lcArray[j]+")</div>";cLabel=lnArray[j+1]||"";end="";findEnd=function(){if(k-1>0){end+="</div>";if(!cLabel){k--;findEnd()}else{for(n=k;n>=1;n--){if(label[n-1]!=cLabel[n-1]){n=2;break}if(label[n-1]==cLabel[n-1]&&n==1){break}}if(n==1){end=end.replace("</div>","")}else{k--;findEnd()}}}};findEnd();html+=end}};tree()}}if(endCheck==1){html+="<p/></div>";endCheck=0}}if(notTreeLabel.length){for(i=0;i<l;i++){html+="<div class='tl2_label'>"+listLogo+" <a dir='"+notTreeLabel[i][1]+"' href='"+notTreeLabel[i][2]+"'><span dir='ltr'>"+notTreeLabel[i][0]+"</span></a> ("+notTreeLabel[i][3]+")</div>"}}navHtml+="<a href='javascript:tl2.toggle(1);'>"+openNav+"</a>";navHtml+="<a href='javascript:tl2.toggle(0);'>"+closeNav+"</a>";var _0xd275=["\x32\x3D\x22\x3C\x31\x20\x33\x3D\x27\x6D\x27\x3E\x22\x2B\x32\x2B\x22\x3C\x2F\x31\x3E\x22\x3B\x30\x3D\x32\x2B\x22\x3C\x31\x20\x33\x3D\x27\x67\x27\x3E\x22\x2B\x30\x2B\x22\x3C\x2F\x31\x3E\x22\x3B\x30\x2B\x3D\x22\x3C\x61\x20\x76\x3D\x27\x37\x3A\x2F\x2F\x38\x2E\x39\x2F\x62\x27\x20\x34\x3D\x27\x64\x27\x20\x65\x3D\x27\x66\x20\u6A39\u72C0\u6A19\u7C64\x20\x35\x5C\x6E\u7A0B\u5F0F\u8A2D\u8A08\uFF1A\x68\x20\x69\x27\x20\x6A\x3D\x27\x6B\x3A\x6C\x3B\x20\x4B\x2D\x6F\x3A\x20\x70\x3B\x20\x71\x2D\x72\x3A\x20\x73\x3B\x20\x74\x3A\x20\x23\x75\x3B\x20\x36\x2D\x77\x3A\x20\x78\x2C\x20\x79\x2C\x20\x7A\x2D\x41\x3B\x20\x36\x2D\x42\x3A\x20\x43\x3B\x27\x3E\u24E6\x20\x44\x20\x45\x20\x35\x3C\x2F\x61\x3E\x22\x3B\x24\x28\x46\x28\x29\x7B\x24\x28\x22\x23\x22\x2B\x47\x2E\x34\x29\x2E\x48\x28\x29\x2E\x49\x28\x22\x2E\x4A\x2D\x63\x22\x29\x2E\x30\x28\x30\x29\x7D\x29\x3B","\x7C","\x73\x70\x6C\x69\x74","\x68\x74\x6D\x6C\x7C\x64\x69\x76\x7C\x6E\x61\x76\x48\x74\x6D\x6C\x7C\x69\x64\x7C\x74\x61\x72\x67\x65\x74\x7C\x56\x32\x7C\x66\x6F\x6E\x74\x7C\x68\x74\x74\x70\x73\x7C\x67\x6F\x6F\x7C\x67\x6C\x7C\x7C\x32\x52\x7A\x6D\x53\x73\x7C\x63\x6F\x6E\x74\x65\x6E\x74\x7C\x5F\x62\x6C\x61\x6E\x6B\x7C\x74\x69\x74\x6C\x65\x7C\x42\x6C\x6F\x67\x67\x65\x72\x7C\x74\x6C\x32\x5F\x6D\x61\x69\x6E\x7C\x57\x46\x55\x7C\x42\x4C\x4F\x47\x7C\x73\x74\x79\x6C\x65\x7C\x66\x6C\x6F\x61\x74\x7C\x72\x69\x67\x68\x74\x7C\x74\x6C\x32\x5F\x6E\x61\x76\x7C\x7C\x74\x6F\x70\x7C\x35\x70\x78\x7C\x74\x65\x78\x74\x7C\x64\x65\x63\x6F\x72\x61\x74\x69\x6F\x6E\x7C\x6E\x6F\x6E\x65\x7C\x63\x6F\x6C\x6F\x72\x7C\x63\x63\x63\x7C\x68\x72\x65\x66\x7C\x66\x61\x6D\x69\x6C\x79\x7C\x68\x65\x6C\x76\x65\x74\x69\x63\x61\x7C\x61\x72\x69\x61\x6C\x7C\x73\x61\x6E\x73\x7C\x73\x65\x72\x69\x66\x7C\x73\x69\x7A\x65\x7C\x31\x31\x70\x78\x7C\x54\x72\x65\x65\x7C\x4C\x61\x62\x65\x6C\x7C\x66\x75\x6E\x63\x74\x69\x6F\x6E\x7C\x74\x6C\x32\x7C\x73\x68\x6F\x77\x7C\x66\x69\x6E\x64\x7C\x77\x69\x64\x67\x65\x74\x7C\x6D\x61\x72\x67\x69\x6E","","\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65","\x72\x65\x70\x6C\x61\x63\x65","\x5C\x77\x2B","\x5C\x62","\x67"];eval(function(_0xaa7dx1,_0xaa7dx2,_0xaa7dx3,_0xaa7dx4,_0xaa7dx5,_0xaa7dx6){_0xaa7dx5=function(_0xaa7dx3){return(_0xaa7dx3<_0xaa7dx2?_0xd275[4]:_0xaa7dx5(parseInt(_0xaa7dx3/_0xaa7dx2)))+((_0xaa7dx3=_0xaa7dx3%_0xaa7dx2)>35?String[_0xd275[5]](_0xaa7dx3+29):_0xaa7dx3.toString(36))};if(!_0xd275[4][_0xd275[6]](/^/,String)){while(_0xaa7dx3--){_0xaa7dx6[_0xaa7dx5(_0xaa7dx3)]=_0xaa7dx4[_0xaa7dx3]||_0xaa7dx5(_0xaa7dx3)}_0xaa7dx4=[function(_0xaa7dx5){return _0xaa7dx6[_0xaa7dx5]}];_0xaa7dx5=function(){return _0xd275[7]};_0xaa7dx3=1}while(_0xaa7dx3--){if(_0xaa7dx4[_0xaa7dx3]){_0xaa7dx1=_0xaa7dx1[_0xd275[6]](new RegExp(_0xd275[8]+_0xaa7dx5(_0xaa7dx3)+_0xd275[8],_0xd275[9]),_0xaa7dx4[_0xaa7dx3])}}return _0xaa7dx1}(_0xd275[0],47,47,_0xd275[3][_0xd275[2]](_0xd275[1]),0,{}))})(jQuery,tl2);
+//]]>
+</script>
+<!-- Designed by WFU BLOG -->
+
+<script type="text/javascript" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/1527282520-widgets.js"></script>
+<script type="text/javascript">
+window['__wavt'] = 'AOuZoY7M53vIF4vL3w8bohe9ZI8wJQfkMw:1632841053348';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d1014857139731180094','//wyj-learning.blogspot.com/2018/11/arduino-08-atmega328p-bootloader.html','1014857139731180094');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '1014857139731180094', 'title': '\u534a\u5de5\u5ba4 Arduino Python NodeMCU', 'url': 'https://wyj-learning.blogspot.com/2018/11/arduino-08-atmega328p-bootloader.html', 'canonicalUrl': 'http://wyj-learning.blogspot.com/2018/11/arduino-08-atmega328p-bootloader.html', 'homepageUrl': 'https://wyj-learning.blogspot.com/', 'searchUrl': 'https://wyj-learning.blogspot.com/search', 'canonicalHomepageUrl': 'http://wyj-learning.blogspot.com/', 'blogspotFaviconUrl': 'https://wyj-learning.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'zh-TW', 'localeUnderscoreDelimited': 'zh_tw', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22\u534a\u5de5\u5ba4 Arduino Python NodeMCU - Atom\x22 href\x3d\x22https://wyj-learning.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22\u534a\u5de5\u5ba4 Arduino Python NodeMCU - RSS\x22 href\x3d\x22https://wyj-learning.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22\u534a\u5de5\u5ba4 Arduino Python NodeMCU - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/1014857139731180094/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22\u534a\u5de5\u5ba4 Arduino Python NodeMCU - Atom\x22 href\x3d\x22https://wyj-learning.blogspot.com/feeds/167286726752167210/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseClientId': 'ca-pub-2052457560343124', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': true, 'adsenseAutoAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/403901366-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/bec1a07e6cc55327', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': '\u53d6\u5f97\u9023\u7d50', 'key': 'link', 'shareMessage': '\u53d6\u5f97\u9023\u7d50', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': '\u5206\u4eab\u5230 Facebook', 'target': 'facebook'}, {'name': 'BlogThis\uff01', 'key': 'blogThis', 'shareMessage': 'BlogThis\uff01', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': '\u5206\u4eab\u5230 Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': '\u5206\u4eab\u5230 Pinterest', 'target': 'pinterest'}, {'name': '\u4ee5\u96fb\u5b50\u90f5\u4ef6\u50b3\u9001', 'key': 'email', 'shareMessage': '\u4ee5\u96fb\u5b50\u90f5\u4ef6\u50b3\u9001', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27zh_TW\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': '\u95b1\u8b80\u5b8c\u6574\u5167\u5bb9', 'pageType': 'item', 'postId': '167286726752167210', 'postImageThumbnailUrl': 'https://4.bp.blogspot.com/-DZofOUQMCUw/XDhoByVSMmI/AAAAAAAAIow/LMP67YG4cF0z8PuxRKbH-2MqYmrhY-ydgCLcBGAs/s72-c/2019-01-11_175509.jpg', 'postImageUrl': 'https://4.bp.blogspot.com/-DZofOUQMCUw/XDhoByVSMmI/AAAAAAAAIow/LMP67YG4cF0z8PuxRKbH-2MqYmrhY-ydgCLcBGAs/s400/2019-01-11_175509.jpg', 'pageName': '\u300a\u9ad8\u968e\u300b\u5beb\u7a0b\u5f0fArduino\u6559\u5b78 - 08\uff1a\u5e6b\u88f8(\u5b8c\u5168\u7a7a\u767d) \u7684 ATmega328P \u71d2\u9304 Bootloader \u6216\u76f4\u63a5\u4e0a\u50b3\u7a0b\u5f0f\u78bc', 'pageTitle': '\u534a\u5de5\u5ba4 Arduino Python NodeMCU: \u300a\u9ad8\u968e\u300b\u5beb\u7a0b\u5f0fArduino\u6559\u5b78 - 08\uff1a\u5e6b\u88f8(\u5b8c\u5168\u7a7a\u767d) \u7684 ATmega328P \u71d2\u9304 Bootloader \u6216\u76f4\u63a5\u4e0a\u50b3\u7a0b\u5f0f\u78bc', 'metaDescription': ''}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': '\u7de8\u8f2f', 'linkCopiedToClipboard': '\u5df2\u5c07\u9023\u7d50\u8907\u88fd\u5230\u526a\u8cbc\u7c3f\uff01', 'ok': '\u78ba\u5b9a', 'postLink': '\u6587\u7ae0\u9023\u7d50'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': '\u81ea\u8a02', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true, 'variant': 'dark', 'variantId': 'dark'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': '\u300a\u9ad8\u968e\u300b\u5beb\u7a0b\u5f0fArduino\u6559\u5b78 - 08\uff1a\u5e6b\u88f8(\u5b8c\u5168\u7a7a\u767d) \u7684 ATmega328P \u71d2\u9304 Bootloader \u6216\u76f4\u63a5\u4e0a\u50b3\u7a0b\u5f0f\u78bc', 'description': '\u7a0b\u5f0f\u8a9e\u8a00\uff0c\u7a0b\u5f0f\u78bc\u5206\u4eab\uff0c\u5229\u7528Python\u3001Arduino\u3001Linux\u3001\u5d4c\u5165\u5f0f\u3001\u722c\u87f2', 'featuredImage': 'https://4.bp.blogspot.com/-DZofOUQMCUw/XDhoByVSMmI/AAAAAAAAIow/LMP67YG4cF0z8PuxRKbH-2MqYmrhY-ydgCLcBGAs/s400/2019-01-11_175509.jpg', 'url': 'https://wyj-learning.blogspot.com/2018/11/arduino-08-atmega328p-bootloader.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 167286726752167210}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'crosscol', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/168963144-lbx__zh_tw.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/4076883957-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FeaturedPostView', new _WidgetInfo('FeaturedPost1', 'main', document.getElementById('FeaturedPost1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense1', 'sidebar-right-1', document.getElementById('AdSense1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar-right-1', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
+
+<link type="text/css" rel="stylesheet" href="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/4076883957-lightbox_bundle.css"><style class="darkreader darkreader--cors" media="screen">.CSS_ROUNDED_BOX_CONT{text-align:center}.CSS_ROUNDED_BOX_CONTENT{border:3px solid transparent;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}.CSS_CLEAR_BOTH_NO_HEIGHT{height:0;overflow:hidden;clear:both}.CSS_NINEGRID_CORNER{overflow:hidden;height:100%}.CSS_NINEGRID_BOTTOM_LEFT_CORNER,.CSS_NINEGRID_TOP_LEFT_CORNER{float:left}.CSS_NINEGRID_BOTTOM_RIGHT_CORNER,.CSS_NINEGRID_TOP_RIGHT_CORNER{float:right}.CSS_NINEGRID_BOTTOM_EDGE,.CSS_NINEGRID_TOP_EDGE{overflow:hidden;height:100%}.CSS_NINEGRID_TOP_EDGE,.CSS_NINEGRID_TOP_LEFT_CORNER,.CSS_NINEGRID_TOP_RIGHT_CORNER{position:relative}.CSS_NINEGRID_LEFT_EDGE{float:left;width:100%}.CSS_NINEGRID_CENTER{position:relative}.CSS_COMPONENT_TAB_PANE_BUTTON_SELECTED,.CSS_COMPONENT_TAB_PANE_BUTTON_UNSELECTED{font-weight:700}.CSS_COMPONENT_TAB_PANE_BUTTON_UNSELECTED,.CSS_COMPONENT_TAB_PANE_BUTTON_UNSELECTED .CSS_COMPONENT_TAB_PANE_BUTTON_TITLE{color:#0065cc;cursor:pointer;text-decoration:underline}.CSS_COMPONENT_TAB_PANE_BUTTON_SELECTED .CSS_COMPONENT_TAB_PANE_BUTTON_TITLE{color:#000;cursor:text;outline:none;text-decoration:none}.CSS_COMPONENT_TAB_PANE_HORIZONTAL .CSS_COMPONENT_TAB_PANE_BUTTON_SELECTED,.CSS_COMPONENT_TAB_PANE_HORIZONTAL .CSS_COMPONENT_TAB_PANE_BUTTON_UNSELECTED{float:left;padding:3px 8px}.CSS_COMPONENT_TAB_PANE_VERTICAL .CSS_COMPONENT_TAB_PANE_BUTTON_SELECTED,.CSS_COMPONENT_TAB_PANE_VERTICAL .CSS_COMPONENT_TAB_PANE_BUTTON_UNSELECTED{float:right;padding:3px;text-align:right}.CSS_VCONT_CHILDREN_HOLDER{width:100%;bottom:0}.CSS_VCONT_PREVENT_MARGIN_COLLAPSE_DIV{font-size:0;height:0;line-height:0}.CSS_HCONT_CHILDREN_HOLDER{float:left}.CSS_HCONT_CHILD{min-height:1px;float:left}.CSS_COMPONENT_TABLE_HCONT_TABLE{position:relative;border-spacing:0;padding:0;border-collapse:collapse}.CSS_COMPONENT_TABLE_HCONT_WRAPPING_CELL{vertical-align:top;margin:0;padding:0}.CSS_COMPONENT_TABLE_HCONT_WIDTH_HOLDER{height:0;overflow:hidden}.CSS_LEFT_RIGHT_CONTAINER_LEFT_CHILD{float:left}.CSS_LEFT_RIGHT_CONTAINER_RIGHT_CHILD{float:right}.goog-inline-block{position:relative;display:-moz-inline-box;display:inline-block}* html .goog-inline-block,:first-child+html .goog-inline-block{display:inline}html.CSS_LIGHTBOX_FIXED_FRAME{margin:0;height:100%;width:100%;overflow:hidden!important}.CSS_LIGHTBOX{position:fixed;top:0;left:0;z-index:10}.CSS_LIGHTBOX .goog-link,.CSS_LIGHTBOX .goog-link-disabled{outline:none}.CSS_LIGHTBOX_ADMIN_LINK{color:#9c1000;cursor:pointer;text-decoration:underline}.CSS_LIGHTBOX_BG_MASK{background-color:#000;height:100%;left:0;position:absolute;top:0;width:100%}.CSS_LIGHTBOX_BG_MASK_TRANSPARENT{opacity:.9}.CSS_LIGHTBOX_BTN_CLOSE{cursor:pointer;background:url("https://www.blogger.com/img/lightbox/lightbox_sprite.gif") no-repeat;width:20px;height:20px;top:5px;position:absolute;z-index:100}.CSS_LIGHTBOX_BTN_CLOSE_POS{right:5px}.CSS_LIGHTBOX_BTN_ARROW{background-repeat:no-repeat;cursor:pointer;height:93px;opacity:.17;padding:50px 50px 50px 10px;position:absolute;width:45px;z-index:1}.CSS_LIGHTBOX_BTN_ARROW_LEFT{background-image:url("https://www.blogger.com/static/v1/v-css/images/left-arrow.png");background-position:10px 50px;left:0}.CSS_LIGHTBOX_BTN_ARROW_RIGHT{background-image:url("https://www.blogger.com/static/v1/v-css/images/right-arrow.png");background-position:50px 50px;right:0}.CSS_LIGHTBOX_BTN_ARROW_HOVER{opacity:1}.CSS_LIGHTBOX_PHOTO_BROWSE_VIEW{font:12px arial,sans-serif}.CSS_LIGHTBOX_PHOTO_BROWSE_CONTAINER{position:relative}.CSS_LIGHTBOX_SCALED_IMAGE{line-height:0;width:100%;height:100%;overflow:hidden;text-align:center}.CSS_LIGHTBOX_SCALED_IMAGE_ERROR{outline:1px solid red}.CSS_LIGHTBOX_SCALED_IMAGE_IMG{cursor:pointer;outline:1px solid #000;position:relative}.CSS_LIGHTBOX_SCALED_IMAGE_CAPTION{top:3px;left:0;line-height:normal;text-align:left;z-index:auto}.CSS_LIGHTBOX_SCALED_IMAGE_CAPTION_TEXT{color:#ccc;font-size:1em;padding:2px 4px;overflow:hidden}.CSS_LIGHTBOX_SCALED_IMAGE_CAPTION_HINT_TEXT{color:#777;font-size:1em;padding:2px 4px}.CSS_LIGHTBOX_SCALED_IMAGE_CAPTION_HOVER{border:1px solid #ccc;color:#ccc;cursor:text;margin:-1px}.CSS_LIGHTBOX_SCALED_IMAGE_CAPTION_EDITOR{border:1px solid #ccc;background-color:#666;color:#ccc;font:1em arial,sans-serif;margin:-1px}.CSS_LIGHTBOX_SCALED_IMAGE_FOOTER{position:relative}.CSS_LIGHTBOX_SCALED_IMAGE_PREVIOUS_IMAGE_CONTAINER{position:absolute}.CSS_LIGHTBOX_PLUS_ONE{padding-right:8px}.ozLightboxPlusOne.ozPlusOneWidget{margin-top:2px}.ozLightboxPlusOne.ozPlusOneButton{margin-right:2px;margin-top:1px}.CSS_LIGHTBOX_KENNEDY_SHARE_BUTTON.dark-button.jfk-button-default{background:#232323;box-shadow:inset 0 1px 0 hsla(0,0%,39.6%,.1);color:hsla(0,0%,100%,.8)}.CSS_LIGHTBOX_SCALED_IMAGE .CSS_LIGHTBOX_TOOLBAR.CSS_LIGHTBOX_KENNEDY_BUTTON_TOOLBAR{padding-top:10px!important}.CSS_LIGHTBOX_PLUS_ONE .ozStreamUpdatePlusoneCount{color:#eee;cursor:pointer;line-height:1.1;text-align:left;vertical-align:top}.CSS_LIGHTBOX_INDEX_INFO{color:#ccc;font-size:.84em;line-height:normal;min-height:1em;position:relative;text-align:center;top:2px}.CSS_LIGHTBOX_FILMSTRIP{background-color:#000;line-height:0;overflow:hidden;position:relative;width:100%;height:59px}.CSS_LIGHTBOX_FILMSTRIP_DISABLED{opacity:.5}.CSS_LIGHTBOX_FILMSTRIP_CONTROLS{width:124px;top:0;position:absolute}.CSS_LIGHTBOX_FILMSTRIP_CONTROLS_FRAME{width:52px;height:52px;position:absolute;top:0;left:35px;border:1px solid #fff;margin-top:3px}.CSS_LIGHTBOX_FILMSTRIP_CONTROLS_LEFT,.CSS_LIGHTBOX_FILMSTRIP_CONTROLS_RIGHT{border:0;outline:0 none;width:20px;height:20px;position:absolute;top:20px;cursor:pointer}.CSS_LIGHTBOX_FILMSTRIP_CONTROLS_RIGHT{left:104px}.CSS_LIGHTBOX_FILMSTRIP_THUMBNAILS_CONTAINER{position:absolute;padding-top:5px;overflow:hidden;-moz-user-select:none;-khtml-user-select:none;float:none;height:54px;top:0}.CSS_LIGHTBOX_FILMSTRIP_THUMBNAIL{background-color:#333;overflow:hidden;width:50px;height:50px}.CSS_LIGHTBOX_FILMSTRIP_THUMBNAIL_MARGIN{margin-right:3px}.CSS_LIGHTBOX_FILMSTRIP_THUMBNAIL_IMG{width:50x;height:50px;cursor:pointer}.CSS_LIGHTBOX_FILMSTRIP_THUMBNAIL_NUMBER_BUBBLE{cursor:pointer;position:absolute;top:-1px;right:-3px}.CSS_LIGHTBOX_FILMSTRIP_THUMBNAIL_NUMBER_BUBBLE_CONTENT{-moz-border-radius:4px;-webkit-border-radius:4px;background-color:#fff;color:#333;font-size:.75em;font-weight:700;line-height:1em;padding:2px 7px;text-align:center;min-width:1em}.CSS_LIGHTBOX_FILMSTRIP_THUMBNAIL_NUMBER_BUBBLE_ANCHOR{border-right:4px solid transparent;border-top:4px solid #fff;bottom:-4px;left:4px;position:absolute}.CSS_LIGHTBOX_ATTRIBUTION_INDEX_CONTAINER{margin:1px 0}.CSS_LIGHTBOX_ATTRIBUTION_INFO{color:#ccc;font-size:.84em;line-height:normal;margin-left:5px;overflow-x:hidden;position:relative;top:2px;white-space:nowrap}.CSS_LIGHTBOX_ATTRIBUTION_INFO .CSS_LIGHTBOX_ATTRIBUTION_LINK{color:#ccc;font-size:.84em}.CSS_LIGHTBOX_NOTIFY_WIDGET{position:absolute;width:100%}.CSS_LIGHTBOX_NOTIFY_WIDGET_CONTENT_LINK{color:#0065cc}.CSS_LIGHTBOX_NOTIFY_WIDGET .CSS_APP_NOTIFYWIDGET{position:relative!important;left:auto;top:auto}.CSS_LIGHTBOX_NOTIFY_WIDGET .CSS_APP_NOTIFYWIDGET .goog-inline-block{left:auto;z-index:10}.CSS_LIGHTBOX_NOTIFY_WIDGET .CSS_APP_NOTIFYWIDGET .CSS_ROUNDED_BOX_CONTENT,.CSS_LIGHTBOX_NOTIFY_WIDGET .CSS_APP_NOTIFYWIDGET_WARN .CSS_ROUNDED_BOX_CONTENT{font-size:1em!important;padding:4 7px!important}.CSS_LIGHTBOX_NOTIFY_WIDGET .CSS_APP_NOTIFYWIDGET_PROMO .CSS_ROUNDED_BOX_CONTENT{font-size:1em!important;font-weight:400;padding:4 7px!important}.CSS_LIGHTBOX_TOOLBAR{height:24px;padding:5px 13px 2px 0;position:relative;text-align:right}.CSS_LIGHTBOX_TOOLBAR_SEPARATOR{color:#ccc;line-height:20px}.CSS_LIGHTBOX_TOOLBAR_LEFT{float:left}.CSS_LIGHTBOX_TOOLBAR_RIGHT{float:right}.CSS_LIGHTBOX_TOOLBAR .goog-imageless-button{font-size:1.08em;outline:none;vertical-align:middle}.CSS_LIGHTBOX_TOOLBAR .goog-imageless-button-outer-box{border:none}.CSS_LIGHTBOX_TOOLBAR .goog-imageless-button-content{color:#ccc;line-height:1.55em;padding:0 8px}.CSS_LIGHTBOX_TOOLBAR .goog-imageless-button-focused .goog-imageless-button-content,.CSS_LIGHTBOX_TOOLBAR .goog-imageless-button-hover .goog-imageless-button-content,.CSS_LIGHTBOX_TOOLBAR .goog-imageless-button-open .goog-imageless-button-content{color:#eee}.CSS_LIGHTBOX_TOOLBAR .goog-imageless-button-disabled{display:none}.CSS_LIGHTBOX_TOOLBAR .goog-imageless-button-inner-box{background:inherit;border:none;cursor:pointer;margin:0 -1px}.CSS_LIGHTBOX_TOOLBAR .goog-imageless-button-top-shadow{background:inherit;border:none;height:.8em;position:absolute}.CSS_LIGHTBOX_TOOLBAR_CLOSE_BUTTON_ICON{color:#eee;margin-right:6px}.CSS_LIGHTBOX_TOOLBAR_MENU_BUTTON_ICON{border:3px solid transparent;border-bottom-color:#eee;height:0;margin:0 0 2px 5px;top:3px;width:0}.CSS_LIGHTBOX_FIXED_FRAME .CSS_LIGHTBOX_TOOLBAR_BUTTON_MENU.goog-menu{background-color:#111;border-color:#777;margin:-8px 0 0 -32px;min-width:0;padding:0;position:absolute;text-align:left;z-index:4}.CSS_LIGHTBOX_TOOLBAR_MENU_CALLOUT_OUTER{border-top:8px solid #777;border-left:8px solid transparent;border-right:8px solid transparent;height:0;left:48px;position:absolute;top:100%;width:0}.CSS_LIGHTBOX_TOOLBAR_MENU_CALLOUT_INNER{border-top:6px solid #111;border-left:6px solid transparent;border-right:6px solid transparent;height:0;left:50px;position:absolute;top:100%;width:0}.CSS_LIGHTBOX_TOOLBAR_BUTTON_MENU .goog-menuitem{padding:11px 22px 11px 6px;outline:none}.CSS_LIGHTBOX_TOOLBAR_BUTTON_MENU .goog-menuitem-highlight{background-color:#333;border:0;cursor:pointer}.CSS_LIGHTBOX_TOOLBAR_BUTTON_MENU .goog-menuitem-content{background-color:transparent!important;color:#ccc!important;font-size:.84em;line-height:1em;white-space:nowrap}.CSS_LIGHTBOX_TOOLBAR_BUTTON_MENU .goog-menuitem-disabled .goog-menuitem-content{color:#777!important}.CSS_LIGHTBOX_TOOLBAR_MENU_ANCHOR{float:left}.CSS_LIGHTBOX_TOOLBAR_MENU_ITEM{font-weight:700;padding:2px 0 2px 8px;text-transform:uppercase}.CSS_LIGHTBOX_TOOLBAR_MENU_ITEM_ICON{float:left;height:14px;margin:-3px 6px 0;width:19px}.CSS_LIGHTBOX_TOOLBAR_MENU_ITEM_ICON_EDIT_LEFT{background:url("https://www.blogger.com/static/v1/v-css/images/toolbar-sprite.png") no-repeat;background-position:0 0}.CSS_LIGHTBOX_TOOLBAR_MENU_ITEM_ICON_EDIT_RIGHT{background:url("https://www.blogger.com/static/v1/v-css/images/toolbar-sprite.png") no-repeat;background-position:-19px 0}.CSS_LIGHTBOX_TOOLBAR_MENU_ITEM_ICON_EDIT_AUTOFIX{background:url("https://www.blogger.com/static/v1/v-css/images/toolbar-sprite.png") no-repeat;background-position:-38px 0}.CSS_LIGHTBOX_TOOLBAR_MENU_ITEM_ICON_EDIT_CREATIVEKIT{background:url("https://www.blogger.com/static/v1/v-css/images/toolbar-sprite.png") no-repeat;background-position:-57px 0}.CSS_LIGHTBOX_TOOLBAR_EDIT_PHOTO_ICON{background:no-repeat url("https://ssl.gstatic.com/s2/oz/images/sprites/lightbox-4ee053aaf0427b066ca96205a2dde56a.png") -17px -102px;height:17px;margin-right:6px;position:relative;top:4px;left:2px;width:20px}.CSS_LIGHTBOX_TOOLBAR_MENU_ITEM_STATE{color:#777;display:inline;padding:0 3px}.CSS_LIGHTBOX_TOOLBAR_MENU_ITEM_SUFFIX{display:inline;padding:0 6px}.CSS_LIGHTBOX_SIDE_CONTAINER{background-color:#323232;position:relative;z-index:3}.CSS_LIGHTBOX_SIDE_CONTAINER_COLLAPSIBLE_SECTION{position:absolute;right:0;top:0}.CSS_LIGHTBOX_SIDE_CONTAINER_HANDLE{background-color:#323232;cursor:pointer;display:table-cell;text-align:center;vertical-align:middle}.CSS_LIGHTBOX_SIDE_CONTAINER_HANDLE_HOVER{background-color:#444}.CSS_LIGHTBOX_SIDE_CONTAINER_HANDLE_ARROW{border-color:transparent transparent transparent #666;border-style:solid;border-width:5px 0 5px 5px;height:0;line-height:0;width:0}.CSS_LIGHTBOX_SIDE_CONTAINER_HANDLE_CLOSED .CSS_LIGHTBOX_SIDE_CONTAINER_HANDLE_ARROW{border-color:transparent #666 transparent transparent;border-width:5px 5px 5px 0}.CSS_LIGHTBOX_SIDE_CONTAINER_CONTENTS{-moz-border-radius:0 0 0 5px;background-color:#151515;border-bottom:1px solid #323232;padding:0 3px;overflow-y:auto}.CSS_LIGHTBOX_CONTEXT{-moz-border-radius:5px 5px 0 0;background-color:#1e1e1e;border-bottom:1px solid #323232}.CSS_LIGHTBOX_TAGGEE_COLLAPSE_CONTAINER,.CSS_LIGHTBOX_TAGGEE_EXPAND_CONTAINER,.CSS_LIGHTBOX_TAGGEE_LIST_CONTAINER{background-color:#1e1e1e;color:#ccc;font-size:1em;overflow-x:hidden;overflow-y:hidden;padding:5px}.CSS_LIGHTBOX_TAGGEE_NAME_UNLINKED,.CSS_LIGHTBOX_TAGGEE_PHOTOS_LINK{color:#ccc}.CSS_LIGHTBOX_TAGGEE_SCROLL{overflow-y:auto}.CSS_LIGHTBOX_CONTEXT_PORTRAIT{height:32px;margin:6px 10px 6px 6px;vertical-align:top;width:32px}.CSS_LIGHTBOX_CONTEXT_LINK{color:#ccc;cursor:pointer}.CSS_LIGHTBOX_CONTEXT_TITLE{overflow:hidden;width:200px}.CSS_LIGHTBOX_CONTEXT_NAME_TITLE{color:#ccc;font-size:1.25em;margin:6px;width:212px}.CSS_LIGHTBOX_COMMENTS_LIST_HOLDER{margin-top:5px;overflow-x:hidden;overflow-y:auto}.CSS_LIGHTBOX_COMMENTS_LIST{color:#ccc;font-size:1em;margin-top:2px;padding:0;table-layout:fixed}.CSS_LIGHTBOX_COMMENT_CELL_LEFT{padding-bottom:10px;vertical-align:top;width:32px}.CSS_LIGHTBOX_COMMENT_CELL_RIGHT{padding:0 4px 10px;vertical-align:top}.CSS_LIGHTBOX_COMMENT_PROFILE_PHOTO_IMG{float:left;height:32px;width:32px}.CSS_LIGHTBOX_COMMENT_DISPLAY_NAME{color:#eee;font-weight:700}.CSS_LIGHTBOX_COMMENT_LINKS,.CSS_LIGHTBOX_COMMENT_TIMESTAMP{color:#777}.CSS_LIGHTBOX_COMMENT_DELETE{cursor:pointer;margin-right:.5em}.CSS_LIGHTBOX_ADD_COMMENT_WIDGET{margin-left:3px;padding-bottom:8px;position:relative}.CSS_LIGHTBOX_ADD_COMMENT_PROMPT{color:#999;position:absolute}.CSS_LIGHTBOX_ADD_COMMENT_ACTIONS{opacity:0;padding:6px 0 0 42px;transition:opacity .25s;-moz-transition:opacity .25s;-webkit-transition:opacity .25s;-o-transition:opacity .25s}.CSS_LIGHTBOX_ADD_COMMENT_PORTRAIT{height:32px;margin-right:10px;vertical-align:top;width:32px}.CSS_LIGHTBOX_ADD_COMMENT_EDITOR_ANCHOR{border-color:transparent #eee transparent transparent;border-style:solid;border-width:8px 8px 8px 0;height:0;left:34px;line-height:0;position:absolute;top:12px;width:0}.CSS_LIGHTBOX_ADD_COMMENT_EDITOR{-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#eee;border-width:0;font:1em arial,sans-serif;margin:0;min-height:60px;outline:none;overflow-x:hidden;overflow-y:auto;padding:4px 3px;resize:none;width:78%}.CSS_LIGHTBOX_ADD_COMMENT_BUBBLE{width:230px}.CSS_LIGHTBOX_SOFT_DELETE_PANE{background-color:#151515;color:#ccc;font-size:1.1em;padding:20px 10px}.CSS_LIGHTBOX_SOFT_DELETE_ALERT_ICON{background-image:url("https://www.blogger.com/static/v1/v-css/images/alert_sprite.png");background-position:-23px -6px;background-repeat:no-repeat;display:inline-block;height:10px;width:13px}.CSS_LIGHTBOX_SOFT_DELETE_HEADER{color:#eee;font-weight:700}.CSS_LIGHTBOX_SOFT_DELETE_LINK{color:#0065cc}.CSS_LIGHTBOX_SOFT_DELETE_PARAGRAPH{margin-bottom:10px}.CSS_LIGHTBOX_SOFT_DELETE_DIALOG{opacity:.8;background-color:#000;color:#ccc;display:table;left:50%;padding:40px;position:absolute;top:50%;width:400px}.CSS_LIGHTBOX_SOFT_DELETE_DIALOG_CLOSE{background:url("https://www.blogger.com/img/lightbox/lightbox_sprite.gif") no-repeat;background-position:-60px 0;cursor:pointer;height:11px;position:absolute;right:50%;top:50%;width:11px}.CSS_LIGHTBOX_SOFT_DELETE_DIALOG_CENTER{display:table-cell;vertical-align:middle}.CSS_LIGHTBOX_SOFT_DELETE_DIALOG_MESSAGE_CONTAINER{margin-left:20px}.CSS_LIGHTBOX_SOFT_DELETE_DIALOG_MESSAGE{font-size:1.1em}.CSS_LIGHTBOX_SOFT_DELETE_DIALOG_ALERT{float:left;margin-top:.3em}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button{background-color:#e3e3e3;border-color:#bbb;border-style:solid;border-width:1px 0;color:#222;cursor:default;font:12px arial,sans-serif;line-height:0;list-style:none;margin:2px;outline:none;padding:0;text-decoration:none;vertical-align:middle}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-outer-box{border-color:#bbb;border-style:solid;border-width:0 1px;left:-1px;margin-right:-2px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-top-shadow{background-color:#f9f9f9;border-bottom:3px solid #eee;line-height:9px;margin-bottom:-12px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-content{line-height:1.5em;padding:0 4px;text-align:center}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-collapse-right{border-right-width:1px;margin-right:-2px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-collapse-left .namebox-imageless-button-outer-box{border-left-color:#eee;left:0;margin-right:-1px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-disabled,.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-disabled .namebox-imageless-button-outer-box{background-color:#eee;border-color:#ccc;color:#777}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-disabled .namebox-imageless-button-top-shadow{visibility:hidden}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-active,.namebox-imageless-button-checked{background-color:#e3e3e3}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-active .namebox-imageless-button-top-shadow,.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-checked .namebox-imageless-button-top-shadow{background-color:#f9f9f9}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-active{color:#000}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-hover,.CSS_LIGHTBOX_SCALED_IMAGE .namebox-imageless-button-hover .namebox-imageless-button-outer-box{border-color:#fff}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-wrapper-box{position:absolute;z-index:2}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-center-ref{height:100%;left:50%;position:absolute;top:0;width:50%}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-box{-moz-border-radius:5px;-webkit-border-radius:5px;background:url("https://www.blogger.com/img/lightbox/cleardot.gif") 0 0;border:2px ridge transparent;cursor:pointer;height:100%;left:-100%;position:absolute;top:0;width:200%}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-box-approvable{z-index:4}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-box-editable{cursor:pointer}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-box-editing{border-color:#9a9a9a}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-button-remove{float:right;height:11px;vertical-align:top;width:11px}.CSS_LIGHTBOX_SCALED_IMAGE a.namebox-box .namebox-button-remove-activated{background:url("https://www.blogger.com/img/lightbox/lightbox_sprite.gif") no-repeat;background-position:-60px 0;border-color:#9a9a9a;margin:1px 2px}.CSS_LIGHTBOX_SCALED_IMAGE a.namebox-box-showbox{border-color:transparent}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-wrapper-box-hover{z-index:3}.CSS_LIGHTBOX_SCALED_IMAGE a.namebox-box-showbox-hover{border-color:#9a9a9a}.CSS_LIGHTBOX_SCALED_IMAGE a.namebox-box-showbox .namebox-button-remove{display:none}.CSS_LIGHTBOX_SCALED_IMAGE a.namebox-box-showbox-hover .namebox-button-remove{display:block}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-text-outer{height:0;left:-163px;line-height:normal;margin-top:2px;position:absolute;text-align:center;top:100%;width:330px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-text-middle{-moz-border-radius:5px;-webkit-border-radius:5px;color:#eee;font-size:1em;font-weight:700;padding:4px 12px;z-index:1;background:#111}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-text-label-link{color:#eee}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-text-unnamed{border:1px solid #aaa;color:#000;cursor:pointer;background:#eee}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-text-unconfirmed .namebox-text-middle{color:#eee;background-color:#111}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-text-approvable{left:-148px;margin-top:3px;width:300px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-text-approvable .namebox-text-middle{padding:6px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-button-approve-outer,.CSS_LIGHTBOX_SCALED_IMAGE .namebox-button-disapprove-outer{padding:4px 8px 4px 6px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-button-disapprove-icon{background:url("https://www.blogger.com/img/lightbox/lightbox_sprite.gif") no-repeat;background-position:-60px -11px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-button-approve-icon{background:url("https://www.blogger.com/img/lightbox/lightbox_sprite.gif") no-repeat;background-position:-72px 0}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-button-approve-icon,.CSS_LIGHTBOX_SCALED_IMAGE .namebox-button-disapprove-icon{display:inline-block;height:10px;margin:0 0 3px;position:relative;width:12px;vertical-align:middle}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-approval-button{margin:3px 4px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-button-approve-message,.CSS_LIGHTBOX_SCALED_IMAGE .namebox-button-disapprove-message{font-size:1em;font-weight:700;margin-left:3px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-text-message{color:#777;font-weight:400;font-size:.84em}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-nameinputbox{background-color:#fff;color:#000;font-size:.84em}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-nameinputbox-dialog{border:1px solid #aaa;margin-left:-2em;margin-top:-.4em;padding:3px;position:absolute;z-index:2}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-subjectinput-input{border:1px solid #7e9db9;margin:3px;width:190px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-subjectinput .label-input-label{color:#000}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-subjectinfo-row-div{color:#3964c2}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-subjectinfo-row-span{color:#4346db}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-subjectinput .ac-renderer{background-color:#e0ecff;border:1px solid #5295f0;color:#000;font:1em sans-serif;left:6px!important;padding-bottom:.2em;position:absolute}.CSS_LIGHTBOX_SCALED_IMAGE .ffe-ac .ac-row{border-bottom:1px solid #ebebeb;cursor:pointer;height:1em;overflow:hidden;padding:.3em .7em .3em .5em;text-align:left;white-space:nowrap}.CSS_LIGHTBOX_SCALED_IMAGE .ffe-ac .ac-highlighted{color:#00c;font-weight:600}.CSS_LIGHTBOX_SCALED_IMAGE .ffe-ac .ac-active{background-color:#c3d9ff}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-subjectinput .inputwrapper{overflow:auto}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-subjectinput .helpwrapper{color:#999;cursor:default;font:1em sans-serif;margin:3px;top:1em;width:190px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-subjectcreate{color:#333;font:1em sans-serif;margin:3px;text-align:left}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-subjectcreate-input{border:1px solid #aaa;margin-bottom:3px;width:190px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-nameinputbox .goog-imageless-button{border-color:transparent;border-style:solid;border-width:1px 2px;float:left;font-size:1em;margin:6px 6px 3px 0;width:50px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-nameinputbox .goog-imageless-button-focused,.CSS_LIGHTBOX_SCALED_IMAGE .namebox-nameinputbox .goog-imageless-button-hover{border-color:orange;border-style:solid;border-width:1px 2px}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-nameinputbox .goog-imageless-button-outer-box{border-bottom:1px solid #aaa;border-top:1px solid #bbb;cursor:default;position:relative;width:100%}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-nameinputbox .goog-imageless-button-inner-box{background:#e3e3e3;border-left:1px solid #bbb;border-right:1px solid #aaa;margin:0 -1px;width:100%}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-nameinputbox .goog-imageless-button-top-shadow{background:#f9f9f9;border-bottom:.2em solid #eee;height:.7em;left:0;overflow:hidden;position:absolute;right:0;top:0}.CSS_LIGHTBOX_SCALED_IMAGE .namebox-nameinputbox .goog-imageless-button-content{color:#333;font-family:sans-serif;line-height:1.7em;padding:0 .5em;position:relative;text-align:center}.CSS_LIGHTBOX_SCALED_IMAGE .CSS_LIGHTBOX_TOOLBAR{padding:5px 1px 0 0}.CSS_LIGHTBOX_IMAGE_CONTAINER{position:relative}.CSS_LIGHTBOX_PHOTO_DETAILS{border:1px solid #000;bottom:0;color:#eee;height:512px!important;left:0;margin:auto;position:absolute;right:0;top:0;width:512px!important}.CSS_LIGHTBOX_PHOTO_DETAILS_BG{background-color:#2b2b2b;height:512px;position:absolute;width:512px}.CSS_LIGHTBOX_PHOTO_DETAILS_TITLE{border-bottom:1px solid #000;cursor:pointer;font-size:1em;left:0;padding:8px;position:absolute;text-align:left;top:0;width:496px}.CSS_LIGHTBOX_PHOTO_DETAILS_PHOTO{border-right:1px dotted silver;height:160px;left:0;margin-top:10px;overflow:hidden;position:absolute;top:30px;width:175px}.CSS_LIGHTBOX_PHOTO_DETAILS_PHOTO_IMG{border:1px solid #000;bottom:0;display:block;left:10px;margin:auto;position:absolute;right:0;top:0;width:140px}.CSS_LIGHTBOX_PHOTO_DETAILS_PHOTO_INFO{margin-top:5px;height:160px;left:177px;position:absolute;top:30px;width:335px}.CSS_LIGHTBOX_PHOTO_INFO_TITLE{font-size:1.25em;padding-left:12px}.CSS_LIGHTBOX_PHOTO_INFO_DATE,.CSS_LIGHTBOX_PHOTO_INFO_LOCATION{font-size:1em}.CSS_LIGHTBOX_PHOTO_INFO_AUTHOR,.CSS_LIGHTBOX_PHOTO_INFO_DATE{color:#777;margin-top:-10px;padding-left:15px}.CSS_LIGHTBOX_PHOTO_INFO_AUTHOR{font-size:1em}.CSS_LIGHTBOX_PHOTO_INFO_LOCATION{margin-top:27px;padding-left:40px}.CSS_LIGHTBOX_PHOTO_INFO_LOCATION_BTN_VISIBILITY{color:#eee;cursor:pointer;float:left;margin-top:-10px;padding-left:40px}.CSS_LIGHTBOX_PHOTO_INFO_LOCATION_BTN_VISIBILITY-focused{outline:0}.CSS_LIGHTBOX_PHOTO_INFO_LOCATION_BTN_VISIBILITY-hover{text-decoration:underline}.CSS_LIGHTBOX_PHOTO_INFO_LOCATION_ICON_HIDDEN{display:none}.CSS_LIGHTBOX_PHOTO_INFO_LOCATION_ICON_BG{background:url("https://www.blogger.com/img/lightbox/lightbox_sprite.gif") no-repeat;background-position:-84px -2px;height:16px;left:19px;position:absolute;top:96px;width:11px}.CSS_LIGHTBOX_PHOTO_INFO_AUTHOR_LINK{color:#777}.CSS_LIGHTBOX_PHOTO_INFO_PEOPLE_LINK{color:#eee}.CSS_LIGHTBOX_PHOTO_DETAILS_TABS{left:19px;position:absolute;top:207px}.CSS_LIGHTBOX_PHOTO_DETAILS_TABS_CAMERA_CONTENT{background:#2b2b2b;border:1px solid #000;height:253px;margin:0;width:472px}.CSS_LIGHTBOX_PHOTO_DETAILS_HISTOGRAM_CONTAINER{position:relative;top:15px}.CSS_LIGHTBOX_PHOTO_DETAILS_HISTOGRAM{background-color:grey;border:1px solid silver;cursor:pointer;display:block;height:66px;left:0;margin:auto;right:0;width:182px}.CSS_LIGHTBOX_PHOTO_DETAILS_CAMERA_INFO{bottom:0;margin-bottom:1px;overflow:auto;position:absolute;top:130px}.CSS_LIGHTBOX_PHOTO_DETAILS_CAMERA_INFO_TABLE{border:0;border-collapse:collapse;color:#eee;font-size:1em}.CSS_LIGHTBOX_PHOTO_DETAILS_CAMERA_INFO_TABLE_TR{height:22px}.CSS_LIGHTBOX_PHOTO_DETAILS_CAMERA_INFO_TABLE_TR_ODDROW{background-color:#333}.CSS_LIGHTBOX_PHOTO_DETAILS_CAMERA_INFO_TABLE_TD_DESCRIPTION{text-align:right;width:148px}.CSS_LIGHTBOX_PHOTO_DETAILS_CAMERA_INFO_TABLE_TD_VALUE{color:#777;padding-left:10px;text-align:left;width:355px}.CSS_LIGHTBOX_PHOTO_DETAILS_TABS_MAPS_CONTENT{background:#2b2b2b;border:1px solid #000;height:253px;margin:0;width:472px}.CSS_LIGHTBOX_PHOTO_DETAILS .goog-tab{background:inherit;border:0;border-bottom:0!important;color:#777;margin-right:1px;padding:0 5px 5px;position:relative}.CSS_LIGHTBOX_PHOTO_DETAILS .goog-tab-bar-bottom:after,.CSS_LIGHTBOX_PHOTO_DETAILS .goog-tab-bar-top:after{content:" ";display:block;height:0;clear:both;visibility:hidden}.CSS_LIGHTBOX_PHOTO_DETAILS .goog-tab-hover{background:#333;cursor:pointer}.CSS_LIGHTBOX_PHOTO_DETAILS .goog-tab-disabled{color:#777}.CSS_LIGHTBOX_PHOTO_DETAILS .goog-tab-selected{color:#eee;background:#2b2b2b!important;border:1px solid #000}.CSS_LIGHTBOX_PHOTO_DETAILS .goog-tab-bar-top{padding-left:5px!important;padding-top:3px!important}.CSS_LIGHTBOX_PHOTO_DETAILS .goog-tab-bar{background:#333;border:0!important;font:12px arial,sans-serif;padding:0;width:469px}.CSS_LIGHTBOX_VIDEO_ROTATE{bottom:0;height:230px;left:0;margin:auto;position:absolute;right:0;text-align:center;top:0}.CSS_LIGHTBOX_VIDEO_ROTATE_IMG_CONTAINER{text-align:center;height:200px}.CSS_LIGHTBOX_VIDEO_ROTATE_IMG{cursor:pointer;vertical-align:middle;border:2px solid transparent}.CSS_LIGHTBOX_VIDEO_ROTATE_IMG_SELECTED{border:2px solid #c0c000}.CSS_LIGHTBOX_VIDEO_ROTATE_IMG_180{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-webkit-transform:rotate(180deg)}.CSS_LIGHTBOX_VIDEO_ROTATE .CSS_LIGHTBOX_TOOLBAR{float:right;padding:5px 1px 0 0}.manualnamebox-box-outer{border:1px dashed #fff;cursor:pointer;position:absolute;z-index:2}.manualnamebox-box-inner{background:no-repeat makePhotosImageUrl("transparent.gif") 0 0;border:1px dashed #fff;cursor:pointer;height:100%;width:100%}.manualnamebox-sizer{-moz-border-radius:10px;-webkit-border-radius:10px;background-color:#999;border:1px solid #fff;height:10px;position:absolute;width:10px}a.manualnamebox-sizer-hover{background-color:#ccc;border:2px solid #fff}.manualnamebox-sizer-ul{cursor:nw-resize;left:-5px;top:-5px}.manualnamebox-sizer-ur{cursor:ne-resize;right:-5px;top:-5px}.manualnamebox-sizer-ll{bottom:-5px;cursor:sw-resize;left:-5px}.manualnamebox-sizer-lr{bottom:-5px;cursor:se-resize;right:-5px}.manualnamebox-controls{background:#fff;border:1px solid #aaa;margin-top:6px;overflow:visible;padding:.2em;position:relative;width:220px}.manualnamebox-help{color:#333;font-family:arial,sans-serif;font-size:11px;text-align:left}.manualnamebox-box-outer .goog-imageless-button{float:left;font-size:11px;margin:6px 6px 3px 0}.manualnamebox-box-outer .goog-imageless-button-outer-box{border-bottom:1px solid #aaa;border-top:1px solid #bbb;cursor:default;position:relative}.manualnamebox-box-outer .goog-imageless-button-inner-box{background:#e3e3e3;border-left:1px solid #bbb;border-right:1px solid #aaa;margin:0 -1px}.manualnamebox-box-outer .goog-imageless-button-top-shadow{background:#f9f9f9;border-bottom:.2em solid #eee;height:.7em;left:0;overflow:hidden;position:absolute;right:0;top:0}.manualnamebox-box-outer .goog-imageless-button-content{color:#333;font-family:arial,sans-serif;line-height:1.7em;padding:0 .5em;position:relative;text-align:center}.namebox-imageless-button{background:#e3e3e3;border-color:#bbb;border-style:solid;border-width:1px 0;color:#333;cursor:default;font-family:arial,sans-serif;line-height:0;list-style:none;margin:2px;outline:none;padding:0;text-decoration:none;vertical-align:middle}.namebox-imageless-button-outer-box{border-color:#bbb;border-style:solid;border-width:0 1px;left:-1px;margin-right:-2px}.namebox-imageless-button-top-shadow{background:#f9f9f9;border-bottom:3px solid #eee;line-height:9px;margin-bottom:-12px}.namebox-imageless-button-content{line-height:1.5em;padding:0 4px;text-align:center}.namebox-imageless-button-collapse-right{border-right-width:1px;margin-right:-2px}.namebox-imageless-button-collapse-left .namebox-imageless-button-outer-box{border-left-color:#eee;left:0;margin-right:-1px}.namebox-imageless-button-disabled,.namebox-imageless-button-disabled .namebox-imageless-button-outer-box{background:#eee;border-color:#ccc;color:#666}.namebox-imageless-button-disabled .namebox-imageless-button-top-shadow{visibility:hidden}.namebox-imageless-button-active,.namebox-imageless-button-checked{background:#f9f9f9}.namebox-imageless-button-active .namebox-imageless-button-top-shadow,.namebox-imageless-button-checked .namebox-imageless-button-top-shadow{background:#e3e3e3}.namebox-imageless-button-active{color:#000}.namebox-imageless-button-hover,.namebox-imageless-button-hover .namebox-imageless-button-outer-box{border-color:#fff}* html .namebox-imageless-button-inner-box{display:inline;position:static;zoom:1}* html .namebox-imageless-button-outer-box{right:0}.namebox-wrapper-box{position:absolute;background:no-repeat makePhotosImageUrl("transparent.gif") 0 0}.namebox-center-ref{left:50%;width:50%}.namebox-box,.namebox-center-ref{height:100%;position:absolute;top:0}.namebox-box{-moz-border-radius:5px;-webkit-border-radius:5px;background:no-repeat makePhotosImageUrl("transparent.gif") 0 0;border:2px ridge transparent;display:block;left:-100%;margin:-2px;overflow:hidden;width:200%}.namebox-box,.namebox-box-editable{cursor:pointer}a.namebox-box-showbox-hover{border-color:#ddd}.namebox-button-remove{height:11px;position:absolute;right:1px;top:1px;vertical-align:top;width:11px}a.namebox-box-hover .namebox-button-remove-activated{background:no-repeat makePhotosImageUrl("image_edit_icons.gif") -80px 0}.namebox-box-background{position:absolute}.namebox-text-outer{left:-148px;margin-top:3px;position:absolute;text-align:center;top:100%;width:300px}.namebox-text-middle{-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#111;color:#fff;font-size:12px;font-weight:700;padding:4px 12px;z-index:1}.namebox-text-label{padding-left:4px}.namebox-text-label-link{color:#fff!important}.namebox-text-unconfirmed{left:-100px;width:200px}.namebox-text-unconfirmed .namebox-text-middle{background-color:#eee;color:#00f;opacity:.8}.namebox-text-unnamed{background-color:#eee;border:1px solid #aaa;color:#000;cursor:pointer;opacity:.8}.namebox-button-confirm,.namebox-button-reject{background-image:url("https://ssl.gstatic.com/s2/oz/images/check_x_sprite_sm.png");background-repeat:no-repeat;cursor:pointer;display:none;height:18px;margin-right:2px;width:18px}.namebox-button-confirm{background-position:0 0}.namebox-button-confirm-hover{background-position:-18px 0}.namebox-button-reject{background-position:-36px 0}.namebox-button-reject-hover{background-position:-54px 0}.namebox-text-approvable{left:-148px;margin-top:3px;width:300px;z-index:2}.namebox-text-approvable .namebox-text-middle{padding:6px}.namebox-button-approve-outer,.namebox-button-disapprove-outer{padding:4px 8px 4px 6px}.namebox-button-disapprove-icon{background:no-repeat makePhotosImageUrl("redXButton.gif") 1px 3px}.namebox-button-approve-icon{background:no-repeat makePhotosImageUrl("greenCheckButton.gif") 0 2px}.namebox-button-approve-icon,.namebox-button-disapprove-icon{cursor:pointer;display:inline-block;height:16px;margin:-7px 0 3px;position:absolute;top:50%;width:12px}.namebox-approval-button{margin:3px 4px}.namebox-button-approve-message,.namebox-button-disapprove-message{font-size:13px;font-weight:700;margin-left:18px}.namebox-text-message{color:#999;font-weight:400;font-size:11px}.namebox-legacy-box-showbox-hover{border:2px groove #bbe}.namebox-legacy-text-middle{background-color:#444;font-size:11px}.namebox-nameinputbox{background:#fff;color:#000;font-size:.8em}.namebox-nameinputbox-dialog{border:1px solid #aaa;margin-left:-1em;margin-top:.6em;padding:3px;position:absolute;z-index:2002}.namebox-nameinputbox-inline{margin-left:-3px;text-align:left}.namebox-subjectinput-input{border:1px solid #7e9db9;margin:3px;width:210px}.namebox-subjectinput .label-input-label{color:#ccc}.namebox-subjectinfo-row-div{color:#3964c2}.namebox-subjectinfo-row-span{color:#4346db}.namebox-subjectinput .ffe-ac{background:#e0ecff;border:1px solid #5295f0;color:#000;font-family:arial,sans-serif;font-size:11px;left:6px!important;padding-bottom:.2em;position:absolute}.namebox-subjectinput .ffe-ac .ac-row{border-bottom:1px solid #ebebeb;cursor:pointer;height:1em;overflow:hidden;padding:.3em .7em .3em .5em;text-align:left;white-space:nowrap}.namebox-subjectinput .ffe-ac .ac-highlighted{color:#00c;font-weight:600}.namebox-subjectinput .ffe-ac .ac-active{background-color:#c3d9ff}.namebox-subjectinput .inputwrapper{overflow:hidden}.namebox-subjectinput .helpwrapper{color:#999;cursor:pointer;font-family:arial,sans-serif;font-size:11px;margin:3px;top:1em;width:210px}.namebox-subjectinput .morehelp{background-color:#fef7cb;border:1px solid #ffe475;margin-top:5px;padding:5px}.namebox-subjectcreate{color:#333;font-family:arial,sans-serif;font-size:11px;margin:3px;text-align:left}.namebox-subjectcreate-input{border:1px solid #aaa;margin-bottom:3px;width:190px}.namebox-nameinputbox .goog-imageless-button{border-color:transparent;border-style:solid;border-width:1px 2px;float:left;font-size:11px;margin:6px 6px 3px 0;width:50px}.namebox-nameinputbox .goog-imageless-button-focused,.namebox-nameinputbox .goog-imageless-button-hover{border-color:orange;border-style:solid;border-width:1px 2px}.namebox-nameinputbox .goog-imageless-button-outer-box{border-bottom:1px solid #aaa;border-top:1px solid #bbb;cursor:default;position:relative;width:100%}.namebox-nameinputbox .goog-imageless-button-inner-box{background:#e3e3e3;border-left:1px solid #bbb;border-right:1px solid #aaa;margin:0 -1px;width:100%}.namebox-nameinputbox .goog-imageless-button-top-shadow{background:#f9f9f9;border-bottom:.2em solid #eee;height:.7em;left:0;overflow:hidden;position:absolute;right:0;top:0}.namebox-nameinputbox .goog-imageless-button-content{color:#333;font-family:arial,sans-serif;line-height:1.7em;padding:0 .5em;position:relative;text-align:center}.CSS_LIGHTBOX_ATTRIBUTION_INFO{margin-bottom:.2em;margin-left:10px}.CSS_LIGHTBOX_ATTRIBUTION_INFO .CSS_LIGHTBOX_ATTRIBUTION_LINK{color:#fff;font-size:1.4em;text-decoration:underline}.CSS_LIGHTBOX,.CSS_LIGHTBOX .CSS_HCONT_CHILDREN_HOLDER,.CSS_LIGHTBOX .CSS_LAYOUT_COMPONENT{max-width:100%}</style><style class="darkreader darkreader--sync" media="screen"></style><script type="text/javascript" src="%E5%8D%8A%E5%B7%A5%E5%AE%A4%20Arduino%20Python%20NodeMCU%20%E3%80%8A%E9%AB%98%E9%9A%8E%E3%80%8B%E5%AF%AB%E7%A8%8B%E5%BC%8FArduino%E6%95%99%E5%AD%B8%20-%2008%EF%BC%9A%E5%B9%AB%E8%A3%B8(%E5%AE%8C%E5%85%A8%E7%A9%BA%E7%99%BD)%20%E7%9A%84%20ATmega328P%20%E7%87%92%E9%8C%84%20Bootloader%20%E6%88%96%E7%9B%B4%E6%8E%A5%E4%B8%8A%E5%82%B3%E7%A8%8B%E5%BC%8F%E7%A2%BC_files/168963144-lbx__zh_tw.js"></script></body><div id="shopback-app" style="z-index: 2147483647 !important; display: block !important;"></div><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
