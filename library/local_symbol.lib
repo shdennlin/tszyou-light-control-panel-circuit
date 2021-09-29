@@ -1,16 +1,15 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# connection
+# passive
 #
-DEF connection CON 0 40 Y Y 1 F N
-F0 "CON" 0 150 50 H V C CNN
-F1 "connection" 0 150 50 H I C CNN
-F2 "" 0 150 50 H I C CNN
-F3 "" 0 150 50 H I C CNN
+DEF passive F 0 40 Y Y 1 F N
+F0 "F" 0 100 50 H I C CNN
+F1 "passive" 0 200 50 H I C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
 DRAW
-X ~ 1 150 0 150 L 50 50 1 1 P
-X ~ 2 -150 0 150 R 50 50 1 1 P
+X V+ 1 -100 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
