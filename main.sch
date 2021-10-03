@@ -1350,28 +1350,28 @@ RXD
 $Comp
 L Connector_Generic:Conn_01x03 J3
 U 1 1 61803AC3
-P 3650 4850
-F 0 "J3" H 3730 4892 50  0000 L CNN
-F 1 "Conn_01x03" H 3730 4801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3650 4850 50  0001 C CNN
-F 3 "~" H 3650 4850 50  0001 C CNN
-	1    3650 4850
+P 4000 4600
+F 0 "J3" H 4080 4642 50  0000 L CNN
+F 1 "Conn_01x03" H 4080 4551 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4000 4600 50  0001 C CNN
+F 3 "~" H 4000 4600 50  0001 C CNN
+	1    4000 4600
 	1    0    0    -1  
 $EndComp
-Text Label 3450 4850 2    50   ~ 0
+Text Label 3800 4600 2    50   ~ 0
 RXD
 $Comp
 L power:GNDS #PWR055
 U 1 1 61820AB0
-P 3450 4950
-F 0 "#PWR055" H 3450 4700 50  0001 C CNN
-F 1 "GNDS" H 3455 4777 50  0000 C CNN
-F 2 "" H 3450 4950 50  0001 C CNN
-F 3 "" H 3450 4950 50  0001 C CNN
-	1    3450 4950
+P 3800 4700
+F 0 "#PWR055" H 3800 4450 50  0001 C CNN
+F 1 "GNDS" H 3805 4527 50  0000 C CNN
+F 2 "" H 3800 4700 50  0001 C CNN
+F 3 "" H 3800 4700 50  0001 C CNN
+	1    3800 4700
 	1    0    0    -1  
 $EndComp
-Text Label 3450 4750 2    50   ~ 0
+Text Label 3800 4500 2    50   ~ 0
 TXD
 Text Label 3750 2750 0    50   ~ 0
 RESET
@@ -1416,4 +1416,30 @@ Wire Wire Line
 	1150 2300 1100 2300
 Wire Wire Line
 	1100 2300 1100 2350
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 615A0C9D
+P 4000 5200
+F 0 "J?" H 4080 5242 50  0000 L CNN
+F 1 "Conn_01x03" H 4080 5151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4000 5200 50  0001 C CNN
+F 3 "~" H 4000 5200 50  0001 C CNN
+	1    4000 5200
+	1    0    0    -1  
+$EndComp
+Text Label 3800 5200 2    50   ~ 0
+RXD
+$Comp
+L power:GNDS #PWR?
+U 1 1 615A8D57
+P 3800 5300
+F 0 "#PWR?" H 3800 5050 50  0001 C CNN
+F 1 "GNDS" H 3805 5127 50  0000 C CNN
+F 2 "" H 3800 5300 50  0001 C CNN
+F 3 "" H 3800 5300 50  0001 C CNN
+	1    3800 5300
+	1    0    0    -1  
+$EndComp
+Text Label 3800 5100 2    50   ~ 0
+TXD
 $EndSCHEMATC
