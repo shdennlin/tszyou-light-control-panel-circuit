@@ -1137,7 +1137,7 @@ U 1 1 615AABDB
 P 9350 5900
 F 0 "H1" H 9450 5946 50  0000 L CNN
 F 1 "MountingHole" H 9450 5855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9350 5900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 9350 5900 50  0001 C CNN
 F 3 "~" H 9350 5900 50  0001 C CNN
 	1    9350 5900
 	1    0    0    -1  
@@ -1148,7 +1148,7 @@ U 1 1 615AB416
 P 10150 5900
 F 0 "H3" H 10250 5946 50  0000 L CNN
 F 1 "MountingHole" H 10250 5855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 10150 5900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 10150 5900 50  0001 C CNN
 F 3 "~" H 10150 5900 50  0001 C CNN
 	1    10150 5900
 	1    0    0    -1  
@@ -1159,7 +1159,7 @@ U 1 1 615AFB1E
 P 9350 6150
 F 0 "H2" H 9450 6196 50  0000 L CNN
 F 1 "MountingHole" H 9450 6105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9350 6150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 9350 6150 50  0001 C CNN
 F 3 "~" H 9350 6150 50  0001 C CNN
 	1    9350 6150
 	1    0    0    -1  
@@ -1170,7 +1170,7 @@ U 1 1 615B40C6
 P 10150 6200
 F 0 "H4" H 10250 6246 50  0000 L CNN
 F 1 "MountingHole" H 10250 6155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 10150 6200 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 10150 6200 50  0001 C CNN
 F 3 "~" H 10150 6200 50  0001 C CNN
 	1    10150 6200
 	1    0    0    -1  
@@ -1417,12 +1417,12 @@ Wire Wire Line
 Wire Wire Line
 	1100 2300 1100 2350
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J4
 U 1 1 615A0C9D
 P 4000 5200
-F 0 "J?" H 4080 5242 50  0000 L CNN
+F 0 "J4" H 4080 5242 50  0000 L CNN
 F 1 "Conn_01x03" H 4080 5151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4000 5200 50  0001 C CNN
+F 2 "local_footprint:JST_VH_B3P-VH_1x03_P3.96mm_Vertical" H 4000 5200 50  0001 C CNN
 F 3 "~" H 4000 5200 50  0001 C CNN
 	1    4000 5200
 	1    0    0    -1  
@@ -1430,10 +1430,10 @@ $EndComp
 Text Label 3800 5200 2    50   ~ 0
 RXD
 $Comp
-L power:GNDS #PWR?
+L power:GNDS #PWR058
 U 1 1 615A8D57
 P 3800 5300
-F 0 "#PWR?" H 3800 5050 50  0001 C CNN
+F 0 "#PWR058" H 3800 5050 50  0001 C CNN
 F 1 "GNDS" H 3805 5127 50  0000 C CNN
 F 2 "" H 3800 5300 50  0001 C CNN
 F 3 "" H 3800 5300 50  0001 C CNN
