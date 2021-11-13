@@ -107,7 +107,7 @@ U 1 1 6152107D
 P 2550 6850
 F 0 "BTN1" V 2504 6998 50  0000 L CNN
 F 1 "Arduino Reset" V 2595 6998 50  0000 L CNN
-F 2 "local_footprint:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" H 2550 7050 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_PTS645" H 2550 7050 50  0001 C CNN
 F 3 "~" H 2550 7050 50  0001 C CNN
 	1    2550 6850
 	0    1    1    0   
@@ -263,7 +263,7 @@ L Device:Crystal Y1
 U 1 1 614C80D4
 P 2350 5100
 F 0 "Y1" V 2300 5350 50  0000 C CNN
-F 1 "16mHz" V 2400 5350 50  0000 C CNN
+F 1 "16MHz" V 2400 5350 50  0000 C CNN
 F 2 "Crystal:Crystal_HC18-U_Vertical" H 2350 5100 50  0001 C CNN
 F 3 "~" H 2350 5100 50  0001 C CNN
 	1    2350 5100
@@ -370,8 +370,6 @@ F 3 "~" H 7900 4550 50  0001 C CNN
 	1    7900 4550
 	1    0    0    -1  
 $EndComp
-Text Notes 3800 7300 0    50   ~ 0
-External machinery:\n\nButton x 1 (Arduino Reset)(SW?)\n\nSwitch x 5 (Separate control 5 LED)(Switch1-5)\nSwitch x 1 (Contrl all LED switches)(Switch_All)\n\nVariable Resistance x 5 (Separate  Adjust 5 LED brightness)(ADC1-5)\n\nButton x 5 (Function button, can control light effect by code)(func1-5)\nButton x 1 (Stop Function and Set status with Switch)(Button_STOP)\n
 Text Label 3750 1750 0    50   ~ 0
 Button_STOP
 $Comp
